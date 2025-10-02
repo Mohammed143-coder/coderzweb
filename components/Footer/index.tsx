@@ -212,9 +212,9 @@ const Footer = () => {
           <div className=" flex items-center justify-around p-4 text-sm">
             <p className="flex items-center text-center text-base text-body-color dark:text-gray-400"><MdOutlineCopyright />{new Date().getFullYear()} CoderzWeb. All rights are reserved</p>
             <p className="text-center text-base text-body-color dark:text-gray-400">
-              <a href="https://junaith-portfolio.vercel.app" rel="nofollow noopener" target="_blank">
+              <Link href="https://junaith-portfolio.vercel.app"  target="_blank">
                 Crafted ❤️ By @Founder CoderzWeb
-              </a>
+              </Link>
             </p>
           </div>
         </div>
