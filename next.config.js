@@ -8,7 +8,7 @@ const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH ? `${process.env.NEXT_PUBLIC_BASE_PATH}/` : '',
   images: {
     unoptimized: true,
-    domains: ["localhost"],
+    // domains: ["localhost"],
     remotePatterns: [
       {
         protocol: "https",
