@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Poppins } from "next/font/google";
-
+import { Providers } from "./providers";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
@@ -40,4 +40,4 @@ export default function RootLayout({
   );
 }
 
-import { Providers } from "./providers";
+
