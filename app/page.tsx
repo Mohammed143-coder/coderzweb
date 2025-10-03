@@ -11,7 +11,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Professional Web Development Services | Custom Websites & Apps | CoderzWeb",
+  title: "Professional Web Development Services | Custom Websites & web Apps | CoderzWeb | Best web development agency",
   description:
     "Award-winning web development company specializing in custom websites, web applications, e-commerce, and mobile apps. Transform your business with responsive design, SEO optimization, and 24/7 support. Get a free consultation today!",
 
