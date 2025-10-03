@@ -5,11 +5,12 @@ import Link from "next/link";
 import { MdOutlineCopyright, MdOutlineDoubleArrow } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { PiInstagramLogoDuotone } from "react-icons/pi";
-import WhatAppIcon from "./WhatsappIcon";
+
 
 const Footer = () => {
+  const msg = `Hi, I'm planning to build website for my business, Checking from your website ?`;
   return (
     <>
       <footer
@@ -95,7 +96,7 @@ const Footer = () => {
                     <a
                       href="https://www.google.com/maps?q=Stadium+2nd+gate,+opposite+building,+1st+floor,+Rajajinagar,+Krishnagiri"
                       target="_blank"
-                      
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <IoLocationOutline className="w-9 h-20 md:h-16" />
@@ -212,7 +213,14 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <>            <WhatAppIcon/></>
+            <>            <a
+              href={`https://wa.me/918072770837?text=${msg}`} // your number with country code
+              target="_blank"
+
+              className="fixed bottom-20  right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-400 transition-all duration-300 animate-bounce"
+            >
+              <FaWhatsapp className="w-10 h-10" />
+            </a></>
 
           </div>
 
