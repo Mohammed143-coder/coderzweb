@@ -60,43 +60,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  // ✅ JSON-LD defined inside the component
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://coderzweb.vercel.app/services/web-development",
-    serviceType: "Web Development",
-    provider: {
-      "@id": "https://coderzweb.vercel.app/#organization",
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Krishnagiri",
-      containedIn: {
-        "@type": "State",
-        name: "Tamil Nadu",
-        containedIn: {
-          "@type": "Country",
-          name: "India",
-        },
-      },
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Web Development Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Custom Website Development",
-            description: "Tailored websites built with modern technologies",
-          },
-        },
-      ],
-    },
-  };
-
+ 
   return (
     <>
       <ScrollUp />
@@ -111,10 +75,7 @@ export default function Home() {
       <Contact />
 
       {/* ✅ Inject JSON-LD here */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
-      />
+     
     </>
   );
 }
