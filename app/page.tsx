@@ -11,17 +11,14 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Professional Web Development Services | Custom Websites & web Apps | CoderzWeb | Best web development agency",
+  title: "CoderzWeb | Custom Websites & Web Apps | Professional Web Development Services",
   description:
     "Award-winning web development company specializing in custom websites, web applications, e-commerce, and mobile apps. Transform your business with responsive design, SEO optimization, and 24/7 support. Get a free consultation today!",
-
   keywords:
     "web development services, custom website development, professional web design, web application development, e-commerce website development, responsive web design, mobile app development, website redesign services, business website development Krishnagiri, affordable web development Krishnagiri, React development services, Next.js development, full stack development, business website development, affordable web development, web development company, hire web developers, website maintenance services, SEO friendly web development, progressive web apps, API integration services, web developers near me Krishnagiri, best web development company Krishnagiri Tamil Nadu",
-
-  authors: [{ name: "Mohammed Junaith", url: "https://coderzweb.vercel.app" }],
+  authors: [{ name: "CoderzWeb", url: "https://coderzweb.vercel.app" }],
   creator: "CoderzWeb",
   publisher: "CoderzWeb",
-
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -31,7 +28,6 @@ export const metadata: Metadata = {
     description:
       "Leading web development company delivering custom websites, web apps, and e-commerce solutions. 500+ projects completed. Fast turnaround. Free consultation. Transform your digital presence today!",
   },
-
   robots: {
     index: true,
     follow: true,
@@ -43,24 +39,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
   category: "technology",
-
   metadataBase: new URL("https://coderzweb.vercel.app"),
-
   appleWebApp: {
     capable: true,
     title: "CoderzWeb",
     statusBarStyle: "black-translucent",
   },
-
   alternates: {
     canonical: "https://coderzweb.vercel.app",
     languages: {
       "en-US": "https://coderzweb.vercel.app",
     },
   },
-
   formatDetection: {
     telephone: true,
     email: true,
@@ -68,44 +59,44 @@ export const metadata: Metadata = {
   },
 };
 
-// ✅ JSON-LD must be exported separately
-export const serviceJsonLd: Record<string, any> = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://coderzweb.vercel.app/services/web-development",
-  serviceType: "Web Development",
-  provider: {
-    "@id": "https://coderzweb.vercel.app/#organization",
-  },
-  areaServed: {
-    "@type": "City",
-    name: "Krishnagiri",
-    containedIn: {
-      "@type": "State",
-      name: "Tamil Nadu",
-      containedIn: {
-        "@type": "Country",
-        name: "India",
-      },
+export default function Home() {
+  // ✅ JSON-LD defined inside the component
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://coderzweb.vercel.app/services/web-development",
+    serviceType: "Web Development",
+    provider: {
+      "@id": "https://coderzweb.vercel.app/#organization",
     },
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Web Development Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Custom Website Development",
-          description: "Tailored websites built with modern technologies",
+    areaServed: {
+      "@type": "City",
+      name: "Krishnagiri",
+      containedIn: {
+        "@type": "State",
+        name: "Tamil Nadu",
+        containedIn: {
+          "@type": "Country",
+          name: "India",
         },
       },
-    ],
-  },
-};
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Web Development Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Custom Website Development",
+            description: "Tailored websites built with modern technologies",
+          },
+        },
+      ],
+    },
+  };
 
-export default function Home() {
   return (
     <>
       <ScrollUp />
@@ -119,7 +110,7 @@ export default function Home() {
       <Blog />
       <Contact />
 
-      {/* ✅ Add JSON-LD inside a script tag */}
+      {/* ✅ Inject JSON-LD here */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
