@@ -36,28 +36,28 @@ const Footer = () => {
                   We craft modern, scalable websites and digital solutions that build trust, boost visibility, and help businesses grow with innovation, experience, and care.
                 </p>
                 <div className="flex items-center">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61581874762273"
-                     target="_blank" 
-  rel="noopener noreferrer"  // ADD THIS
-  aria-label="social-link"
+                  <Link
+                    href="https://facebook.com/profile.php?id=61581874762273"
+                    target="_blank"
+                    rel="noopener noreferrer"  // ADD THIS
+                    aria-label="social-link"
 
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    onClick={(e) => e.preventDefault()}
+
                   >
                     <FaFacebook className="w-6 h-6" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/official_coderzweb/"
-                      target="_blank" 
-  rel="noopener noreferrer"  // ADD THIS
-  aria-label="social-link"
+                  </Link>
+                  <Link
+                    href="https://instagram.com/official_coderzweb/"
+                    target="_blank"
+                    rel="noopener noreferrer"  // ADD THIS
+                    aria-label="social-link"
 
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    onClick={(e) => e.preventDefault()}
+
                   >
                     <PiInstagramLogoDuotone className="w-6 h-6" />
-                  </a>
+                  </Link>
                   {/* <a
                     href="#"
                     aria-label="social-link"
@@ -101,8 +101,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="https://www.google.com/maps?q=Stadium+2nd+gate,+opposite+building,+1st+floor,+Rajajinagar,+Krishnagiri"
-                      target="_blank" 
-  rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
 
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
@@ -115,8 +115,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="tel:+918072770837"
-                     target="_blank" 
-  rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -129,8 +129,8 @@ const Footer = () => {
                     <a
                       href="tel:917904463409"
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                      target="_blank" 
-  rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
 
                     >
                       <LuPhoneCall />+91 79044 63409
@@ -149,8 +149,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="#about"
-                   
-  rel="noopener noreferrer"
+
+                      rel="noopener noreferrer"
 
                       className=" flex gap-2 mb-4 items-center text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -160,8 +160,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="#pricing"
-                     
-  rel="noopener noreferrer"
+
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -171,8 +171,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="#blog"
-                     
-  rel="noopener noreferrer"
+
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -182,8 +182,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="#contact"
-                      
-  rel="noopener noreferrer"
+
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -205,8 +205,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                     
-  rel="noopener noreferrer"
+
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -217,7 +217,7 @@ const Footer = () => {
                     <a
                       href="#"
 
-  rel="noopener noreferrer"
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -229,7 +229,7 @@ const Footer = () => {
                       href="#"
 
 
-  rel="noopener noreferrer"
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -239,8 +239,8 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                     
-  rel="noopener noreferrer"
+
+                      rel="noopener noreferrer"
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -252,9 +252,9 @@ const Footer = () => {
             </div>
             <>            <a
               href={`https://wa.me/918072770837?text=${msg}`} // your number with country code
-               target="_blank" 
-  rel="noopener noreferrer"  // ADD THIS
-  aria-label="social-link"
+              target="_blank"
+              rel="noopener noreferrer"  // ADD THIS
+              aria-label="social-link"
 
               className="fixed bottom-20  right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-400 transition-all duration-300 animate-bounce"
             >
