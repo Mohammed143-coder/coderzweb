@@ -101,7 +101,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="https://www.google.com/maps?q=Stadium+2nd+gate,+opposite+building,+1st+floor,+Rajajinagar,+Krishnagiri"
-                      target="_blank"
+                      target="_blank" 
+  rel="noopener noreferrer"
+
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
@@ -113,7 +115,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="tel:+918072770837"
-                      target="_blank"
+                     target="_blank" 
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <LuPhoneCall className="w-6 h-6" />
@@ -125,7 +129,9 @@ const Footer = () => {
                     <a
                       href="tel:917904463409"
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                      target="_blank"
+                      target="_blank" 
+  rel="noopener noreferrer"
+
                     >
                       <LuPhoneCall />+91 79044 63409
                     </a>
@@ -143,6 +149,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#about"
+                   
+  rel="noopener noreferrer"
+
                       className=" flex gap-2 mb-4 items-center text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow />About Us
@@ -151,6 +160,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#pricing"
+                     
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow /> Pricing
@@ -159,6 +171,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#blog"
+                     
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow /> Blogs
@@ -167,6 +182,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#contact"
+                      
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow />Contact Us
@@ -187,6 +205,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
+                     
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow />Landing & Static Website Development
@@ -195,6 +216,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
+
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow /> Dynamic Website Development
@@ -203,6 +227,10 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
+
+
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow />Web App Development
@@ -211,6 +239,9 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
+                     
+  rel="noopener noreferrer"
+
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow /> Domain & Hosting service
