@@ -216,7 +216,7 @@ const Footer = () => {
             <>            <a
               href={`https://wa.me/918072770837?text=${msg}`} // your number with country code
               target="_blank"
-
+              rel="noreferrer"
               className="fixed bottom-20  right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-400 transition-all duration-300 animate-bounce"
             >
               <FaWhatsapp className="w-10 h-10" />
