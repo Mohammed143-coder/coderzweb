@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import { LuSendHorizontal } from "react-icons/lu";
 import { PiFlipVerticalLight } from "react-icons/pi";
 
 
@@ -127,7 +128,7 @@ const Contact = () => {
                   </div>
                   <div className="w-full px-4">
                     <button type='submit' className="flex items-center gap-2 shadow-submit dark:shadow-submit-dark  bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90 rounded-lg" >
-                      Send <PiFlipVerticalLight className="w-6 h-6"/>
+                      Send <LuSendHorizontal className="w-6 h-6"/>
                     </button>
                   </div>
                 </div>
