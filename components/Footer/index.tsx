@@ -7,6 +7,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaFacebook } from "react-icons/fa";
 import { PiInstagramLogoDuotone } from "react-icons/pi";
+import WhatAppIcon from "./WhatsappIcon";
 
 const Footer = () => {
   return (
@@ -35,20 +36,20 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61581874762273"
                     aria-label="social-link"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <FaFacebook className="w-6 h-6"/>
+                    <FaFacebook className="w-6 h-6" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/official_coderzweb/"
                     aria-label="social-link"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <PiInstagramLogoDuotone className="w-6 h-6"/>
+                    <PiInstagramLogoDuotone className="w-6 h-6" />
                   </a>
                   {/* <a
                     href="#"
@@ -92,27 +93,32 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="#"
+                      href="https://www.google.com/maps?q=Stadium+2nd+gate,+opposite+building,+1st+floor,+Rajajinagar,+Krishnagiri"
+                      target="_blank"
+                      
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                      onClick={(e) => e.preventDefault()}
                     >
-                      <IoLocationOutline className="w-9 h-20 md:h-16" /> Stadium 2nd gate, opposite building, 1st floor, Rajajinagar, Krishnagiri.
+                      <IoLocationOutline className="w-9 h-20 md:h-16" />
+                      Stadium 2nd gate, opposite building, 1st floor, Rajajinagar, Krishnagiri.
                     </a>
                   </li>
+
                   <li>
                     <a
-                      href="#"
+                      href="tel:+918072770837"
+                      target="_blank"
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                      onClick={(e) => e.preventDefault()}
                     >
-                      <LuPhoneCall />+91 80727 70837
+                      <LuPhoneCall className="w-6 h-6" />
+                      +91 80727 70837
                     </a>
                   </li>
+
                   <li>
                     <a
-                      href="#"
+                      href="tel:917904463409"
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                      onClick={(e) => e.preventDefault()}
+                      target="_blank"
                     >
                       <LuPhoneCall />+91 79044 63409
                     </a>
@@ -154,7 +160,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#contact"
-                      className="flex items-center gap-2 mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
+                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow />Contact Us
                     </a>
@@ -206,13 +212,15 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+            <>            <WhatAppIcon/></>
+
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className=" flex items-center justify-around p-4 text-sm">
             <p className="flex items-center text-center text-base text-body-color dark:text-gray-400"><MdOutlineCopyright />{new Date().getFullYear()} CoderzWeb. All rights are reserved</p>
             <p className="text-center text-base text-body-color dark:text-gray-400">
-              <Link href="https://junaith-portfolio.vercel.app"  target="_blank">
+              <Link href="https://junaith-portfolio.vercel.app" target="_blank">
                 Crafted ❤️ By @Founder CoderzWeb
               </Link>
             </p>
