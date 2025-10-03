@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   keywords:
     "web development services, custom website development, professional web design, web application development, e-commerce website development, responsive web design, mobile app development, website redesign services, business website development Krishnagiri, affordable web development Krishnagiri, React development services, Next.js development, full stack development, business website development, affordable web development, web development company, hire web developers, website maintenance services, SEO friendly web development, progressive web apps, API integration services, web developers near me Krishnagiri, best web development company Krishnagiri Tamil Nadu",
   authors: [{ name: "CoderzWeb", url: "https://coderzweb.vercel.app" }],
-  creator: "CoderzWeb",
+  creator: "Mohammed Junaith",
   publisher: "CoderzWeb",
   openGraph: {
     type: "website",
@@ -74,7 +74,7 @@ export default function Home() {
       <Blog />
       <Contact />
 
-      {/* ✅ Inject JSON-LD here */}
+      
      
     </>
   );
