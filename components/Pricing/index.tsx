@@ -166,7 +166,7 @@ const Pricing = () => {
       </div>
       <div className="flex flex-col items-center justify-center md:h-72 p-4 shadow-lg rounded-lg">
         <h2 className="text-2xl font-semibold text-gray-400 py-2">Get Ready to Start Your Idea To Project?</h2>
-        <p className="py-4 my-2 text-lg font-medium text-gray-400">If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs.</p>
+        <p className="py-4 my-2 text-lg font-medium text-gray-400">{"If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs."}</p>
         <button>
           <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
            Connect with Us
