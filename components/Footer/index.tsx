@@ -120,7 +120,7 @@ const Footer = () => {
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
-                      <LuPhoneCall className="w-6 h-6" />
+                      <LuPhoneCall className="w-4 h-4" />
                       +91 80727 70837
                     </a>
                   </li>
@@ -133,7 +133,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
 
                     >
-                      <LuPhoneCall />+91 79044 63409
+                      <LuPhoneCall className="w-4 h-4"/>+91 79044 63409
                     </a>
                   </li>
                 </ul>

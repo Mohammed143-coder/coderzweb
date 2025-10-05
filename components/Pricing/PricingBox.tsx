@@ -15,6 +15,7 @@ const PricingBox = (props: {
         className="wow fadeInUp shadow-md dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xl bg-white px-8 py-8 hover:shadow-[#A4B4FB] hover:shadow-xl duration-300"
         data-wow-delay=".1s"
       >
+       
         <div className="flex items-center justify-between pb-2">
           <h3 className="price mb-2 text-3xl font-bold text-black dark:text-gray-400">
             ₹{" "}<span className="amount">{price}</span>
@@ -27,7 +28,7 @@ const PricingBox = (props: {
         {/* <p className="mb-7 text-base text-body-color">{subtitle}</p> */}
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
           <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            Know More
+            Unlock Your Offer
           </Link>
         </div>
         <div className="md:h-96 ">{children}</div>

@@ -8,7 +8,7 @@ const Features = () => {
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Our Best Features"
+            title="Our Best Features / Services"
             paragraph="We provide expert website development, dynamic web solutions, e-commerce platforms, responsive design, SEO marketing, and secure hosting with free SSL—everything your business needs to grow online with confidence."
             center
           />
