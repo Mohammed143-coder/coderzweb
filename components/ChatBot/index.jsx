@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { MdClose } from "react-icons/md";
 import { RiRobot3Line } from "react-icons/ri";
 
 export default function ChatBox() {
@@ -37,18 +38,21 @@ export default function ChatBox() {
       }
 
       const data = await res.json();
-      
+
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: data.reply || "Sorry, no response received." },
+        {
+          role: "assistant",
+          content: data.reply || "Sorry, no response received.",
+        },
       ]);
     } catch (error) {
       console.error("Chat error:", error);
       setMessages((prev) => [
         ...prev,
-        { 
-          role: "assistant", 
-          content: "Sorry, something went wrong. Please try again." 
+        {
+          role: "assistant",
+          content: "Sorry, something went wrong. Please try again.",
         },
       ]);
     } finally {
@@ -61,29 +65,36 @@ export default function ChatBox() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 flex items-center justify-center rounded-full 
-        bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 
-        text-white shadow-lg animate-bounce hover:scale-110 transition"
+        className="flex h-16 w-16 animate-bounce items-center justify-center 
+        rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 
+        to-pink-500 text-white shadow-lg transition hover:scale-110"
       >
         <RiRobot3Line size={30} />
       </button>
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-20 md:bottom-16 -right-52 md:-right-80 w-auto h-96 md:w-96 md:h-96 bg-white 
-          shadow-2xl rounded-2xl flex flex-col border overflow-hidden animate-slide-up">
+        <div
+          className="animate-slide-up absolute -right-52 bottom-20 flex h-96 w-auto flex-col overflow-hidden rounded-2xl 
+          border bg-white shadow-2xl md:-right-80 md:bottom-16 md:h-96 md:w-96"
+        >
           {/* Header */}
-          <div className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 
-            text-white font-semibold p-3">
-            CoderWeb AI Assistant
+          <div
+            className="flex items-center justify-between bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 
+            p-3 font-semibold text-white"
+          >
+            <span>CoderWeb AI Assistant</span>
+            <span>
+              <MdClose className="h-6 w-6" onClick={() => setIsOpen(!isOpen)} />
+            </span>
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-3 overflow-y-auto text-sm space-y-2">
+          <div className="flex-1 space-y-2 overflow-y-auto p-3 text-sm">
             {messages.map((m, i) => (
               <div
                 key={i}
-                className={`p-2 rounded-lg max-w-[75%] ${
+                className={`max-w-[75%] rounded-lg p-2 ${
                   m.role === "user"
                     ? "ml-auto bg-cyan-100 text-cyan-900"
                     : "mr-auto bg-gray-200 text-gray-900"
@@ -93,27 +104,27 @@ export default function ChatBox() {
               </div>
             ))}
             {isLoading && (
-              <div className="mr-auto bg-gray-200 text-gray-900 p-2 rounded-lg w-56 md:w-max-72">
+              <div className="md:w-max-72 mr-auto w-56 rounded-lg bg-gray-200 p-2 text-gray-900">
                 Thinking...
               </div>
             )}
           </div>
 
           {/* Input */}
-          <form onSubmit={sendMessage} className="flex p-2 border-t">
+          <form onSubmit={sendMessage} className="flex border-t p-2">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="flex-grow border rounded-lg px-3 py-2 text-sm focus:outline-none"
+              className="flex-grow rounded-lg border px-3 py-2 text-sm focus:outline-none"
               placeholder="Ask me..."
               disabled={isLoading}
             />
             <button
               type="submit"
               disabled={isLoading}
-              className="ml-2 px-4 py-2 rounded-lg bg-gradient-to-r 
-              from-cyan-400 via-purple-500 to-pink-500 text-white font-semibold
-              disabled:opacity-50 disabled:cursor-not-allowed"
+              className="ml-2 rounded-lg bg-gradient-to-r from-cyan-400 via-purple-500 
+              to-pink-500 px-4 py-2 font-semibold text-white
+              disabled:cursor-not-allowed disabled:opacity-50"
             >
               Send
             </button>
