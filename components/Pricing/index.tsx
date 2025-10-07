@@ -74,7 +74,7 @@ const Pricing = () => {
             <OfferList text="Free SSL + Basic hosting" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Basic / Recommended"
+            packageName="Recommended"
             price={"18k"}
             // duration={isMonthly ? "mo" : "yr"}
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."

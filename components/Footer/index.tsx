@@ -7,6 +7,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { PiInstagramLogoDuotone } from "react-icons/pi";
+import ChatBox from "../ChatBot";
 
 
 const Footer = () => {
@@ -250,6 +251,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+            <><ChatBox/></>
             <>            <a
               href={`https://wa.me/918072770837?text=${msg}`} // your number with country code
               target="_blank"
