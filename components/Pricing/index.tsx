@@ -71,7 +71,10 @@ const Pricing = () => {
             <OfferList text="Social media integration (FB/Instagram/What's app links)" status="active" />
             <OfferList text="Contact form integration (basic email capture / WhatsApp link)" status="active" />
             <OfferList text="Get your location section" status="active" />
-            <OfferList text="Free SSL + Basic hosting" status="active" />
+            <OfferList text="Free SSL + Free basic hosting for a year" status="active" />
+            <OfferList text="4 months free website maintenace" status="active" />
+
+
           </PricingBox>
           <PricingBox
             packageName="Recommended"
@@ -84,24 +87,24 @@ const Pricing = () => {
             <OfferList text="Basic UI with animations & modern design" status="active" />
             <OfferList text="Basic SEO optimization (keywords, sitemap, robots.txt, google setup)" status="active" />
             <OfferList text="Basic speed optimization (lazy loading, image compression)" status="active" />
-            <OfferList text="Google Maps integration & Call-to-action integration" status="active" />
-            <OfferList text="Free .in domain" status="active" />
-            <OfferList text="Basic AI chat bot" status="active" />
-            <OfferList text="4 months free maintenace" status="active" />
+            <OfferList text="Google maps integration & Call-to-action integration" status="active" />
+            <OfferList text="Grab your free .in domain" status="active" />
+            <OfferList text="Free Basic AI chat bot" status="active" />
+            <OfferList text="6 months free website maintenace" status="active" />
 
 
           </PricingBox>
           <PricingBox
-            packageName="Booster"
+            packageName="Booster / Modern package"
             price={"24k"}
             // duration={isMonthly ? "mo" : "yr"}
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
           >
             <OfferList text="Recommended package features included" status="active" />
-            <OfferList text="Hosting plan 10% discount" status="active" />
+            <OfferList text="Grab 10% discount hosting plan" status="active" />
             <OfferList text="1 year free website maintenace" status="active" />
             <OfferList text="Full-stack / Scalable web app(pwa)" status="active" />
-            <OfferList text="Advance AI chat bot with live updates" status="active" />
+            <OfferList text="Free AI chat bot with live updates" status="active" />
             <OfferList text="Multi-language support (if required)" status="active" />
             <OfferList text="Technical SEO (website)" status="active" />
             <OfferList text="Free Gmb page creation" status="active" />
@@ -169,7 +172,7 @@ const Pricing = () => {
         <p className="py-4 my-2 text-lg font-medium text-gray-400">{"If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs."}</p>
         <button>
           <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-           Connect with Us
+            Connect with Us
           </Link>
         </button>
       </div>

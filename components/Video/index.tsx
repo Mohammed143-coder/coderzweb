@@ -20,19 +20,21 @@ const Video = () => {
           mb="80px"
         />
 
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap ">
           <div className="w-full px-4">
             <div
-              className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-md"
+              className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-lg shadow-xl dark:shadow-2xl dark:shadow-[#95A9FC]"
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
                 <Image
-                  src={getImagePath("/images/video/video.jpg")}
+                  src={getImagePath("/images/video/coderzweb-offers.jpeg")}
                   alt="video image"
-                  fill
+                  className="w-full h-[90vh]"
+                  width={250}
+                  height={200}
                 />
-                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+                {/* <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
                     onClick={() => setOpen(true)}
@@ -47,7 +49,7 @@ const Video = () => {
                       <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
                     </svg>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -136,7 +136,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center justify-center w-full px-4 lg:w-5/12 xl:w-4/12 font-bold text-xl shadow-sm animate-pulse text-gray-500">
-          Location will be update soon...
+         <iframe className="w-full h-full pb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.784643476239!2d78.1986422753335!3d12.530421087745912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac33297879eee1%3A0x8e6a7e64428494c3!2sCoderzWeb%20%7C%20Website%20Development%20%7C%20Web%20App%20Development%20%7C%20AI%20Chat%20bot!5e0!3m2!1sen!2sin!4v1760014931854!5m2!1sen!2sin" loading="lazy" ></iframe>
             {/* <NewsLatterBox /> */}
           </div>
         </div>

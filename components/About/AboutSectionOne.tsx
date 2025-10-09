@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Crafted for startup, small and medium business growth."
-                paragraph="Seeking growth and digital success. From responsive website development to dynamic web apps, SEO, e-commerce, and secure hosting with free SSL, we provide end-to-end solutions. We design with scalability, performance, and user experience in mind, helping brands attract customers and thrive online."
+                paragraph="At Coderz Web, our experienced developers (More than 1.3+ years in modern web development) craft responsive & dynamic websites, web apps, SEO-friendly platforms, e-commerce solutions, and secure hosting with free SSL. We deliver scalable, high-performance, and user-focused solutions that help businesses enhance visibility, attract customers, and thrive online with confidence."
                 mb="44px"
               />
 
@@ -44,7 +44,7 @@ const AboutSectionOne = () => {
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Web App Solutions" />
                     <List text="Domain & Hosting" />
-                    <List text="Ongoing Support" />
+                    <List text="Support & Maintenance" />
                   </div>
                 </div>
               </div>
@@ -59,12 +59,14 @@ const AboutSectionOne = () => {
                   src={getImagePath("/images/about/about-image.svg")}
                   alt="about-image"
                   fill
+                  loading="lazy"
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image
                   src={getImagePath("/images/about/about-image-dark.svg")}
                   alt="about-image"
                   fill
+                  loading="lazy"
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
                 />
               </div>
