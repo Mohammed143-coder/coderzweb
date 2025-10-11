@@ -95,7 +95,7 @@ const Pricing = () => {
 
           </PricingBox>
           <PricingBox
-            packageName="Booster / Modern package"
+            packageName="Web Booster"
             price={"24k"}
             // duration={isMonthly ? "mo" : "yr"}
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
@@ -167,7 +167,7 @@ const Pricing = () => {
           </defs>
         </svg>
       </div>
-      <div className="flex flex-col items-center justify-center md:h-72 p-4 shadow-lg rounded-lg">
+      <div className="flex flex-col items-center justify-center md:h-72 p-4 rounded-lg">
         <h2 className="text-2xl font-semibold text-gray-400 py-2">Are you ready to start your idea to project?</h2>
         <p className="py-4 my-2 text-lg font-medium text-gray-400">{"If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs."}</p>
         <button>
