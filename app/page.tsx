@@ -109,7 +109,7 @@ export default function Home() {
         </div>
 
         {/* Hero content - positioned relatively to appear above background */}
-        <div className="relative z-20">
+        <div className="relative z-10">
           <Features />
         </div>
       </div>
