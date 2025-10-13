@@ -8,7 +8,7 @@ import { Providers } from "./providers";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"], // Specify weights you need
   variable: "--font-poppins", // Optional: CSS variable
@@ -22,10 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+
+      <head /> <meta name="google-site-verification" content="FEFWA7kjSl3mGXEcGuoH8h2ztFi5P71PiAxvPBJW19c" />
+
       <head />
 
       <body className={`bg-[#FCFCFC] dark:bg-black${poppins.className}`}>
