@@ -10,10 +10,10 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {icon}
         </div>
        </div>
-        <h3 className="mb-5 text-xl  font-bold text-gray-400 sm:text-2xl lg:text-xl xl:text-2xl">
+        <h3 className="mb-5 text-xl  font-bold sm:text-2xl lg:text-xl xl:text-2xl">
           {title}
         </h3>
-        <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
+        <p className="pr-[10px] text-base font-medium leading-relaxed ">
           {paragraph}
         </p>
       </div>

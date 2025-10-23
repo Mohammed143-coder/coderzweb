@@ -23,14 +23,14 @@ const Video = () => {
         <div className="-mx-4 flex flex-wrap ">
           <div className="w-full px-4">
             <div
-              className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-lg shadow-xl dark:shadow-2xl dark:shadow-[#95A9FC]"
+              className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden "
               data-wow-delay=".15s"
             >
-              <div className="relative aspect-[77/40] items-center justify-center">
+              <div className="relative aspect-[77/40] items-center justify-center ">
                 <Image
-                  src={getImagePath("/images/video/coderzweb-offers.jpeg")}
+                  src={getImagePath("/images/video/coderzweb-festival-offer.jpg")}
                   alt="video image"
-                  className="w-full h-[90vh]"
+                  className="w-auto h-[90vh] object-fit mx-auto rounded-lg shadow-xl dark:shadow-3xl dark:shadow-[#8ea4fb]"
                   width={250}
                   height={200}
                 />

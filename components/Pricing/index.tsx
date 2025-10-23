@@ -88,7 +88,7 @@ const Pricing = () => {
             <OfferList text="Basic SEO optimization (keywords, sitemap, robots.txt, google setup)" status="active" />
             <OfferList text="Basic speed optimization (lazy loading, image compression)" status="active" />
             <OfferList text="Google maps integration & Call-to-action integration" status="active" />
-            <OfferList text="Grab your free .in domain" status="active" />
+            <OfferList text="Grab your free .in domain for a year" status="active" />
             <OfferList text="Free Basic AI chat bot" status="active" />
             <OfferList text="6 months free website maintenace" status="active" />
 
@@ -102,6 +102,7 @@ const Pricing = () => {
           >
             <OfferList text="Recommended package features included" status="active" />
             <OfferList text="Grab 10% discount hosting plan" status="active" />
+            <OfferList text="Grab 10% discount in .com domain" status="active" />
             <OfferList text="1 year free website maintenace" status="active" />
             <OfferList text="Full-stack / Scalable web app(pwa)" status="active" />
             <OfferList text="Free AI chat bot with live updates" status="active" />
