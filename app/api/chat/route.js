@@ -57,7 +57,7 @@ export async function POST(req) {
 
     const llm = new ChatGroq({
       model: "openai/gpt-oss-120b", // Updated to a valid Groq model
-      temperature: 0,
+      temperature: 0.1,
       maxRetries: 2,
       maxTokens: 2000,
       apiKey: process.env.GROQ_API_KEY,
