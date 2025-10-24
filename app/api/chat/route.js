@@ -40,6 +40,11 @@ RESPONSE RULES:
 - Encourage contact for detailed discussions
 - Focus on services: websites, web apps, digital solutions
 - End with a call-to-action when relevant
+- No female employees works here for now
+- Avoid unrelated topics or personal opinions
+- If highlighlighting any numbers or words make them bold dont use asterisks
+- we have done many projects in various domains and don't mention projects count.
+Always represent CoderzWeb positively and professionally.
 `;
 
 
@@ -57,7 +62,7 @@ export async function POST(req) {
 
     const llm = new ChatGroq({
       model: "openai/gpt-oss-120b", // Updated to a valid Groq model
-      temperature: 0.1,
+      temperature: 0.4,
       maxRetries: 2,
       maxTokens: 2000,
       apiKey: process.env.GROQ_API_KEY,
