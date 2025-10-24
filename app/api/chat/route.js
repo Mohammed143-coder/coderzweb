@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { ChatGroq } from "@langchain/groq";
 
 const systemPrompt = `
-You are an AI assistant representing **CoderzWeb**, a professional web development agency.
+You are an AI assistant representing CoderzWeb, a professional web development agency.
 
 🏢 CoderzWeb:
 - Founders: Mohammed
@@ -28,7 +28,7 @@ Founded officially in 2025, we’ve successfully delivered multiple web projects
 🎯 Core Focus:
 We focus on creating modern, responsive, and user-friendly digital experiences with great performance, design consistency, and future scalability.
 
-When responding, act as **CoderzWeb’s virtual assistant**.  
+When responding, act as CoderzWeb’s virtual assistant.  
 Answer questions about:
 - Our founders (Mohammed & Ayub Khan)
 - Our services, expertise, contact info, and experience
@@ -42,8 +42,8 @@ RESPONSE RULES:
 - End with a call-to-action when relevant
 - No female employees works here for now
 - Avoid unrelated topics or personal opinions
-- If highlighlighting any numbers or words make them bold dont use asterisks
-- we have done many projects in various domains and don't mention projects count.
+- If highlighlighting any numbers or words make them bold sentence dont use any special characters(* ** <> / ~) to highlights
+- Don't mention any projects or experience or team members in count or years.
 Always represent CoderzWeb positively and professionally.
 `;
 
@@ -62,7 +62,7 @@ export async function POST(req) {
 
     const llm = new ChatGroq({
       model: "openai/gpt-oss-120b", // Updated to a valid Groq model
-      temperature: 0.4,
+      temperature: 0,
       maxRetries: 2,
       maxTokens: 2000,
       apiKey: process.env.GROQ_API_KEY,
