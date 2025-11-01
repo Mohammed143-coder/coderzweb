@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-3/12 ">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block font-semibold text-2xl md:text-3xl text-[#9FB1FB]">
+                <Link href="/" className="mb-8 inline-block font-semibold text-2xl md:text-3xl text-[#9FB1FB] hover:skew-y-3 ">
                   {/* <Image
                     src={getImagePath("/images/logo/logo-2.svg")}
                     alt="logo"
@@ -235,6 +235,18 @@ const Footer = () => {
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
                       <MdOutlineDoubleArrow />Web App Development
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+
+
+                      rel="noopener noreferrer"
+
+                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
+                    >
+                      <MdOutlineDoubleArrow />Shopify Website Development
                     </a>
                   </li>
                   <li>

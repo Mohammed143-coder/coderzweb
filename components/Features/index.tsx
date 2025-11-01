@@ -5,11 +5,11 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28 text-black/60">
+      <section id="services" className="py-16 md:py-20 lg:py-28 text-black/60">
         <div className="container">
           <SectionTitle
             title="Our Best Features / Services"
-            paragraph="We provide expert website development, dynamic web solutions, responsive design, SEO marketing,e-commerce platforms, and secure hosting with free SSL—everything your business needs to grow online with confidence."
+            paragraph="We deliver expert website development, responsive design, SEO marketing, e-commerce platforms, and secure hosting with free SSL—everything your business needs to grow and thrive online with confidence."
             center
           />
 

@@ -34,7 +34,7 @@ const getTestimonialData = (): Testimonial[] => [
 
 const Testimonials = () => {
   return (
-    <section className="relative z-10 bg-gray-light dark:bg-bg-color-dark py-16 lg:py-28 shadow">
+    <section className="relative z-10 bg-gray-light dark:bg-bg-color-dark py-16 lg:py-28 shadow" id='testimonials'>
       <div className="container ">
         <SectionTitle
           title="What Our Users Says"

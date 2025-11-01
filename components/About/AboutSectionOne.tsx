@@ -10,11 +10,11 @@ const checkIcon = (
 
 const AboutSectionOne = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+    <p className="mb-5 flex items-center font-medium hover:skew-y-3 shadow-md shadow-[#99ABFB] text-body-color border-2 border-slate-200 rounded-lg p-1.5 duration-200">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
-      {text}
+      <span className="">{text}</span>
     </p>
   );
 
@@ -25,8 +25,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for startup, small and medium business growth."
-                paragraph="At Coderz Web, our experienced developers (More than 1.3+ years in modern web development) craft responsive & dynamic websites, web apps, SEO-friendly platforms, e-commerce solutions, and secure hosting with free SSL. We deliver scalable, high-performance, and user-focused solutions that help businesses enhance visibility, attract customers, and thrive online with confidence."
+                title="Designed for startups, small businesses, and those eager to grow online."
+                paragraph="At Coderz Web, we build more than just websites — we create powerful digital experiences. From responsive sites, web apps and e-commerce platforms with SEO-optimized and secure hosting with free SSL, our team delivers scalable, high-performing solutions that drive visibility, engagement, and online growth."
                 mb="44px"
               />
 

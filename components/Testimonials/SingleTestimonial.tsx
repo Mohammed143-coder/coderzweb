@@ -21,12 +21,12 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full ">
       <div
-        className="wow fadeInUp shadow-two dark:shadow-three dark:hover:shadow-gray-dark  bg-white p-6 duration-300 hover:shadow-[#A2B2FB] dark:bg-dark lg:px-5 xl:px-8 rounded-lg md:h-72"
+        className="wow fadeInUp shadow-xl bg-white p-6 shadow-[#A2B2FB] hover:scale-105 dark:bg-dark lg:px-5 xl:px-8 rounded-lg md:h-72 duration-300"
         data-wow-delay=".1s"
       >
         <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
         <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-gray-400 md:h-32">
-          “{content}
+          {content}
         </p>
         <div className="flex items-center">
           <div className="flex items-center justify-center relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">

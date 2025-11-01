@@ -58,7 +58,7 @@ const Pricing = () => {
           </div>
         </div> */}
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
 
           <PricingBox
             packageName="Starter"
@@ -76,12 +76,14 @@ const Pricing = () => {
 
 
           </PricingBox>
+         
           <PricingBox
-            packageName="Recommended"
+            packageName="Essential"
             price={"18k"}
             // duration={isMonthly ? "mo" : "yr"}
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
           >
+             <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">Recommended</span>
             <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio, Blog, Contact, etc.)" status="active" />
             <OfferList text="Starter package features included" status="active" />
             <OfferList text="Basic UI with animations & modern design" status="active" />
@@ -172,7 +174,7 @@ const Pricing = () => {
         <h2 className="text-2xl font-semibold text-gray-400 py-2">Are you ready to start your idea to project?</h2>
         <p className="py-4 my-2 text-lg font-medium text-gray-400">{"If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs."}</p>
         <button>
-          <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+          <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-[#99ABFB] p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:skew-y-3 hover:scale-105 hover:shadow-xl hover:shadow-[#99ABFB]">
             Connect with Us
           </Link>
         </button>

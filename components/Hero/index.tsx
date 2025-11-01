@@ -1,8 +1,15 @@
 import Link from "next/link";
+import TypeWriter from "./TypeWriter";
 
 
 const Hero = () => {
-  
+  const solutions = [
+    "Boost Your Online Presence",
+    "Drive More Traffic To Your Website",
+    "Convert Visitors Into Valuable Customers",
+    "Grow Your Business Online",
+    "Optimize for Search Engines",
+  ];
   return (
     <>
     
@@ -18,22 +25,34 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-gray-400 sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Innovative Web Development & Digital Solutions to Grow Your Business                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  We build fast, secure, and scalable websites using modern technologies that help startups and businesses
+                <h1 className="mb-5 text-2xl font-semibold leading-tight text-gray-400  md:text-5xl md:leading-tight">
+                  Our Web Solutions Designed To</h1>
+                
+                <p className="my-8 text-2xl md:text-3xl font-semibold text-[#99ABFB] ">
+                  <TypeWriter sentences={solutions} />
+                </p>
+                <p className="my-8 text-gray-400 dark:text-body-color-dark font-medium text-lg">
+                  We craft responsive, secure, and scalable websites using <strong className="text-[#99ABFB]">modern technologies</strong> that help startups and businesses
                   attract more customers, boost visibility, and grow online.
 
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
+                <div className="mt-5 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
                   <Link
                     target="_blank"
                     href="tel:918072770837"
-                    className="inline-block  bg-[#99ABFB] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-[#2E3D76] dark:text-gray-400 dark:hover:bg-white/50 dark:hover:text-black/90 rounded-xl"
+                    className="inline-block border-2 bg-[#99ABFB] border-[#99ABFB] text-white px-8 py-4 text-base font-semibold duration-200 ease-in-out shadow-xl hover:scale-105 shadow-[#99abfb] dark:bg-[#2E3D76] dark:text-gray-400  rounded-xl"
                   >
-                    Connect With Us
+                    Book a call
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="tel:918072770837"
+                    className="inline-block border-2 border-[#99ABFB] text-[#99ABFB] px-8 py-4 text-base font-semibold duration-200 ease-in-out shadow-lg hover:scale-105 shadow-[#99ABFB] dark:bg-[#2E3D76] dark:text-gray-400 rounded-xl "
+                  >
+                    View Services
                   </Link>
                 </div>
+                
               </div>
             </div>
           </div>

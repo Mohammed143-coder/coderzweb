@@ -85,6 +85,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <AboutSectionOne />
       {/* Hero section with LiquidEther background */}
       <div className="relative">
         {/* LiquidEther as background - positioned absolutely */}
@@ -115,9 +116,9 @@ export default function Home() {
       </div>
 
       <Video />
-      <AboutSectionOne />
+      
       <AboutSectionTwo />
-      <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }} className="text-[#99ABFB] dark:text-black">
         <LogoLoop
           logos={techLogos}
           speed={120}
