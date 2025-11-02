@@ -38,7 +38,7 @@ const getBlogData = (): Blog[] => [
       image: getImagePath("/images/blog/coderzweb-blog3.webp"),
       designation: "Graphic Designer",
     },
-    tags: ["design"],
+    tags: ["Designer"],
     publishDate: "2025",
   },
 ];

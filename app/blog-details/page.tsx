@@ -1,4 +1,3 @@
-import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import { getImagePath } from "@/lib/utils";
 import Image from "next/image";
@@ -336,9 +335,7 @@ const BlogDetailsPage = () => {
                       <h5 className="mb-3 text-sm font-medium text-body-color sm:text-right">
                         Share this post :
                       </h5>
-                      <div className="flex items-center sm:justify-end">
-                        <SharePost />
-                      </div>
+                      
                     </div>
                   </div>
                 </div>

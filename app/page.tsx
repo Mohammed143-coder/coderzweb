@@ -1,12 +1,15 @@
+
+import dynamic from "next/dynamic";
+
+const LiquidEther = dynamic(() => import("@/components/LiquidEther"), { ssr: false });
+const LogoLoop = dynamic(() => import("@/components/LogoLoop"), { ssr: false });
+const ScrollUp = dynamic(() => import("@/components/Common/ScrollUp"), { ssr: false });
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
-import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import LiquidEther from "@/components/LiquidEther";
-import LogoLoop from "@/components/LogoLoop";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";

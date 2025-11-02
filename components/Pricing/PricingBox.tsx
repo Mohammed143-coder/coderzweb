@@ -25,7 +25,7 @@ const PricingBox = (props: {
             {packageName}
           </h4>
         </div>
-        {/* <p className="mb-7 text-base text-body-color">{subtitle}</p> */}
+        <p className="mb-7 h-14 text-base text-body-color">{subtitle}</p>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
           <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-[#99ABFB] hover:scale-105 p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
             Unlock Your Offer

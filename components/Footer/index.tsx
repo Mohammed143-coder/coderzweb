@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-3/12 ">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block font-semibold text-2xl md:text-3xl text-[#9FB1FB] hover:skew-y-3 ">
+                <Link href="/" className="mb-8 inline-block font-semibold text-2xl md:text-3xl text-[#9FB1FB] hover:rotate-[-4deg] hover:scale-105 transition-all duration-200">
                   {/* <Image
                     src={getImagePath("/images/logo/logo-2.svg")}
                     alt="logo"

@@ -58,17 +58,18 @@ const Pricing = () => {
           </div>
         </div> */}
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
 
           <PricingBox
             packageName="Starter"
             price={"12k"}
             // duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="One-pager or starter website, conversion-focused, perfect for product launches or lead gen."
           >
             <OfferList text="Landing page or static website 1 – 3 pages (Home, About, Contact)" status="active" />
             <OfferList text="Mobile responsive design (looks great on phone & PC)" status="active" />
             <OfferList text="Social media integration (FB/Instagram/What's app links)" status="active" />
+            <OfferList text="Basic optimization" status="active" />
             <OfferList text="Contact form integration (basic email capture / WhatsApp link)" status="active" />
             <OfferList text="Get your location section" status="active" />
             <OfferList text="Free SSL + Free basic hosting for a year" status="active" />
@@ -76,16 +77,17 @@ const Pricing = () => {
 
 
           </PricingBox>
-         
+
           <PricingBox
             packageName="Essential"
             price={"18k"}
             // duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Your brand needs. Clean, scalable, and intentional with AI power chat bot."
           >
-             <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">Recommended</span>
-            <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio, Blog, Contact, etc.)" status="active" />
+            <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">Recommended</span>
             <OfferList text="Starter package features included" status="active" />
+            <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio, Blog, Contact, etc.)" status="active" />
+            
             <OfferList text="Basic UI with animations & modern design" status="active" />
             <OfferList text="Basic SEO optimization (keywords, sitemap, robots.txt, google setup)" status="active" />
             <OfferList text="Basic speed optimization (lazy loading, image compression)" status="active" />
@@ -100,7 +102,7 @@ const Pricing = () => {
             packageName="Web Booster"
             price={"24k"}
             // duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Flexible packages crafted to help your brand shine online with AI power chat bot."
           >
             <OfferList text="Recommended package features included" status="active" />
             <OfferList text="Grab 10% discount hosting plan" status="active" />
@@ -113,6 +115,37 @@ const Pricing = () => {
             <OfferList text="Free Gmb page creation" status="active" />
 
           </PricingBox>
+
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 mt-8 mx-auto">
+
+          <PricingBox
+            packageName="Shopify Starter"
+            price={"27k"}
+            // duration={isMonthly ? "mo" : "yr"}
+            subtitle="Everthing, for modern shoppers. Perfect for launches, ideas & everyday essentials. Shop local & global."
+          >
+            <OfferList text="Strategy call to align on goals" status="active" />
+            <OfferList text="Custom UI design" status="active" />
+            <OfferList text="Grab 10% discount in your domain" status="active" />
+            <OfferList text="1 year free website maintenace" status="active" />
+            <OfferList text="Mobile-optimized & lightning fast" status="active" />
+            <OfferList text="Multi-language support (if required)" status="active" />
+            <OfferList text="Technical SEO (website)" status="active" />
+            <OfferList text="Free Gmb page creation" status="active" />
+
+          </PricingBox>
+          <div className="">
+            <div className="flex flex-col items-center justify-center md:h-72 p-4 rounded-lg">
+              <h2 className="text-2xl font-semibold text-gray-400 py-2">Are you ready to start your idea to project?</h2>
+              <p className="py-4 my-2 text-lg font-medium text-gray-400">{"If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs."}</p>
+              <button>
+                <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-[#99ABFB] p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:skew-y-3 hover:scale-105 hover:shadow-xl hover:shadow-[#99ABFB]">
+                  Connect with Us
+                </Link>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -170,15 +203,7 @@ const Pricing = () => {
           </defs>
         </svg>
       </div>
-      <div className="flex flex-col items-center justify-center md:h-72 p-4 rounded-lg">
-        <h2 className="text-2xl font-semibold text-gray-400 py-2">Are you ready to start your idea to project?</h2>
-        <p className="py-4 my-2 text-lg font-medium text-gray-400">{"If you have any custom project idea let's bring your vision to life with cutting-edge web solutions tailored to your needs."}</p>
-        <button>
-          <Link href='tel:918072770837' className="flex w-full items-center justify-center rounded-lg bg-[#99ABFB] p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:skew-y-3 hover:scale-105 hover:shadow-xl hover:shadow-[#99ABFB]">
-            Connect with Us
-          </Link>
-        </button>
-      </div>
+
 
     </section>
   );
