@@ -21,7 +21,7 @@ import { TiHtml5 } from "react-icons/ti";
 import { SiMongodb } from "react-icons/si";
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Custom Websites & Web Apps | Professional Web Development Services",
+  title: "CoderzWeb | Professional Web Development Services",
   description:
     "Award-winning web development company specializing in custom websites, web applications, e-commerce, and mobile apps. Transform your business with responsive design, SEO optimization, and 24/7 support. Get a free consultation today!",
   keywords:
