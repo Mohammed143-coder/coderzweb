@@ -265,7 +265,7 @@ const Footer = () => {
             </div>
             <><ChatBox/></>
             <>            <a
-              href={`https://wa.me/918072770837?text=${msg}`} // your number with country code
+              href={`https://wa.me/917904463409?text=${msg}`} // your number with country code
               target="_blank"
               rel="noopener noreferrer"  // ADD THIS
               aria-label="social-link"

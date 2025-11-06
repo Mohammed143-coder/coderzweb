@@ -45,8 +45,8 @@ const Hero = () => {
                     Book a call
                   </Link>
                   <Link
-                    target="_blank"
-                    href="tel:918072770837"
+                    
+                    href="#services"
                     className="inline-block border-2 border-[#99ABFB] text-[#99ABFB] px-8 py-4 text-base font-semibold duration-200 ease-in-out shadow-lg hover:scale-105 shadow-[#99ABFB] dark:bg-[#2E3D76] dark:text-gray-400 rounded-xl "
                   >
                     View Services
