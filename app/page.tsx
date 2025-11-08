@@ -19,13 +19,12 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandNextjs, TbBrandTailwind, TbBrandTypescript } from "react-icons/tb";
 import { TiHtml5 } from "react-icons/ti";
 import { SiMongodb } from "react-icons/si";
+import ModernFAQ from "@/components/Common/ModernFAQ";
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Professional Web Development Services",
-  description:
-    "Award-winning web development company specializing in custom websites, web applications, e-commerce, and mobile apps. Transform your business with responsive design, SEO optimization, and 24/7 support. Get a free consultation today!",
-  keywords:
-    "web development services, custom website development, professional web design, web application development, e-commerce website development, responsive web design, mobile app development, website redesign services, business website development Krishnagiri, affordable web development Krishnagiri, React development services, Next.js development, full stack development, business website development, affordable web development, web development company, hire web developers, website maintenance services, SEO friendly web development, progressive web apps, API integration services, web developers near me Krishnagiri, best web development company Krishnagiri Tamil Nadu",
+  title: "CoderzWeb | Professional Web Development agency in Krishnagiri",
+  description:"Award-winning web development company in Krishnagiri serving Pan India. We create responsive websites, web apps, Meta ads & SEO solutions. Get a free consultation today!",
+  keywords:"Web development services, Custom website development, Best web development company Krishnagiri, Web design company India, Web application development, E-commerce website development, Responsive web design, Website redesign services, Business website development Krishnagiri, Affordable website development Krishnagiri, React development services, Next.js development India, Web development agency India, Hire web developers, Website maintenance services, SEO-friendly web development, Progressive web apps development, Web developers near me Krishnagiri, Full stack web development, Dynamic web solutions India, Professional website design Krishnagiri Tamil Nadu",
   authors: [{ name: "CoderzWeb", url: "https://coderzweb.vercel.app" }],
   creator: "Mohammed Junaith",
   publisher: "CoderzWeb",
@@ -140,6 +139,7 @@ export default function Home() {
       <Pricing />
       <Blog />
       <Contact />
+      <ModernFAQ />
     </>
   );
 }

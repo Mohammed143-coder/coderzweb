@@ -24,7 +24,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
 
       <head /> <meta name="google-site-verification" content="FEFWA7kjSl3mGXEcGuoH8h2ztFi5P71PiAxvPBJW19c" />
-
+      <link rel="canonical" href="https://coderzweb.vercel.app/" />
       <head />
 
       <body className={`bg-[#FCFCFC] dark:bg-black${poppins.className}`}>
