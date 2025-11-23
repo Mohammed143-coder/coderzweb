@@ -49,7 +49,7 @@ const Footer = () => {
                     <FaFacebook className="w-6 h-6" />
                   </Link>
                   <Link
-                    href="https://instagram.com/official_coderzweb/"
+                    href="https://www.instagram.com/coderzweb_official/"
                     target="_blank"
                     rel="noopener noreferrer"  // ADD THIS
                     aria-label="social-link"
