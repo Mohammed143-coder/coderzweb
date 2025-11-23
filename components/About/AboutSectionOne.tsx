@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Designed for startups, small businesses, and those eager to grow online."
-                paragraph="At Coderz Web, we build more than just websites — we create powerful digital experiences. From responsive sites, web apps and e-commerce platforms with SEO-optimized and secure hosting with free SSL, our team delivers scalable, high-performing solutions that drive visibility, engagement, and online growth."
+                paragraph="At CoderzWeb, our founder Mohammed and his expert team build more than just websites — we create powerful digital experiences. From responsive websites and scalable web apps to e-commerce platforms, Meta Ads, Google Ads, and SEO-optimized secure hosting, we deliver high-performance solutions that boost visibility, engagement, and online growth."
                 mb="44px"
               />
 
@@ -43,8 +43,8 @@ const AboutSectionOne = () => {
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Web App Solutions" />
-                    <List text="Domain & Hosting" />
-                    <List text="Support & Maintenance" />
+                    <List text="Meta & Google Ads" />
+                    <List text="Proven Local SEO" />
                   </div>
                 </div>
               </div>

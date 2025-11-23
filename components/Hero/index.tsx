@@ -26,16 +26,16 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-2xl font-semibold leading-tight text-gray-400  md:text-5xl md:leading-tight">
-                  Our Web Solutions Designed To</h1>
+                  Our Digital Solutions Designed To</h1>
                 
                 <p className="my-8 text-2xl md:text-3xl font-semibold text-[#99ABFB] ">
                   <TypeWriter sentences={solutions} />
                 </p>
                 <p className="my-8 text-gray-400 dark:text-body-color-dark font-medium text-lg">
-                  We craft responsive, secure, and scalable websites using <strong className="text-[#99ABFB]">modern technologies</strong> that help startups and businesses
-                  attract more customers, boost visibility, and grow online.
+  We build <strong className="text-[#99ABFB]">responsive, secure & scalable websites</strong> and run high-performance 
+  <strong className="text-[#99ABFB]"> Meta Ads & Google Ads</strong> to help businesses attract customers, boost visibility, generate quality leads, and grow faster online.
+</p>
 
-                </p>
                 <div className="mt-5 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
                   <Link
                     target="_blank"

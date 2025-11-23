@@ -63,10 +63,10 @@ export default function ModernFAQ() {
       <div className="relative mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <div className="mb-6 inline-flex h-20 w-20 transform items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-[#A2B2FB] shadow-xl shadow-purple-500/30 transition-all duration-300 hover:rotate-6 hover:scale-110">
+          {/* <div className="mb-6 inline-flex h-20 w-20 transform items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-[#A2B2FB] shadow-xl shadow-purple-500/30 transition-all duration-300 hover:rotate-6 hover:scale-110">
             <HelpCircle className="h-10 w-10 text-white" />
-          </div>
-          <h1 className="mb-4 text-6xl font-bold text-black">
+          </div> */}
+          <h1 className="mb-4 text-5xl font-bold text-black">
             Frequently Asked Questions
           </h1>
           <p className="flex items-center justify-center gap-2 text-lg text-gray-600">
