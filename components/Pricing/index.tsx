@@ -134,7 +134,7 @@ const Pricing = () => {
             <div className="text-center max-w-5xl mx-auto mb-12">
 
               <p className="text-gray-500 text-lg leading-relaxed">
-                In today’s digital world, social media is not just about posting — it’s about
+                In todays digital world, social media is not just about posting — its about
                 <span className="font-semibold text-black"> building visibility, trust, and sales.</span>
                 Our SMM packages are carefully designed for business growth, not just followers.
               </p>
@@ -188,7 +188,7 @@ const Pricing = () => {
             {/* Closing Business Hook */}
             <div className="mt-12 text-center">
               <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                We don’t just manage your social media — we make it work for your business.
+                We dont just manage your social media — we make it work for your business.
                 Choose us if you want <span className="font-semibold text-black">results, not just designs.</span>
               </p>
             </div>
