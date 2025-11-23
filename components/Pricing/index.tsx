@@ -49,7 +49,7 @@ const Pricing = () => {
               >
                 <OfferList text="Landing page or static website 1 – 3 pages (Home, About, Contact)" status="active" />
                 <OfferList text="Responsive design (looks great on all devices)" status="active" />
-                <OfferList text="Social media integration (FB/Instagram/What's app links)" status="active" />
+                <OfferList text="Social media integration (FB/Instagram/WhatsApp links)" status="active" />
                 <OfferList text="Website optimization with advance auditing tool (lazy loading, image compression)" status="active" />
                 <OfferList text="Contact form integration (basic email capture / WhatsApp link)" status="active" />
                 <OfferList text="Free SSL + Free basic hosting for a year" status="active" />
@@ -114,13 +114,13 @@ const Pricing = () => {
                   Are you ready to start your project?
                 </h2>
                 <p className="py-4 text-center text-lg font-medium text-gray-400">
-                  If you have any custom project ideas, let's bring your vision to life with cutting-edge web solutions.
+                  If you have any custom project ideas, lets bring your vision to life with cutting-edge web solutions.
                 </p>
                 <Link
                   href="tel:918072770837"
                   className="flex w-full justify-center md:w-auto rounded-lg bg-[#99ABFB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl"
                 >
-                  Connect with Us
+                  Connect with us
                 </Link>
               </div>
             </div>
