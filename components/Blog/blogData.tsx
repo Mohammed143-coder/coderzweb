@@ -34,11 +34,11 @@ const getBlogData = (): Blog[] => [
     paragraph:"No digital presence = invisible business. Calculate exactly how much revenue you're losing monthly without a website. This guide reveals how strategic web development creates passive income streams, builds credibility, and attracts customers 24/7—even while you sleep. Start recovering lost profits today.",
     image: getImagePath("/images/blog/coderzweb-blog3.webp"),
     author: {
-      name: "KM Wasim",
+      name: "Mohammed",
       image: getImagePath("/images/blog/coderzweb-blog3.webp"),
-      designation: "Graphic Designer",
+      designation: "@Founder",
     },
-    tags: ["Designer"],
+    tags: ["Founder"],
     publishDate: "2025",
   },
 ];
