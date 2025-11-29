@@ -9,7 +9,7 @@ const Pricing = () => {
   const [activeTab, setActiveTab] = useState("website");
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="relative z-10 py-16 md:py-20 ">
       <div className="container">
         <SectionTitle
           title="Simple and Affordable Pricing"
@@ -17,7 +17,15 @@ const Pricing = () => {
           center
           width="665px"
         />
+        <div className="text-center max-w-5xl mx-auto mb-10">
 
+          <p className="text-gray-500 text-lg leading-relaxed">
+            In todays digital world, Online presence is not just about posting — its about
+            <span className="font-semibold text-black"> building visibility, trust, and sales.</span>
+            Our Digital crafted packages are carefully designed for business growth, not just followers.
+          </p>
+
+        </div>
         {/* TOGGLE BUTTONS */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {["website", "marketing", "whatsapp"].map((tab) => (
@@ -44,7 +52,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Essential"
-                price={"12k"}
+                price={"11,999"}
                 subtitle="One-pager or starter website, conversion-focused, perfect for product launches or lead gen."
               >
                 <OfferList text="Landing page or static website 1 – 3 pages (Home, About, Contact)" status="active" />
@@ -58,11 +66,11 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Recommended"
-                price={"18k"}
+                price={"17,999"}
                 subtitle="Your brand needs. Clean, scalable, and intentional with AI power chat bot."
               >
                 <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
-                  Recommended
+                  Most Popular
                 </span>
                 <OfferList text="Starter package features included" status="active" />
                 <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio, Blog, Contact, etc.)" status="active" />
@@ -76,7 +84,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Web Booster"
-                price={"24k"}
+                price={"23,999"}
                 subtitle="Flexible packages crafted to help your brand shine online with AI power chat bot."
               >
                 <OfferList text="Recommended package features included" status="active" />
@@ -92,7 +100,7 @@ const Pricing = () => {
             </div>
 
             {/* SHOPIFY SECTION */}
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6">
 
               <PricingBox
                 packageName="Shopify Starter"
@@ -109,7 +117,7 @@ const Pricing = () => {
                 <OfferList text="Free Gmb page creation" status="active" />
               </PricingBox>
 
-              <div className="flex flex-col items-center justify-center p-4 rounded-lg">
+              {/* <div className="flex flex-col items-center justify-center p-4 rounded-lg">
                 <h2 className="text-2xl font-semibold text-gray-400 py-2 text-center">
                   Are you ready to start your project?
                 </h2>
@@ -122,7 +130,7 @@ const Pricing = () => {
                 >
                   Connect with us
                 </Link>
-              </div>
+              </div> */}
             </div>
           </>
         )}
@@ -130,17 +138,6 @@ const Pricing = () => {
         {/* ================= DIGITAL MARKETING (SMM) ================= */}
         {activeTab === "marketing" && (
           <div>
-            {/* SMM Intro Content */}
-            <div className="text-center max-w-5xl mx-auto mb-12">
-
-              <p className="text-gray-500 text-lg leading-relaxed">
-                In todays digital world, social media is not just about posting — its about
-                <span className="font-semibold text-black"> building visibility, trust, and sales.</span>
-                Our SMM packages are carefully designed for business growth, not just followers.
-              </p>
-
-            </div>
-
             {/* SMM Cards */}
             <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
 
@@ -176,6 +173,7 @@ const Pricing = () => {
                 price={"10,999"}
                 subtitle="For businesses serious about scaling and dominating online presence."
               >
+
                 <OfferList text="10 premium social media posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding" status="active" />
                 <OfferList text="3 high-conversion video with engaging animation" status="active" />
@@ -186,24 +184,73 @@ const Pricing = () => {
             </div>
 
             {/* Closing Business Hook */}
-            <div className="mt-12 text-center">
+            {/* <div className="mt-12 text-center">
               <p className="text-lg text-gray-600 max-w-4xl mx-auto">
                 We dont just manage your social media — we make it work for your business.
                 Choose us if you want <span className="font-semibold text-black">results, not just designs.</span>
               </p>
-            </div>
+            </div> */}
           </div>
         )}
 
 
         {/* ================= WHATSAPP API ================= */}
         {activeTab === "whatsapp" && (
-          <div className="text-center py-12 max-w-4xl mx-auto text-gray-500">
-            <h2 className="text-2xl font-semibold mb-2">WhatsApp API</h2>
-            <p>Get ready! Our WhatsApp API solution with powerful features and budget-friendly pricing is coming soon to boost your customer engagement.</p>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-2">
+            <PricingBox
+              packageName="Saver"
+              price={"5,999"}
+              subtitle="Perfect for a small business or solopreneur to get started with WhatsApp Broadcasting & Automation for 3 months."
+            >
+              <OfferList text="Get Official WhatsApp Business API" status="active" />
+              <OfferList text="Broadcast Unlimited Campaigns" status="active" />
+                                          <OfferList text="Zero-fee WhatsApp setup" status="active" />
+              <OfferList text="Schedule Broadcasts" status="active" />
+              <OfferList text="Chat CRM Included" status="active" />
+              <OfferList text="Click-to-WhatsApp-Ads" status="active" />
+              <OfferList text="Connect Your Third-Party APIs" status="active" />
+              <OfferList text="Send Personalised Messages" status="active" />
+              <OfferList text="Multi Agent Shared Inbox" status="active" />
+              <OfferList text="Click-tracking" status="active" />
+            </PricingBox>
+            <PricingBox
+              packageName="Recommended"
+              price={"11,999"}
+              subtitle="Best for Advanced features and higher limits, ideal for growing businesses needing more capabilities for an year."
+            >
+              <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
+                Most Popular
+              </span>
+              <OfferList text="Get Official WhatsApp Business API" status="active" />
+              <OfferList text="Broadcast Unlimited Campaigns" status="active" />
+                            <OfferList text="Zero-fee WhatsApp setup" status="active" />
+              <OfferList text="Schedule Broadcasts" status="active" />
+              <OfferList text="Chat CRM Included" status="active" />
+              <OfferList text="Click-to-WhatsApp-Ads" status="active" />
+              <OfferList text="Connect Your Third-Party APIs" status="active" />
+              <OfferList text="Send Personalised Messages" status="active" />
+              <OfferList text="Connect No Code A.I. Chatbots" status="active" />
+              <OfferList text="Multi Agent Shared Inbox" status="active" />
+              <OfferList text="Click-tracking" status="active" />
+
+            </PricingBox>
           </div>
         )}
       </div>
+      <div className="mt-10 flex flex-col items-center justify-center">
+        <p className="text-lg text-gray-600 max-w-4xl mx-auto text-center">
+          We dont just manage your social media — we make it work for your business.
+          Choose us if you want <span className="font-semibold text-black">results, not just designs.</span>
+        </p>
+
+        <Link
+          href="tel:918072770837"
+          className="mt-4 w-44 rounded-lg bg-[#99ABFB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl text-center"
+        >
+          Connect with us
+        </Link>
+      </div>
+
     </section>
   );
 };

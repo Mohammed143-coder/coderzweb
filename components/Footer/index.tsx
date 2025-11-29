@@ -246,7 +246,7 @@ const Footer = () => {
 
                       className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
                     >
-                      <MdOutlineDoubleArrow />Shopify Website Development
+                      <MdOutlineDoubleArrow />Digital Marketing Services
                     </a>
                   </li>
                   <li>
@@ -282,7 +282,7 @@ const Footer = () => {
             <p className="flex items-center text-center text-base text-body-color dark:text-gray-400"><MdOutlineCopyright />{new Date().getFullYear()} CoderzWeb. All rights are reserved</p>
             <p className="text-center text-base text-body-color dark:text-gray-400">
              
-                Crafted ❤️ By @Founder CoderzWeb
+                Crafted with ❤️ By @Founder CoderzWeb
             </p>
           </div>
         </div>
