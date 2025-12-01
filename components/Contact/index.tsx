@@ -5,29 +5,32 @@ import { PiFlipVerticalLight } from "react-icons/pi";
 
 
 const Contact = () => {
-   const [result, setResult] = React.useState("");
-  const onSubmit = async (event:any) => {
+  const [loading, setLoading] = React.useState(false);
+
+  const onSubmit = (event: any) => {
     event.preventDefault();
-    setResult("Sending....");
+    setLoading(true);
+
     const formData = new FormData(event.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const phone = formData.get("phone No");
+    const subject = formData.get("subject");
+    const message = formData.get("message");
 
-    formData.append("access_key", "a8555757-13ec-420e-b3cf-b6fdb2c5ea5e");
+    const whatsappMessage = `*New Request From Website*\n\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Subject:* ${subject}\n*Message:* ${message}`;
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/917904463409?text=${encodedMessage}`;
 
-    const data = await response.json();
+    window.open(whatsappUrl, "_blank");
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
+    setTimeout(() => {
+      setLoading(false);
       event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
+    }, 1000);
   };
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -57,7 +60,7 @@ const Contact = () => {
                       <input
                         type="text"
                         name="name"
-                        placeholder="Name..."
+                        placeholder="Name"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -73,7 +76,7 @@ const Contact = () => {
                       <input
                         type="email"
                         name="email"
-                        placeholder="Email..."
+                        placeholder="Email"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -89,7 +92,7 @@ const Contact = () => {
                       <input
                         type="number"
                         name="phone No"
-                        placeholder="Phone No..."
+                        placeholder="Phone No"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -105,7 +108,7 @@ const Contact = () => {
                       <input
                         type="text"
                         name="subject"
-                        placeholder="Subject..."
+                        placeholder="Subject"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -128,7 +131,7 @@ const Contact = () => {
                   </div>
                   <div className="w-full px-4">
                     <button type='submit' className="flex items-center gap-2 shadow-submit dark:shadow-submit-dark  bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90 rounded-lg" >
-                      Send <LuSendHorizontal className="w-6 h-6"/>
+                      {loading ? "Sending..." : "Send"} <LuSendHorizontal className="w-6 h-6" />
                     </button>
                   </div>
                 </div>
@@ -136,7 +139,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center justify-center w-full px-4 lg:w-5/12 xl:w-4/12 font-bold text-xl shadow-sm animate-pulse text-gray-500">
-         <iframe className="w-full h-full pb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.784643476239!2d78.1986422753335!3d12.530421087745912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac33297879eee1%3A0x8e6a7e64428494c3!2sCoderzWeb%20%7C%20Website%20Development%20%7C%20Web%20App%20Development%20%7C%20AI%20Chat%20bot!5e0!3m2!1sen!2sin!4v1760014931854!5m2!1sen!2sin" loading="lazy" ></iframe>
+            <iframe className="w-full h-full pb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.784643476239!2d78.1986422753335!3d12.530421087745912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac33297879eee1%3A0x8e6a7e64428494c3!2sCoderzWeb%20%7C%20Website%20Development%20%7C%20Web%20App%20Development%20%7C%20AI%20Chat%20bot!5e0!3m2!1sen!2sin!4v1760014931854!5m2!1sen!2sin" loading="lazy" ></iframe>
             {/* <NewsLatterBox /> */}
           </div>
         </div>

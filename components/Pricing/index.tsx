@@ -47,7 +47,7 @@ const Pricing = () => {
 
         {/* ================= WEBSITE PRICING ================= */}
         {activeTab === "website" && (
-          <>
+
             <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
 
               <PricingBox
@@ -57,9 +57,9 @@ const Pricing = () => {
               >
                 <OfferList text="Landing page or static website 1 – 3 pages (Home, About, Contact)" status="active" />
                 <OfferList text="Responsive design (looks great on all devices)" status="active" />
-                <OfferList text="Social media integration (FB/Instagram/WhatsApp links)" status="active" />
+                <OfferList text="Social media integration " status="active" />
                 <OfferList text="Website optimization with advance auditing tool (lazy loading, image compression)" status="active" />
-                <OfferList text="Contact form integration (basic email capture / WhatsApp link)" status="active" />
+                <OfferList text="Contact form integration (email capture / WhatsApp link)" status="active" />
                 <OfferList text="Free SSL + Free basic hosting for a year" status="active" />
                 <OfferList text="6 months free website maintenace" status="active" />
               </PricingBox>
@@ -97,12 +97,7 @@ const Pricing = () => {
                 <OfferList text="Technical SEO (website)" status="active" />
                 <OfferList text="Free Gmb page creation" status="active" />
               </PricingBox>
-            </div>
-
-            {/* SHOPIFY SECTION */}
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6">
-
-              <PricingBox
+               <PricingBox
                 packageName="Shopify Starter"
                 price={"27k"}
                 subtitle="Everything for modern shoppers. Perfect for launches, ideas & everyday essentials."
@@ -116,23 +111,7 @@ const Pricing = () => {
                 <OfferList text="Technical SEO (website)" status="active" />
                 <OfferList text="Free Gmb page creation" status="active" />
               </PricingBox>
-
-              {/* <div className="flex flex-col items-center justify-center p-4 rounded-lg">
-                <h2 className="text-2xl font-semibold text-gray-400 py-2 text-center">
-                  Are you ready to start your project?
-                </h2>
-                <p className="py-4 text-center text-lg font-medium text-gray-400">
-                  If you have any custom project ideas, lets bring your vision to life with cutting-edge web solutions.
-                </p>
-                <Link
-                  href="tel:918072770837"
-                  className="flex w-full justify-center md:w-auto rounded-lg bg-[#99ABFB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl"
-                >
-                  Connect with us
-                </Link>
-              </div> */}
             </div>
-          </>
         )}
 
         {/* ================= DIGITAL MARKETING (SMM) ================= */}
