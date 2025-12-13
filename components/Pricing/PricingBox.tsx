@@ -9,9 +9,9 @@ const PricingBox = (props: {
   const { price, packageName, subtitle, children } = props;
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full ">
       <div
-        className="wow fadeInUp hover:scale-105 dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xl bg-white px-8 py-8 shadow-[#A4B4FB] shadow-xl duration-300 h-full flex flex-col"
+        className="wow fadeInUp hover:scale-105 dark:shadow-[#A2B2FB] dark:shadow-lg dark:hover:sshadow-[#A2B2FB] relative z-10 rounded-xl bg-white px-8 py-8 shadow-[#A4B4FB] shadow-xl duration-300 h-full flex flex-col"
         data-wow-delay=".1s"
       >
         {/* HEADER SECTION */}

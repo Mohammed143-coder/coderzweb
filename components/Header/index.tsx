@@ -149,7 +149,7 @@ const Header = () => {
               {/* Menu items */}
               <nav
                 id="navbarCollapse"
-                className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 lg:visible lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 ${
+                className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white dark:bg-black/90 px-6 py-4 duration-300 dark:border-body-color/20 lg:visible lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 ${
                   navbarOpen
                     ? "visibility top-full opacity-100"
                     : "invisible top-[120%] opacity-0"
@@ -162,10 +162,10 @@ const Header = () => {
                         <Link
                           href={menuItem.path.startsWith("#") ? "/" : menuItem.path}
                           onClick={(e) => handleNavClick(e, menuItem.path)}
-                          className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-4 transition-all duration-200 font-semibold ${
+                          className={`flex py-2 text-base justify-center lg:mr-0 lg:inline-flex lg:px-0 lg:py-4 transition-all duration-200 font-semibold ${
                             isActive(menuItem.path)
                               ? "text-primary dark:text-white  text-scale-105 text-rotate-[6deg]"
-                              : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white border-b-2 border-transparent hover:border-primary"
+                              : "text-gray-400  hover:text-primary dark:text-[#A9B8FB]  border-b border-gray-400 lg:border-none hover:border-primary"
                           }`}
                         >
                           {menuItem.title}

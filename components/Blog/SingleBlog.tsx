@@ -6,7 +6,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
 
   return (
     <div
-      className="wow fadeInUp hover:shadow-[#99ABFB] hover:shadow-xl hover:scale-105 dark:hover:shadow-gray-dark group relative overflow-hidden bg-white shadow-one duration-300 dark:bg-dark rounded-xl h-full flex flex-col"
+      className="wow fadeInUp hover:shadow-[#99ABFB] hover:shadow-xl hover:scale-105 dark:shadow-xl dark:shadow-[#A2B2FB] group relative overflow-hidden bg-white shadow-one duration-300 dark:bg-dark rounded-xl h-full flex flex-col"
       data-wow-delay=".1s"
     >
       {/* IMAGE */}

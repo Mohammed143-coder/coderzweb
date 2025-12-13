@@ -224,7 +224,7 @@ const Pricing = () => {
 
         <Link
           href="tel:918072770837"
-          className="mt-4 w-44 rounded-lg bg-[#99ABFB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl text-center"
+          className="mt-4 w-44 rounded-lg bg-[#99ABFB] shadow-md shadow-[#A2B2FB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl text-center"
         >
           Connect with us
         </Link>
