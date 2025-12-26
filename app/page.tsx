@@ -23,17 +23,17 @@ import ModernFAQ from "@/components/Common/ModernFAQ";
 
 export const metadata: Metadata = {
   title: "CoderzWeb | Professional Web Development agency in Krishnagiri",
-  description:"Award-winning web development company in Krishnagiri serving Pan India. We create responsive websites, web apps, Meta ads & SEO solutions. Get a free consultation today!",
-  keywords:"Web development services, Custom website development, Best web development company Krishnagiri, Web design company India, Web application development, E-commerce website development, Responsive web design, Website redesign services, Business website development Krishnagiri, Affordable website development Krishnagiri, React development services, Next.js development India, Web development agency India, Hire web developers, Website maintenance services, SEO-friendly web development, Progressive web apps development, Web developers near me Krishnagiri, Full stack web development, Dynamic web solutions India, Professional website design Krishnagiri Tamil Nadu",
-  authors: [{ name: "CoderzWeb", url: "https://coderzweb.vercel.app" }],
+  description:"Award-winning web development and Best Digital Marketing services in Krishnagiri serving Pan India. We create responsive websites, web apps, Meta ads Google ads & SEO solutions. Get a free consultation today!",
+  keywords:"Web development services, Custom website development, Best web development company Krishnagiri, Best digital marketing agency, Web design company India, Web application development, E-commerce website development, Responsive web design, Website redesign services, Business website development Krishnagiri, Affordable website development Krishnagiri, React development services, Next.js development India, Web development agency India, Hire web developers, Website maintenance services, SEO-friendly web development, Progressive web apps development, Web developers near me Krishnagiri, Full stack web development, Dynamic web solutions India, Professional website design Krishnagiri Tamil Nadu",
+  authors: [{ name: "CoderzWeb", url: "https://coderzweb.in" }],
   creator: "Mohammed Junaith",
   publisher: "CoderzWeb",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://coderzweb.vercel.app",
-    siteName: "CoderzWeb - Professional Web Development Services",
-    title: "Expert Web Development Services | Custom Websites & Digital Solutions",
+    url: "https://coderzweb.in",
+    siteName: "CoderzWeb - Professional Web Development agency in Krishnagiri",
+    title: "Expert In Custom Websites & Digital Marketing",
     description:
       "Leading web development company delivering custom websites, web apps, and e-commerce solutions. 500+ projects completed. Fast turnaround. Free consultation. Transform your digital presence today!",
   },
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
-  metadataBase: new URL("https://coderzweb.vercel.app"),
+  metadataBase: new URL("https://coderzweb.in"),
   appleWebApp: {
     capable: true,
     title: "CoderzWeb",
     statusBarStyle: "black-translucent",
   },
   alternates: {
-    canonical: "https://coderzweb.vercel.app",
+    canonical: "https://coderzweb.in",
     languages: {
-      "en-US": "https://coderzweb.vercel.app",
+      "en-US": "https://coderzweb.in",
     },
   },
   formatDetection: {
