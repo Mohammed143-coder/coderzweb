@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Poppins } from "next/font/google";
 import { Providers } from "./providers";
+import Gtag from "@/components/Analytics/gtag"
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
@@ -23,7 +24,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
 
-      {/* <head /> <meta name="google-site-verification" content="FEFWA7kjSl3mGXEcGuoH8h2ztFi5P71PiAxvPBJW19c" /> */}
+      <head /> 
+      <Gtag />
+      {/* <meta name="google-site-verification" content="FEFWA7kjSl3mGXEcGuoH8h2ztFi5P71PiAxvPBJW19c" /> */}
       <link rel="canonical" href="https://coderzweb.in/" />
       <head />
 
