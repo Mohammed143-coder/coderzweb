@@ -125,10 +125,11 @@ const Pricing = () => {
                 price={"7,599"}
                 subtitle="Perfect for startups & local businesses beginning their branding journey."
               >
-                <OfferList text="5 professionally designed posters" status="active" />
+                <OfferList text="3 professionally designed posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding" status="active" />
                 <OfferList text="2 promotional videos with engaging animation" status="active" />
                 <OfferList text="Free Meta ad campaign for 2 days" status="active" />
+
                 <OfferList text="Ideal for creating brand presence & trust" status="active" />
               </PricingBox>
 
@@ -140,8 +141,8 @@ const Pricing = () => {
                 <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
                   Most Popular
                 </span>
-                <OfferList text="8 high-quality business posters" status="active" />
-                <OfferList text="1 festival poster for seasonal branding" status="active" />
+                <OfferList text="6 high-quality business posters" status="active" />
+                <OfferList text="1 festival poster for seasonal branding (Optional)" status="active" />
                 <OfferList text="2 professional video with engaging animation" status="active" />
                 <OfferList text="Free Meta ad campaign for 2 days" status="active" />
                 <OfferList text="Designed for lead generation & customer engagement" status="active" />

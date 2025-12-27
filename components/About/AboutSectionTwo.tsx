@@ -40,7 +40,7 @@ const AboutSectionTwo = () => {
                   Premier support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Expert assistance to keep your website secure, updated, and running smoothly, ensuring peace of mind and uninterrupted online presence.
+                  Premier support to keep your business running smoothly, visible online, and connected with expert web, ads, design, and communication services.
                 </p>
               </div>
               <div className="mb-1">

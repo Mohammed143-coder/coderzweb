@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Designed for startups, small businesses, and those eager to grow online."
-                paragraph="At CoderzWeb, our founder Mohammed and his expert team build more than just websites — we create powerful digital experiences. From responsive websites and scalable web apps to e-commerce platforms, Meta Ads, Google Ads, and SEO-optimized secure hosting, we deliver high-performance solutions that boost visibility, engagement, and online growth."
+                paragraph="At CoderzWeb, our founder Mohammed and his expert team build responsive websites, web apps, and e-commerce platforms, while delivering Meta Ads, Google Ads, SEO, and secure hosting to drive visibility and online growth for client businesses."
                 mb="44px"
               />
 

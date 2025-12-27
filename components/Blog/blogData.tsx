@@ -12,7 +12,7 @@ const getBlogData = (): Blog[] => [
       image: getImagePath("/images/blog/coderzweb-blog1.webp"),
       designation: "Full Stack Developer",
     },
-    tags: ["Developer"],
+    tags: ["Founder"],
     publishDate: "2025",
   },
   {
@@ -25,7 +25,7 @@ const getBlogData = (): Blog[] => [
     image: getImagePath("/images/blog/coderzweb-blog2.webp"),
       designation: "Flutter Developer",
     },
-    tags: ["Developer"],
+    tags: ["Co-Founder"],
     publishDate: "2025",
   },
   {
