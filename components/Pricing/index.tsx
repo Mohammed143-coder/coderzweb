@@ -150,7 +150,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Booster"
-                price={"10,999"}
+                price={"11,599"}
                 subtitle="For businesses serious about scaling and dominating online presence."
               >
 
