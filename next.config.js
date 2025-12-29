@@ -6,7 +6,7 @@ const nextConfig = {
  
   images: {
     unoptimized: true,
-    // domains: ["localhost"],
+    domains: ["coderzweb.in", "www.coderzweb.in"],
     remotePatterns: [
       {
         protocol: "https",

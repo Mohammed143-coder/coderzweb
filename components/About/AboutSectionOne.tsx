@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Designed for startups, small businesses, and those eager to grow online."
-                paragraph="At CoderzWeb, our founder Mohammed and his expert team build responsive websites, web apps, and e-commerce platforms, while delivering Meta Ads, Google Ads, SEO, and secure hosting to drive visibility and online growth for client businesses."
+                paragraph="At CoderzWeb, our founder Mohammed and his expert team build responsive websites, web apps, and e-commerce platforms, while delivering Meta Ads, Google Ads, SEO, WhatsApp API and secure Domain & hosting to drive visibility and online growth for client businesses."
                 mb="44px"
               />
 
@@ -36,13 +36,13 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Responsive Web Design" />
+                    <List text="Website & Web Apps" />
                     <List text="Enhanced Security" />
                     <List text="Cost-Effective Growth" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Web App Solutions" />
+                    <List text="WhatsApp API" />
                     <List text="Meta & Google Ads" />
                     <List text="Proven Local SEO" />
                   </div>
