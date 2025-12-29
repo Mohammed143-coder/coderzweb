@@ -131,7 +131,8 @@ const Pricing = () => {
                 <OfferList text="1 Shoot with specific script" status="active" />
                 <OfferList text="1 professional video with engaging animation" status="active" />
                 <OfferList text="1 Free Meta ad campaign for 3 days" status="active" />
-                <OfferList text="1 ad campaign setup (optional)" status="active" />
+                <OfferList text="1 ad campaign setup (Optional)" status="active" />
+                                <OfferList text="1 scripted voiceover (Optional)" status="active" />
                 <OfferList text="Ideal for creating brand presence & trust" status="active" />
               </PricingBox>
 
@@ -147,8 +148,8 @@ const Pricing = () => {
                 <OfferList text="1 festival poster for seasonal branding (Optional)" status="active" />
                 <OfferList text="2 professional video with engaging animation" status="active" />
                 <OfferList text="1 Free Meta ad campaign for 2 days" status="active" />
-                <OfferList text="1 scripted voiceover" status="active" />
-                <OfferList text="Designed for lead generation & customer engagement" status="active" />
+
+                <OfferList text="Crafted for lead generation & customer engagement" status="active" />
               </PricingBox>
 
               <PricingBox
@@ -161,8 +162,8 @@ const Pricing = () => {
                 <OfferList text="1 festival poster for seasonal branding" status="active" />
                 <OfferList text="3 professional video with engaging animation" status="active" />
                 <OfferList text="1 Free Meta ad campaign for 3 days" status="active" />
-                <OfferList text="1 scripted voiceover" status="active" />
-                <OfferList text="Built for business growth, leads & revenue" status="active" />
+                
+                <OfferList text="Crafted for business growth, leads & revenue" status="active" />
               </PricingBox>
 
             </div>
