@@ -184,7 +184,7 @@ const Pricing = () => {
           <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
             <PricingBox
               packageName="Saver"
-              price={"5,999"}
+              price={"6,599"}
               subtitle="Perfect for a small business or solopreneur to get started with WhatsApp Broadcasting & Automation for 3 months."
             >
               <OfferList text="Get Official WhatsApp Business API" status="active" />
@@ -198,7 +198,7 @@ const Pricing = () => {
               <OfferList text="Multi Agent Shared Inbox" status="active" />
               <OfferList text="Click-tracking" status="active" />
             </PricingBox>
-            <PricingBox
+            {/* <PricingBox
               packageName="Essential"
               price={"7,999"}
               subtitle="Perfect for a small business or solopreneur or brands to get started with WhatsApp Broadcasting & Automation for 6 months."
@@ -213,10 +213,10 @@ const Pricing = () => {
               <OfferList text="Zero Mock-up charges" status="active" />
               <OfferList text="Multi Agent Shared Inbox" status="active" />
               <OfferList text="Click-tracking" status="active" />
-            </PricingBox>
+            </PricingBox> */}
             <PricingBox
               packageName="Recommended"
-              price={"11,999"}
+              price={"12,599"}
               subtitle="Best for Advanced features and higher limits, ideal for growing businesses needing more capabilities for an year."
             >
               <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">

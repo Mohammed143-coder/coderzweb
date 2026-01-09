@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Custom Websites & Web Apps | Professional Web Development Agency",
+  title: "CoderzWeb | Professional Web Development & Digital marketing agency",
   description:
     "Award-winning web development company specializing in custom websites, web applications, e-commerce, and mobile apps, Meta ads, Google ads and Logo desiging. Transform your business with responsive design, SEO optimization, and 24/7 support. Get a free consultation today!",
   keywords:
@@ -19,7 +19,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Our team is ready to provide the answers and support you need. Let’s make things happen together!"
       />
 
       <Contact />

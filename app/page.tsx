@@ -22,7 +22,7 @@ import { SiMongodb } from "react-icons/si";
 import ModernFAQ from "@/components/Common/ModernFAQ";
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Professional Web Development agency in Krishnagiri",
+  title: "CoderzWeb | Professional Web Development & Digital marketing agency in Krishnagiri",
   description:"Award-winning web development and Best Digital Marketing services in Krishnagiri serving Pan India. We create responsive websites, web apps, Meta ads Google ads & SEO solutions. Get a free consultation today!",
   keywords:"Web development services, Custom website development, Best web development company Krishnagiri, Best digital marketing agency, Web design company India, Web application development, E-commerce website development, Responsive web design, Website redesign services, Business website development Krishnagiri, Affordable website development Krishnagiri, React development services, Next.js development India, Web development agency India, Hire web developers, Website maintenance services, SEO-friendly web development, Progressive web apps development, Web developers near me Krishnagiri, Full stack web development, Dynamic web solutions India, Professional website design Krishnagiri Tamil Nadu",
   authors: [{ name: "CoderzWeb", url: "https://coderzweb.in" }],
