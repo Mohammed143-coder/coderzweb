@@ -28,7 +28,7 @@ const Video = () => {
             >
               <div className="relative aspect-[77/40] items-center justify-center ">
                 <Image
-                  src={getImagePath("/images/video/coderzweb-new.jpg")}
+                  src={getImagePath("/images/video/Coderzweb_pongal-c.webp")}
                   alt="video image"
                   className="w-auto h-[90vh] object-fit mx-auto rounded-lg shadow-xl dark:shadow-3xl dark:shadow-[#8ea4fb]"
                   width={250}
