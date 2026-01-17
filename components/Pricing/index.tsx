@@ -218,7 +218,7 @@ const Pricing = () => {
             </PricingBox> */}
             <PricingBox
               packageName="Recommended"
-              price={"12,599"}
+              price={"11,999"}
               subtitle="Best for Advanced features and higher limits, ideal for growing businesses needing more capabilities for an year."
             >
               <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
