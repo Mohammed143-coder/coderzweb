@@ -131,8 +131,8 @@ const Pricing = () => {
                 <OfferList text="1 Shoot with specific script" status="active" />
                 <OfferList text="1 professional video with engaging animation" status="active" />
                 <OfferList text="1 Free Meta ad campaign for 3 days" status="active" />
-                <OfferList text="1 ad campaign setup (Optional)" status="active" />
-                                <OfferList text="1 scripted voiceover (Optional)" status="active" />
+                <OfferList text="2 ad campaign setup max (Optional)" status="active" />
+                <OfferList text="1 scripted voiceover (Optional)" status="active" />
                 <OfferList text="Ideal for creating brand presence & trust" status="active" />
               </PricingBox>
 
@@ -146,9 +146,10 @@ const Pricing = () => {
                 </span>
                 <OfferList text="5 high-quality business posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding (Optional)" status="active" />
+                <OfferList text="2 Proper video shots" status="active" />
                 <OfferList text="2 professional video with engaging animation" status="active" />
                 <OfferList text="1 Free Meta ad campaign for 2 days" status="active" />
-
+                <OfferList text="3 Meta ad campaigns setup max" status="active" />
                 <OfferList text="Crafted for lead generation & customer engagement" status="active" />
               </PricingBox>
 
@@ -158,11 +159,12 @@ const Pricing = () => {
                 subtitle="For businesses serious about scaling and dominating online presence."
               >
 
-                <OfferList text="8 premium social media posters" status="active" />
+                <OfferList text="6 premium social media posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding" status="active" />
+                <OfferList text="2 Proper video shots" status="active" />
                 <OfferList text="3 professional video with engaging animation" status="active" />
                 <OfferList text="1 Free Meta ad campaign for 3 days" status="active" />
-                
+                <OfferList text="4 Meta ad campaigns setup max" status="active" />
                 <OfferList text="Crafted for business growth, leads & revenue" status="active" />
               </PricingBox>
 
