@@ -144,7 +144,7 @@ const Pricing = () => {
                 <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
                   Most Popular
                 </span>
-                <OfferList text="5 high-quality business posters" status="active" />
+                <OfferList text="4 high-quality business posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding (Optional)" status="active" />
                 <OfferList text="2 Proper video shots" status="active" />
                 <OfferList text="2 professional video with engaging animation" status="active" />
