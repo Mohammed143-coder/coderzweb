@@ -55,7 +55,7 @@ const Pricing = () => {
               price={"11,999"}
               subtitle="One-pager or starter website, conversion-focused, perfect for product launches or lead gen."
             >
-              <OfferList text="Landing page or static website 1 – 3 pages (Home, About, Contact)" status="active" />
+              <OfferList text="Landing page or static website 1 – 2 pages" status="active" />
               <OfferList text="Responsive design (looks great on all devices)" status="active" />
               <OfferList text="Social media integration " status="active" />
               <OfferList text="Website optimization with advance auditing tool (lazy loading, image compression)" status="active" />
@@ -73,7 +73,7 @@ const Pricing = () => {
                 Most Popular
               </span>
               <OfferList text="Starter package features included" status="active" />
-              <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio, Blog, Contact, etc.)" status="active" />
+              <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio & Contact)" status="active" />
               <OfferList text="Custom UI with animations & modern design" status="active" />
               <OfferList text="Proven SEO optimization (keywords, sitemap, robots.txt, google setup)" status="active" />
               <OfferList text="Google maps integration & Call-to-action integration" status="active" />
@@ -155,7 +155,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Booster"
-                price={"11,999"}
+                price={"12,599"}
                 subtitle="For businesses serious about scaling and dominating online presence."
               >
 
