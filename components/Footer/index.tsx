@@ -7,7 +7,9 @@ import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { PiInstagramLogoDuotone } from "react-icons/pi";
-import ChatBox from "../ChatBot";
+import dynamic from "next/dynamic";
+
+const ChatBox = dynamic(() => import("../ChatBot"), { ssr: false });
 
 
 const Footer = () => {
@@ -40,8 +42,8 @@ const Footer = () => {
                   <Link
                     href="https://facebook.com/profile.php?id=61581874762273"
                     target="_blank"
-                    rel="noopener noreferrer"  // ADD THIS
-                    aria-label="social-link"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook"
 
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
 
@@ -51,8 +53,8 @@ const Footer = () => {
                   <Link
                     href="https://www.instagram.com/coderzweb_official/"
                     target="_blank"
-                    rel="noopener noreferrer"  // ADD THIS
-                    aria-label="social-link"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram"
 
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
 
@@ -134,7 +136,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
 
                     >
-                      <LuPhoneCall className="w-4 h-4"/>+91 79044 63409
+                      <LuPhoneCall className="w-4 h-4" />+91 79044 63409
                     </a>
                   </li>
                 </ul>
@@ -205,7 +207,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="#"
+                      href="#services"
 
                       rel="noopener noreferrer"
 
@@ -216,7 +218,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#services"
 
                       rel="noopener noreferrer"
 
@@ -227,7 +229,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#services"
 
 
                       rel="noopener noreferrer"
@@ -239,7 +241,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#services"
 
 
                       rel="noopener noreferrer"
@@ -251,7 +253,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#services"
 
                       rel="noopener noreferrer"
 
@@ -263,17 +265,16 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <><ChatBox/></>
-            <>            <a
-              href={`https://wa.me/917904463409?text=${msg}`} // your number with country code
+            <ChatBox />
+            <a
+              href={`https://wa.me/917904463409?text=${msg}`}
               target="_blank"
-              rel="noopener noreferrer"  // ADD THIS
-              aria-label="social-link"
-
-              className="fixed bottom-20  right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-400 transition-all duration-300 animate-bounce"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className="fixed bottom-20 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-400 hover:scale-110 transition-all duration-300"
             >
               <FaWhatsapp className="w-10 h-10" />
-            </a></>
+            </a>
 
           </div>
 
@@ -281,12 +282,12 @@ const Footer = () => {
           <div className=" flex items-center justify-around p-4 text-sm">
             <p className="flex items-center text-center text-base text-body-color dark:text-gray-400"><MdOutlineCopyright />{new Date().getFullYear()} CoderzWeb. All rights are reserved</p>
             <p className="text-center text-base text-body-color dark:text-gray-400">
-             
-                Crafted with ❤️ By @Founder CoderzWeb
+
+              Crafted with ❤️ By @Founder CoderzWeb
             </p>
           </div>
         </div>
-        <div className="absolute right-0 top-14 z-[-1]">
+        <div className="absolute right-0 top-14 z-[-1]" aria-hidden="true">
           <svg
             width="55"
             height="99"
@@ -360,7 +361,7 @@ const Footer = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute bottom-24 left-0 z-[-1]">
+        <div className="absolute bottom-24 left-0 z-[-1]" aria-hidden="true">
           <svg
             width="79"
             height="94"

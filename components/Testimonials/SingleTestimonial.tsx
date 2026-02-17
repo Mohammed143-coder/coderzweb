@@ -19,24 +19,25 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   }
 
   return (
-    <div className="w-full ">
+    <div className="w-full h-full">
       <div
-        className="wow fadeInUp shadow-xl bg-white p-6 shadow-[#A2B2FB] hover:scale-105 dark:bg-dark lg:px-5 xl:px-8 rounded-lg md:h-72 duration-300"
-        data-wow-delay=".1s"
+        className="reveal-3d shadow-[var(--lux-shadow)] hover:shadow-[var(--lux-shadow-hover)] bg-white dark:bg-dark p-8 md:p-10 rounded-2xl h-full flex flex-col transition-all duration-500 hover:scale-[1.02] border border-gray-100 dark:border-white/5 group"
       >
-        <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-gray-400 md:h-32">
-          {content}
+        <div className="mb-6 flex items-center space-x-1 transition-transform duration-500 group-hover:translate-x-1">{ratingIcons}</div>
+        <p className="mb-8 border-b border-gray-100 dark:border-white/5 pb-8 text-lg font-medium leading-relaxed italic text-gray-700 dark:text-gray-300 flex-grow">
+          &quot;{content}&quot;
         </p>
         <div className="flex items-center">
-          <div className="flex items-center justify-center relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-           {image} 
+          <div className="flex items-center justify-center relative mr-5 h-14 w-14 shrink-0 overflow-hidden rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-[#4A6CF7] shadow-inner">
+            <span className="text-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+              {image}
+            </span>
           </div>
           <div className="w-full">
-            <h3 className="mb-1 text-lg font-semibold text-dark dark:text-gray-400 lg:text-base xl:text-lg">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white leading-tight">
               {name}
             </h3>
-            <p className="text-sm text-body-color">{designation}</p>
+            <p className="text-sm font-semibold text-[#4A6CF7] dark:text-gray-400 mt-1 uppercase tracking-wider">{designation}</p>
           </div>
         </div>
       </div>

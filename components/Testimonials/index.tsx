@@ -1,54 +1,69 @@
+"use client";
+
 import { getImagePath } from "@/lib/utils";
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import { BsPersonCheck } from "react-icons/bs";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const getTestimonialData = (): Testimonial[] => [
   {
     id: 1,
     name: "Hasane Mehadi",
     designation: "Co-Founder @hitechconstructions",
-    content:"Professional web development with clean design, fast delivery & SEO-friendly sites. Perfect for startups & businesses looking to grow online.",
-    // image: getImagePath("/images/testimonials/auth-01.png"),
-     image: <BsPersonCheck className="w-7 h-7"/>,
+    content:
+      "Professional web development with clean design, fast delivery & SEO-friendly sites. Perfect for startups & businesses looking to grow online.",
+    image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
     star: 5,
   },
   {
     id: 2,
     name: "Ayub Khan",
     designation: "Co-Founder @coderzweb",
-    content:"Creative team delivering responsive, modern websites. Great support, affordable packages & strong focus on user experience & performance.",
- image: <BsPersonCheck className="w-7 h-7"/>,
-     star: 5,
+    content:
+      "Creative team delivering responsive, modern websites. Great support, affordable packages & strong focus on user experience & performance.",
+    image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
+    star: 5,
   },
   {
     id: 3,
     name: "Sameer",
     designation: "Founder @asmobiles",
-    content:"Trusted web developers for custom websites & portfolios. SEO-optimized, mobile-friendly & tailored solutions for businesses of all sizes.",
-    image: <BsPersonCheck className="w-7 h-7"/>,
+    content:
+      "Trusted web developers for custom websites & portfolios. SEO-optimized, mobile-friendly & tailored solutions for businesses of all sizes.",
+    image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
     star: 5,
   },
 ];
 
 const Testimonials = () => {
-  return (
-    <section className="relative z-10 bg-gray-light dark:bg-bg-color-dark py-16 lg:py-28 shadow" id='testimonials'>
-      <div className="container ">
-        <SectionTitle
-          title="What Our Users Says"
-          paragraph="Hear real stories from our happy clients! Discover how CoderzWeb deliver quality, trust, and on-time projects. Genuine reviews that guide your choice with confidence."
-          center
-        />
+  const revealRef = useScrollReveal();
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 ">
+  return (
+    <section
+      className="relative z-10 bg-gray-light dark:bg-bg-color-dark py-16 lg:py-28 shadow"
+      id="testimonials"
+      aria-label="Client testimonials"
+    >
+      <div className="container" ref={revealRef}>
+        <div className="reveal">
+          <SectionTitle
+            title="What Our Client Say"
+            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            center
+          />
+        </div>
+
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 reveal-stagger">
           {getTestimonialData().map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+            <div key={testimonial.id} className="w-full">
+              <SingleTestimonial testimonial={testimonial} />
+            </div>
           ))}
         </div>
       </div>
-      <div className="absolute right-0 top-5 z-[-1]">
+      <div className="absolute right-0 top-5 z-[-1]" aria-hidden="true">
         <svg
           width="238"
           height="531"
@@ -102,7 +117,7 @@ const Testimonials = () => {
           </defs>
         </svg>
       </div>
-      <div className="absolute bottom-5 left-0 z-[-1]">
+      <div className="absolute bottom-5 left-0 z-[-1]" aria-hidden="true">
         <svg
           width="279"
           height="106"

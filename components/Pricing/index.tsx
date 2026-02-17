@@ -4,20 +4,25 @@ import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 import Link from "next/link";
+import { useScrollReveal } from "@/lib/useScrollReveal";
+
 
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState("website");
+  const revealRef = useScrollReveal();
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 ">
+    <section id="pricing" className="relative z-10 py-16 md:py-20 " ref={revealRef}>
       <div className="container">
-        <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="Get top-quality digital solutions with transparent and flexible pricing plans."
-          center
-          width="665px"
-        />
-        <div className="text-center max-w-5xl mx-auto mb-10">
+        <div className="reveal">
+          <SectionTitle
+            title="Simple and Affordable Pricing"
+            paragraph="Find the perfect plan for your business. Transparent pricing, maximum value, and results-driven packages designed for startups and enterprises alike."
+            center
+            width="700px"
+          />
+        </div>
+        {/* <div className="text-center max-w-5xl mx-auto mb-10">
 
           <p className="text-gray-500 text-lg leading-relaxed">
             In todays digital world, Online presence is not just about posting — its about
@@ -25,7 +30,7 @@ const Pricing = () => {
             Our Digital crafted packages are carefully designed for business growth, not just followers.
           </p>
 
-        </div>
+        </div> */}
         {/* TOGGLE BUTTONS */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {["website", "marketing", "whatsapp"].map((tab) => (
@@ -48,7 +53,7 @@ const Pricing = () => {
         {/* ================= WEBSITE PRICING ================= */}
         {activeTab === "website" && (
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
 
             <PricingBox
               packageName="Essential"
@@ -118,7 +123,7 @@ const Pricing = () => {
         {activeTab === "marketing" && (
           <div>
             {/* SMM Cards */}
-            <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
 
               <PricingBox
                 packageName="Saver"
@@ -183,7 +188,7 @@ const Pricing = () => {
 
         {/* ================= WHATSAPP API ================= */}
         {activeTab === "whatsapp" && (
-          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
             <PricingBox
               packageName="Saver"
               price={"6,599"}
@@ -241,14 +246,14 @@ const Pricing = () => {
         )}
       </div>
       <div className="mt-10 flex flex-col items-center justify-center">
-        <p className="text-lg text-gray-600 max-w-4xl mx-auto text-center">
+        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto text-center">
           We dont just manage your social media — we make it work for your business.
-          Choose us if you want <span className="font-semibold text-black">results, not just designs.</span>
+          Choose us if you want <span className="font-semibold text-gray-600 dark:text-gray-400">results, not just designs.</span>
         </p>
 
         <Link
           href="tel:918072770837"
-          className="mt-4 w-44 rounded-lg bg-[#99ABFB] shadow-md shadow-[#A2B2FB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl text-center"
+          className="mt-4 w-48 rounded-lg bg-[#99ABFB] shadow-md shadow-[#A2B2FB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl text-center"
         >
           Connect with us
         </Link>

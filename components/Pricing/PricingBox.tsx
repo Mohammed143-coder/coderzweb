@@ -11,37 +11,37 @@ const PricingBox = (props: {
   return (
     <div className="w-full h-full ">
       <div
-        className="wow fadeInUp hover:scale-105 dark:shadow-[#A2B2FB] dark:shadow-lg dark:hover:sshadow-[#A2B2FB] relative z-10 rounded-xl bg-white px-8 py-8 shadow-[#A4B4FB] shadow-xl duration-300 h-full flex flex-col"
-        data-wow-delay=".1s"
+        className="reveal hover:scale-105 dark:shadow-[#A2B2FB] dark:shadow-sm dark:hover:shadow-[#A2B2FB] relative z-10 rounded-xl bg-white px-8 py-8 shadow-sm shadow-[#A4B4FB] duration-300 h-full flex flex-col"
       >
         {/* HEADER SECTION */}
-        <div className="flex items-center justify-between pb-2">
-          <h3 className="price mb-2 text-3xl font-extrabold text-gray-700 dark:text-[#99ABFB]">
-            ₹ <span className="amount">{price}</span>
+        <div className="flex items-center justify-between pb-4">
+          <h3 className="price mb-2 text-4xl font-extrabold text-gray-800 dark:text-[#99ABFB] tracking-tight">
+            <span className="text-2xl font-bold mr-1 opacity-80">₹</span>
+            <span className="amount">{price}</span>
           </h3>
 
-          <h4 className="mb-2 text-xl font-semibold text-gray-500 dark:text-gray-400">
+          <div className="px-3 py-1 rounded-full bg-blue-50 dark:bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 shadow text-blue-600 dark:text-white text-sm font-bold uppercase tracking-wider">
             {packageName}
-          </h4>
+          </div>
         </div>
 
         {/* SUBTITLE */}
-        <p className="mb-7 h-14 text-base text-body-color leading-relaxed">
+        <p className="mb-8 h-16 text-base text-gray-500 dark:text-gray-400 leading-relaxed font-medium">
           {subtitle}
         </p>
 
         {/* CTA BUTTON */}
-        <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
+        <div className="mb-10 border-b border-gray-100 dark:border-white/5 pb-10">
           <Link
             href="tel:918072770837"
-            className="flex w-full items-center justify-center rounded-lg bg-[#99ABFB] p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:scale-105 hover:bg-opacity-90 hover:shadow-signUp"
+            className="flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 p-4 text-base font-bold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/40 active:scale-[0.98]"
           >
             Unlock Your Discounts
           </Link>
         </div>
 
         {/* FEATURE LIST */}
-        <div className="flex-grow">{children}</div>
+        <div className="flex-grow space-y-4">{children}</div>
 
         {/* BACKGROUND SVG */}
         <div className="absolute bottom-0 right-0 z-[-1]">

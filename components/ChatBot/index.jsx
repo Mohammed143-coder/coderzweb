@@ -75,7 +75,7 @@ export default function ChatBox() {
       {/* Chat Window */}
       {isOpen && (
         <div
-          className="animate-slide-up absolute -right-auto bottom-20 flex h-96 w-auto flex-col overflow-hidden rounded-2xl 
+          className="animate-slide-up -right-auto absolute bottom-20 flex h-96 w-auto flex-col overflow-hidden rounded-2xl 
           border bg-white shadow-2xl md:-right-80 md:bottom-16 md:h-96 md:w-96"
         >
           {/* Header */}
@@ -115,8 +115,9 @@ export default function ChatBox() {
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="flex-grow rounded-lg border px-3 py-2 text-sm focus:outline-none "
+              className="flex-grow rounded-lg border px-3 py-2 text-sm focus:outline-none dark:placeholder-gray-50"
               placeholder="Ask me..."
+              aria-label="Type your message"
               disabled={isLoading}
             />
             <button

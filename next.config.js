@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
- 
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
   images: {
-    unoptimized: true,
+    formats: ["image/webp"],
     domains: ["coderzweb.in", "www.coderzweb.in"],
     remotePatterns: [
       {

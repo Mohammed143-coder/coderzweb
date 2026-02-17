@@ -1,65 +1,57 @@
+"use client";
 import Link from "next/link";
 import TypeWriter from "./TypeWriter";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 
 const Hero = () => {
-  const solutions = [
-    "Boost Your Online Presence",
-    "Drive More Traffic To Your Website",
-    "Convert Visitors Into Valuable Customers",
-    "Grow Your Business Online",
-    "Optimize for Search Engines",
-  ];
+  const revealRef = useScrollReveal();
+
   return (
     <>
-    
       <section
         id="home"
+        aria-label="Hero section"
         className="relative z-10 min-h-screen overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
-       
-        <div className="container">
+        <div className="container" ref={revealRef}>
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
+                className="mx-auto max-w-[800px] text-center"
               >
-                <h1 className="mb-5 text-2xl font-semibold leading-tight text-gray-400  md:text-5xl md:leading-tight">
-                  Our Proven Digital Solutions Designed To</h1>
-                
-                <p className="my-8 text-2xl md:text-3xl font-semibold text-[#99ABFB] ">
-                  <TypeWriter sentences={solutions} />
+                <h1 className="reveal mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Software Solutions for Your <br />
+                  <TypeWriter
+                    sentences={["Startup.", "Business.", "Brand."]}
+                    typingSpeed={100}
+                    deletingSpeed={50}
+                    pauseDuration={1500}
+                  />
+                </h1>
+                <p className="reveal mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                  Empower your vision with our expert web development and innovative AI solutions.
+                  Whether you&apos;re a startup or an established enterprise, we build the digital foundation for your success.
                 </p>
-                <p className="my-8 text-gray-400 dark:text-body-color-dark font-medium text-lg">
-  We build <strong className="text-[#99ABFB]">secure, scalable websites</strong> and run 
-  <strong className="text-[#99ABFB]"> high-performing Meta & Google Ads</strong> to help 
-  <strong className="text-[#99ABFB]"> all types of businesses</strong> increase visibility, generate quality leads, and grow faster online.
-</p>
-
-
-                <div className="mt-5 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
+                <div className="reveal flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    target="_blank"
-                    href="tel:918072770837"
-                    className="inline-block border-2 bg-[#99ABFB] border-[#99ABFB] text-white px-8 py-4 text-base font-semibold duration-200 ease-in-out shadow-xl hover:scale-105 shadow-[#99abfb] dark:bg-[#2E3D76] dark:text-gray-400  rounded-xl"
+                    href="#contact"
+                    className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 hover:bg-primary/80"
                   >
-                    Book a call
+                    🚀 Book a Call
                   </Link>
                   <Link
-                    
-                    href="#services"
-                    className="inline-block border-2 border-[#99ABFB] text-[#99ABFB] px-8 py-4 text-base font-semibold duration-200 ease-in-out shadow-lg hover:scale-105 shadow-[#99ABFB] dark:bg-[#2E3D76] dark:text-gray-400 rounded-xl "
+                    href="/#pricing"
+                    className="rounded-lg bg-black/20 px-8 py-4 text-base font-semibold text-black duration-300 hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
                   >
-                    View Services
+                    💰 Unlock Discounts
                   </Link>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100" aria-hidden="true">
           <svg
             width="450"
             height="556"
@@ -197,7 +189,7 @@ const Hero = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100" aria-hidden="true">
           <svg
             width="364"
             height="201"
@@ -300,9 +292,7 @@ const Hero = () => {
             </defs>
           </svg>
         </div>
-       
       </section>
-
     </>
   );
 };

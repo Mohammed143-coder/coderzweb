@@ -1,20 +1,23 @@
-"use client";
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
+import ClientLayout from "@/components/ClientLayout";
+import Gtag from "@/components/Analytics/gtag";
 import { Poppins } from "next/font/google";
-import { Providers } from "./providers";
-import Gtag from "@/components/Analytics/gtag"
-import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import { Metadata } from "next";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"], // Specify weights you need
-  variable: "--font-poppins", // Optional: CSS variable
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-poppins",
 });
 
+export const metadata: Metadata = {
+  title: "CoderzWeb | Professional Web Development & Digital Marketing",
+  description:
+    "Award-winning web development and digital marketing services. We create responsive websites, web apps, Meta ads, Google ads & SEO solutions.",
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#4A6CF7",
+};
 
 export default function RootLayout({
   children,
@@ -22,24 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
-
-      <head /> 
-      <Gtag />
-      {/* <meta name="google-site-verification" content="FEFWA7kjSl3mGXEcGuoH8h2ztFi5P71PiAxvPBJW19c" /> */}
-      <link rel="canonical" href="https://coderzweb.in/" />
-      <head />
-
-      <body className={`bg-[#FCFCFC] dark:bg-black${poppins.className}`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </Providers>
+    <html suppressHydrationWarning lang="en" className={poppins.variable}>
+      <head>
+        <link rel="canonical" href="https://coderzweb.in/" />
+      </head>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${poppins.className}`}>
+        <Gtag />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
 }
-
-

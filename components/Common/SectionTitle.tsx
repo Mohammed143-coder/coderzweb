@@ -14,8 +14,7 @@ const SectionTitle = ({
   return (
     <>
       <div
-        className={`wow fadeInUp w-full text-gray-500 ${center ? "mx-auto text-center" : ""}`}
-        data-wow-delay=".1s"
+        className={`reveal w-full text-gray-500 ${center ? "mx-auto text-center" : ""}`}
         style={{ maxWidth: width, marginBottom: mb }}
       >
         <h2 className="mb-4 text-3xl font-bold !leading-tight sm:text-4xl md:text-[45px]">

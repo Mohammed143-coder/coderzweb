@@ -42,7 +42,6 @@ export default function ModernFAQ() {
       answer:
         "Yes, we have web apps which support for both iOS and Android. They're feature-complete and sync seamlessly with the web version, so you can work from anywhere.",
     },
-    
   ];
 
   const toggleFAQ = (index) => {
@@ -84,7 +83,6 @@ export default function ModernFAQ() {
               className="group relative"
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
-              style={{ perspective: "1000px" }}
             >
               <div
                 className={`relative cursor-pointer overflow-hidden rounded-2xl border-2 bg-white transition-all duration-500 ${

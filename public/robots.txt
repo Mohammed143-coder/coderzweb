@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.coderzweb.in
+
+# Sitemaps
+Sitemap: https://www.coderzweb.in/sitemap.xml
