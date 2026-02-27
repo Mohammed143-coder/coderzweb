@@ -104,7 +104,7 @@ const Pricing = () => {
             </PricingBox>
             <PricingBox
               packageName="Shopify Starter"
-              price={"27k"}
+              price={"26,999"}
               subtitle="Everything for modern shoppers. Perfect for launches, ideas & everyday essentials."
             >
               <OfferList text="Strategy call to align on goals" status="active" />
@@ -143,7 +143,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Recommended"
-                price={"8,999"}
+                price={"10,799"}
                 subtitle="Best for startups & brands ready to grow faster and reach more customers."
               >
                 <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
@@ -160,7 +160,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Booster"
-                price={"12,599"}
+                price={"12,899"}
                 subtitle="For businesses serious about scaling and dominating online presence."
               >
 
@@ -226,9 +226,10 @@ const Pricing = () => {
               price={"12,599"}
               subtitle="Best for Advanced features and higher limits, ideal for growing businesses needing more capabilities for an year."
             >
-              <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
+              <span className="absolute -top-4 font-medium right-8  border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
                 Most Popular
               </span>
+              <span className=""></span>
               <OfferList text="Get Official WhatsApp Business API" status="active" />
               <OfferList text="Broadcast Unlimited Campaigns" status="active" />
               <OfferList text="Zero-fee WhatsApp setup" status="active" />

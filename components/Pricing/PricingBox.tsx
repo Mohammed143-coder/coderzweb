@@ -34,7 +34,7 @@ const PricingBox = (props: {
         <div className="mb-10 border-b border-gray-100 dark:border-white/5 pb-10">
           <Link
             href="tel:918072770837"
-            className="flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 p-4 text-base font-bold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/40 active:scale-[0.98]"
+            className="flex w-full items-center justify-center rounded-xl bg-[#A2B2FB] p-4 text-base font-bold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/40 active:scale-[0.98]"
           >
             Unlock Your Discounts
           </Link>

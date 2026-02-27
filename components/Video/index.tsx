@@ -28,7 +28,7 @@ const Video = () => {
             <div
               className="reveal-scale relative mx-auto max-w-[770px] overflow-hidden rounded-md"
             >
-              <div className="relative aspect-[77/40] items-center justify-center ">
+              <div className="relative aspect-[77/60] items-center justify-center ">
                 <Image src="/images/video/Coderzweb_pongal-c.webp" alt="video image" fill />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   {/* <button

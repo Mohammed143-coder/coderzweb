@@ -58,7 +58,7 @@ const TypeWriter = ({
 
   return (
     <span className="inline-block">
-      <span className="">{text}</span>
+      <span className="md:text-3xl text-[#A2B2FB]">{text}</span>
       {/* <span className="ml-0.5 inline-block w-1 h-6 bg-gray-500 animate-blink align-middle"></span> */}
     </span>
   );

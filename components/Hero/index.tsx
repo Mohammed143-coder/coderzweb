@@ -3,7 +3,6 @@ import Link from "next/link";
 import TypeWriter from "./TypeWriter";
 import { useScrollReveal } from "@/lib/useScrollReveal";
 
-
 const Hero = () => {
   const revealRef = useScrollReveal();
 
@@ -12,37 +11,42 @@ const Hero = () => {
       <section
         id="home"
         aria-label="Hero section"
-        className="relative z-10 min-h-screen overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 min-h-screen overflow-hidden bg-white pb-10 pt-[200px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[260px] "
       >
         <div className="container" ref={revealRef}>
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div
-                className="mx-auto max-w-[800px] text-center"
-              >
-                <h1 className="reveal mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Software Solutions for Your <br />
+              <div className="mx-auto max-w-[800px] text-center">
+                <h1 className="reveal mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight">
+                  Our Proven Digital Solution for Your <br />
                   <TypeWriter
-                    sentences={["Startup.", "Business.", "Brand."]}
+                    sentences={[
+                      "Startup Growth.",
+                      "Local Business Success.",
+                      "Brand Expansion.",
+                      "Boost Your Brand Online.",
+                    ]}
                     typingSpeed={100}
                     deletingSpeed={50}
                     pauseDuration={1500}
                   />
                 </h1>
-                <p className="reveal mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                  Empower your vision with our expert web development and innovative AI solutions.
-                  Whether you&apos;re a startup or an established enterprise, we build the digital foundation for your success.
+
+                <p className="reveal mb-12 text-sm font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                  We provide digital growth solutions including custom website
+                  development, SEO, AI automation, and performance marketing for
+                  startups and local businesses.
                 </p>
-                <div className="reveal flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="reveal flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-2">
                   <Link
                     href="#contact"
-                    className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 hover:bg-primary/80"
+                    className="rounded-lg bg-[#A2B2FB] px-8 py-4 text-base font-semibold text-white duration-300 hover:bg-primary/80"
                   >
                     🚀 Book a Call
                   </Link>
                   <Link
                     href="/#pricing"
-                    className="rounded-lg bg-black/20 px-8 py-4 text-base font-semibold text-black duration-300 hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
+                    className="rounded-lg bg-white border-2 border-[#A2B2FB] px-8 py-4 text-base font-semibold text-black duration-300 hover:bg-[#A2B2FB]/40 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
                   >
                     💰 Unlock Discounts
                   </Link>
@@ -51,7 +55,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100" aria-hidden="true">
+        <div
+          className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100"
+          aria-hidden="true"
+        >
           <svg
             width="450"
             height="556"
@@ -189,7 +196,10 @@ const Hero = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100" aria-hidden="true">
+        <div
+          className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100"
+          aria-hidden="true"
+        >
           <svg
             width="364"
             height="201"
