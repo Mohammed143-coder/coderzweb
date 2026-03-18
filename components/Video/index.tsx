@@ -29,7 +29,7 @@ const Video = () => {
               className="reveal-scale relative mx-auto max-w-[770px] overflow-hidden rounded-md"
             >
               <div className="relative aspect-[77/60] items-center justify-center ">
-                <Image src="/images/video/Coderzweb_pongal-c.webp" alt="video image" fill />
+                <Image src="/images/video/coderzweb-ramzan-p.jpg" alt="video image" fill />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   {/* <button
                     aria-label="video play button"

@@ -90,7 +90,7 @@ export default function ChatBox() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 space-y-2 overflow-y-auto p-3 text-sm">
+          <div className="flex-1 space-y-2 overflow-y-auto p-3 text-sm whitespace-pre-wrap break-words">
             {messages.map((m, i) => (
               <div
                 key={i}
