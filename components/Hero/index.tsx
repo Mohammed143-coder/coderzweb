@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="reveal mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight">
+                <h1 className="reveal mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl">
                   Our Proven Digital Solution for Your <br />
                   <TypeWriter
                     sentences={[
@@ -32,7 +32,7 @@ const Hero = () => {
                   />
                 </h1>
 
-                <p className="reveal mb-12 text-sm font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                <p className="reveal mb-12  font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 text-xs md:text-base">
                   We provide digital growth solutions including custom website
                   development, SEO, AI automation, and performance marketing for
                   startups and local businesses.
@@ -40,15 +40,15 @@ const Hero = () => {
                 <div className="reveal flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-2">
                   <Link
                     href="#contact"
-                    className="rounded-lg bg-[#A2B2FB] px-8 py-4 text-base font-semibold text-white duration-300 hover:bg-primary/80"
+                    className="inline-flex items-center justify-center rounded-lg bg-[#A2B2FB] border-2 border-[#A2B2FB] px-8 py-4 text-base font-semibold text-white duration-300 hover:bg-white hover:text-[#A2B2FB] hover:border-[#A2B2FB]"
                   >
-                    🚀 Book a Call
+                    Book a Call
                   </Link>
                   <Link
                     href="/#pricing"
-                    className="rounded-lg bg-white border-2 border-[#A2B2FB] px-8 py-4 text-base font-semibold text-black duration-300 hover:bg-[#A2B2FB]/40 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
+                    className="inline-flex items-center justify-center rounded-lg bg-white border-2 border-[#A2B2FB] px-8 py-4 text-base font-semibold text-[#A2B2FB] duration-300 hover:bg-[#A2B2FB] hover:text-white dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
                   >
-                    💰 Unlock Discounts
+                    Unlock Discounts
                   </Link>
                 </div>
               </div>
