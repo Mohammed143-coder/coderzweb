@@ -7,7 +7,7 @@ const nextConfig = {
   },
   images: {
     formats: ["image/webp"],
-    domains: ["coderzweb.in", "www.coderzweb.in"],
+    domains: ["coderzweb.in", "www.coderzweb.in", "s.wordpress.com"],
     remotePatterns: [
       {
         protocol: "https",

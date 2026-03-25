@@ -1,5 +1,6 @@
 import ClientLayout from "@/components/ClientLayout";
 import Gtag from "@/components/Analytics/gtag";
+import OrganizationSchema from "@/components/StructuredData";
 import { Poppins } from "next/font/google";
 import "../styles/index.css";
 import { Metadata } from "next";
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en" className={poppins.variable}>
       <head>
         <link rel="canonical" href="https://coderzweb.in/" />
+        <OrganizationSchema />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${poppins.className}`}>
         <Gtag />

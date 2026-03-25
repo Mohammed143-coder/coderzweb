@@ -1,6 +1,6 @@
 "use client";
 
-import { getImagePath } from "@/lib/utils";
+import { useEffect, useState } from "react";
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
@@ -35,10 +35,48 @@ const getTestimonialData = (): Testimonial[] => [
     image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
     star: 5,
   },
+  {
+    id: 4,
+    name: "Asquare Constructions",
+    designation: "Owner @Asquare Constructions",
+    content:"We’re very happy with the website developed by CoderzWeb for our Asquare construction and real estate business. The website is highly optimised, quick, and SEO-friendly, and the price was reasonable. Everything was delivered on schedule, and communication was easy. Strongly advised for entrepreneurs searching for a trustworthy website development service in Krishnagiri and throughout India.",
+    image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
+    star: 5,
+  },
+  {
+    id: 5,
+    name: "Sowmya",
+    designation: "Sales manager",
+    content:"Excellent web development service by coderzweb! They built our modern, fast website using Next.js. Great design, timely delivery, and professional support. Highly recommend for websites & web apps",
+    image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
+    star: 5,
+  },
+  // {
+  //   id: 6,
+  //   name: "Mohammed Faisal",
+  //   designation: "Manager @faisalautos",
+  //   content:
+  //     "Best web development company in Krishnagiri. They built our auto parts store website and helped with Google Ads. Revenue doubled in 3 months!",
+  //   image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
+  //   star: 5,
+  // },
 ];
 
 const Testimonials = () => {
   const revealRef = useScrollReveal();
+  const allTestimonials = getTestimonialData();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % allTestimonials.length);
+    }, 6500);
+
+    return () => clearInterval(timer);
+  }, [allTestimonials.length]);
+
+  const goPrev = () => setActiveIndex((prev) => (prev - 1 + allTestimonials.length) % allTestimonials.length);
+  const goNext = () => setActiveIndex((prev) => (prev + 1) % allTestimonials.length);
 
   return (
     <section
@@ -50,17 +88,53 @@ const Testimonials = () => {
         <div className="reveal">
           <SectionTitle
             title="What Our Client Say"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="Real feedback from businesses we've helped grow with professional websites and digital marketing solutions."
             center
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 reveal-stagger">
-          {getTestimonialData().map((testimonial) => (
-            <div key={testimonial.id} className="w-full">
-              <SingleTestimonial testimonial={testimonial} />
+        <div className="mt-10">
+          {/* <div className="flex items-center justify-center gap-3 mb-6">
+            <button
+              onClick={goPrev}
+              className="rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-gray-700 shadow transition hover:bg-white dark:bg-gray-800 dark:text-gray-200"
+              aria-label="Previous testimonial"
+            >
+              ← Prev
+            </button>
+            <div className="text-sm font-semibold text-gray-600 dark:text-gray-300">
+              {activeIndex + 1}/{allTestimonials.length}
             </div>
-          ))}
+            <button
+              onClick={goNext}
+              className="rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-gray-700 shadow transition hover:bg-white dark:bg-gray-800 dark:text-gray-200"
+              aria-label="Next testimonial"
+            >
+              Next →
+            </button>
+          </div> */}
+
+          <div className="relative mx-auto w-full max-w-4xl">
+            <div className="reveal transition-all duration-700">
+              <SingleTestimonial testimonial={allTestimonials[activeIndex]} />
+            </div>
+          </div>
+
+          <div className="mt-8 flex items-center justify-center gap-2">
+            {allTestimonials.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => setActiveIndex(index)}
+                className={`h-2 w-2 rounded-full transition ${
+                  index === activeIndex
+                    ? "bg-primary"
+                    : "bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500"
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <div className="absolute right-0 top-5 z-[-1]" aria-hidden="true">

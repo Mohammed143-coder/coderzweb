@@ -20,6 +20,7 @@ const Blog = dynamic(() => import("@/components/Blog"));
 const Contact = dynamic(() => import("@/components/Contact"));
 const ModernFAQ = dynamic(() => import("@/components/Common/ModernFAQ"));
 const TechLogos = dynamic(() => import("@/components/TechLogos"), { ssr: false });
+const Portfolio = dynamic(() => import("@/components/Portfolio"));
 
 export const metadata: Metadata = {
   title: "CoderzWeb | Professional Web Development & Digital marketing agency in Krishnagiri",
@@ -104,6 +105,7 @@ export default function Home() {
       <Video />
       <AboutSectionTwo />
       <TechLogos />
+      <Portfolio />
       <Testimonials />
       <Pricing />
       <Blog />
