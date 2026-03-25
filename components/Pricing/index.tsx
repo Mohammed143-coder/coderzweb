@@ -84,6 +84,7 @@ const Pricing = () => {
               <OfferList text="Google maps integration & Call-to-action integration" status="active" />
               <OfferList text="Grab your free .in domain for a year" status="active" />
               <OfferList text="Free Basic AI chat bot" status="active" />
+              <OfferList text="Free Google indexing for the site" status="active" />
               <OfferList text="8 months free website maintenace" status="active" />
             </PricingBox>
 
@@ -100,11 +101,11 @@ const Pricing = () => {
               <OfferList text="Free AI chat bot with live updates" status="active" />
               <OfferList text="Multi-language support (if required)" status="active" />
               <OfferList text="Technical SEO (website)" status="active" />
-              <OfferList text="Free Gmb page creation" status="active" />
+              <OfferList text="Free google business page creation" status="active" />
             </PricingBox>
             <PricingBox
               packageName="Shopify Starter"
-              price={"26,999"}
+              price={"27,999"}
               subtitle="Everything for modern shoppers. Perfect for launches, ideas & everyday essentials."
             >
               <OfferList text="Strategy call to align on goals" status="active" />
@@ -143,7 +144,7 @@ const Pricing = () => {
 
               <PricingBox
                 packageName="Recommended"
-                price={"10,799"}
+                price={"11,499"}
                 subtitle="Best for startups & brands ready to grow faster and reach more customers."
               >
                 <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
@@ -151,26 +152,27 @@ const Pricing = () => {
                 </span>
                 <OfferList text="4 high-quality business posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding (Optional)" status="active" />
-                <OfferList text="2 Proper video shots" status="active" />
+                <OfferList text="2 Proper video shoots" status="active" />
                 <OfferList text="2 professional video with engaging animation" status="active" />
-                <OfferList text="1 Free Meta ad campaign for 2 days" status="active" />
+                <OfferList text="2 Free Meta ad campaign each for 2 days" status="active" />
                 <OfferList text="3 Meta ad campaigns setup max" status="active" />
-                <OfferList text="Crafted for lead generation & customer engagement" status="active" />
+                <OfferList text="1 scripted voiceover (Optional)" status="active" />
               </PricingBox>
 
               <PricingBox
                 packageName="Booster"
-                price={"12,899"}
+                price={"13,499"}
                 subtitle="For businesses serious about scaling and dominating online presence."
               >
 
                 <OfferList text="6 premium social media posters" status="active" />
                 <OfferList text="1 festival poster for seasonal branding" status="active" />
-                <OfferList text="2 Proper video shots" status="active" />
+                <OfferList text="2 Proper video shoots" status="active" />
                 <OfferList text="3 professional video with engaging animation" status="active" />
-                <OfferList text="1 Free Meta ad campaign for 3 days" status="active" />
+                <OfferList text="2 Free Meta ad campaign each for 3 days" status="active" />
                 <OfferList text="4 Meta ad campaigns setup max" status="active" />
-                <OfferList text="Crafted for business growth, leads & revenue" status="active" />
+                <OfferList text="1 scripted voiceover (Optional)" status="active" />
+              <OfferList text="Free Gmb page creation" status="active" />
               </PricingBox>
 
             </div>
