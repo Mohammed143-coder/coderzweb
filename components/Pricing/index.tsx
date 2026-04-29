@@ -204,7 +204,7 @@ const Pricing = () => {
         {/* Footer CTA */}
         <div className="reveal mt-20 flex flex-col items-center justify-center text-center">
           <p className="mb-8 text-lg font-medium text-gray-500 dark:text-gray-400">
-            "Results-driven architecture, engineered for <span className="text-black dark:text-white font-bold">your business growth.</span>"
+            &quot;Results-driven architecture, engineered for <span className="text-black dark:text-white font-bold">your business growth.</span>&quot;
           </p>
 
           <Link

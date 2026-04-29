@@ -70,7 +70,7 @@ const PricingBox = (props: {
         {/* FEATURE LIST */}
         <div className="flex-1 space-y-4">
           <div className="mb-4 text-xs font-bold uppercase tracking-widest text-gray-400">
-            What's Included
+            What&apos;s Included
           </div>
           {children}
         </div>

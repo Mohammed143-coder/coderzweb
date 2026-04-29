@@ -29,7 +29,7 @@ const AboutSectionOne = () => {
               </h2>
               
               <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 leading-relaxed mb-12">
-                We don't just build websites; we create high-converting digital experiences. Our team combines premium design with data-driven marketing to scale your business.
+                We don&apos;t just build websites; we create high-converting digital experiences. Our team combines premium design with data-driven marketing to scale your business.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
