@@ -169,7 +169,7 @@ const Pricing = () => {
                 <OfferList text="1 festival poster for seasonal branding" status="active" />
                 <OfferList text="2 Proper video shoots" status="active" />
                 <OfferList text="3 professional video with engaging animation" status="active" />
-                <OfferList text="2 Free Meta ad campaign each for 3 days" status="active" />
+                <OfferList text="1 Free Meta ad campaign each for 3 days" status="active" />
                 <OfferList text="4 Meta ad campaigns setup max" status="active" />
                 <OfferList text="1 scripted voiceover (Optional)" status="active" />
               <OfferList text="Free Gmb page creation" status="active" />
