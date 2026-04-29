@@ -66,6 +66,26 @@ module.exports = {
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
       },
+      animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-reverse": "marquee-reverse var(--duration) linear infinite",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-reverse": {
+          from: { transform: "translateX(calc(-100% - var(--gap)))" },
+          to: { transform: "translateX(0)" },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
+      },
     },
   },
   plugins: [],

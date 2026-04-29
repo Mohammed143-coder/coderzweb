@@ -26,25 +26,36 @@ export default function TechLogos() {
     const revealRef = useScrollReveal();
 
     return (
-        <div
-            ref={revealRef}
-            style={{ height: "200px", position: "relative", overflow: "hidden" }}
-            className="reveal text-[#99ABFB] dark:text-white"
-            aria-label="Technologies we use"
-            role="region"
-        >
-            <LogoLoop
-                logos={techLogos}
-                speed={200}
-                direction="left"
-                logoHeight={48}
-                gap={60}
-                pauseOnHover
-                scaleOnHover
-                fadeOut
-                fadeOutColor="transparent"
-                ariaLabel="Technology partners"
-            />
+    <section className="relative py-24 md:py-32 overflow-hidden bg-white dark:bg-[#030712] " ref={revealRef}>
+      {/* Background Decoration */}
+      <div className="absolute inset-0 -z-10 bg-mesh opacity-30 dark:opacity-50 " />
+      
+      <div className="container relative z-10 mx-auto px-4">
+        <div className="reveal max-w-4xl mx-auto text-center mb-16 md:mb-24">
+          <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary md:text-sm">
+            <span className="mr-2 h-2 w-2 animate-pulse rounded-full bg-primary" />
+            Our Tech Stack
+          </div>
+          
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-8 tracking-tight leading-[1.1]">
+            Powered by <span className="text-primary text-glow">Elite</span> Technologies
+          </h2>
         </div>
+
+        <div className="reveal relative overflow-hidden  py-10 backdrop-blur-xl dark:bg-[#111322]/50">
+          <LogoLoop
+            logos={techLogos}
+            speed={100}
+            direction="left"
+            logoHeight={48}
+            gap={80}
+            pauseOnHover
+            scaleOnHover
+            fadeOut
+            fadeOutColor="transparent"
+          />
+        </div>
+      </div>
+    </section>
     );
 }

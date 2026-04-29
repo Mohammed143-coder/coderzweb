@@ -17,273 +17,132 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24"
-        data-wow-delay=".1s"
+        className="relative z-10 bg-white pt-20 dark:bg-[#030712] md:pt-28"
       >
+        {/* Background Decoration */}
+        <div className="absolute inset-0 -z-10 bg-mesh opacity-30" />
+        
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-3/12 ">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block font-semibold text-2xl md:text-3xl text-[#9FB1FB] hover:rotate-[-4deg] hover:scale-105 transition-all duration-200">
-                  {/* <Image
-                    src={getImagePath("/images/logo/logo-2.svg")}
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  /> */}
-                  CoderzWeb
-
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12">
+              <div className="mb-12 max-w-[360px]">
+                <Link href="/" className="mb-8 inline-block text-2xl font-black tracking-tighter text-primary">
+                  CODERZWEB
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  We craft modern, scalable websites and digital solutions that build trust, boost visibility, and help businesses grow with innovation, experience, and care.
+                <p className="mb-9 text-base font-medium leading-relaxed text-gray-500 dark:text-gray-400">
+                  Engineering high-performance digital experiences. We craft modern, scalable solutions that transform businesses and build lasting digital authority.
                 </p>
-                <div className="flex items-center">
-                  <Link
-                    href="https://facebook.com/profile.php?id=61581874762273"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook"
-
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-
-                  >
-                    <FaFacebook className="w-6 h-6" />
-                  </Link>
-                  <Link
-                    href="https://www.instagram.com/coderzweb_official/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram"
-
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-
-                  >
-                    <PiInstagramLogoDuotone className="w-6 h-6" />
-                  </Link>
-                  {/* <a
-                    href="#"
-                    aria-label="social-link"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <svg
-                      width="18"
-                      height="14"
-                      viewBox="0 0 18 14"
-                      className="fill-current"
+                <div className="flex items-center gap-4">
+                  {[
+                    { icon: <FaFacebook />, href: "https://facebook.com/profile.php?id=61581874762273" },
+                    { icon: <PiInstagramLogoDuotone />, href: "https://www.instagram.com/coderzweb_official/" },
+                    { icon: <FaWhatsapp />, href: `https://wa.me/917904463409?text=${msg}` }
+                  ].map((social, i) => (
+                    <Link
+                      key={i}
+                      href={social.href}
+                      target="_blank"
+                      className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/5 text-xl text-primary transition-all duration-300 hover:bg-primary hover:text-white"
                     >
-                      <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    aria-label="social-link"
-                    className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <svg
-                      width="17"
-                      height="16"
-                      viewBox="0 0 17 16"
-                      className="fill-current"
-                    >
-                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
-                    </svg>
-                  </a> */}
+                      {social.icon}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 ">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-gray-400">
-                  Get Into Touch
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.google.com/maps?q=Stadium+2nd+gate,+opposite+building,+1st+floor,+Rajajinagar,+Krishnagiri"
-                      target="_blank"
-                      rel="noopener noreferrer"
-
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <IoLocationOutline className="w-9 h-20 md:h-16" />
-                      Stadium 2nd gate, opposite building, 1st floor, Rajajinagar, Krishnagiri.
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="tel:+918072770837"
-                      target="_blank"
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <LuPhoneCall className="w-4 h-4" />
-                      +91 80727 70837
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="tel:917904463409"
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                      target="_blank"
-                      rel="noopener noreferrer"
-
-                    >
-                      <LuPhoneCall className="w-4 h-4" />+91 79044 63409
-                    </a>
-                  </li>
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12">
+              <div className="mb-12">
+                <h3 className="mb-9 text-sm font-black uppercase tracking-[0.2em] text-black dark:text-white">
+                  Quick Links
+                </h3>
+                <ul className="space-y-4">
+                  {["About", "Services", "Portfolio", "Pricing", "Contact"].map((link) => (
+                    <li key={link}>
+                      <Link
+                        href={`#${link.toLowerCase()}`}
+                        className="text-base font-medium text-gray-500 transition-colors duration-300 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                      >
+                        {link}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 ">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-gray-400">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="#about"
-
-                      rel="noopener noreferrer"
-
-                      className=" flex gap-2 mb-4 items-center text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow />About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#pricing"
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow /> Pricing
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#blog"
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow /> Blogs
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#contact"
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow />Contact Us
-                    </a>
-                  </li>
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12">
+              <div className="mb-12">
+                <h3 className="mb-9 text-sm font-black uppercase tracking-[0.2em] text-black dark:text-white">
+                  Top Services
+                </h3>
+                <ul className="space-y-4">
+                  {[
+                    "Web Architecture",
+                    "PWA Development",
+                    "Digital Strategy",
+                    "AI Automation",
+                    "Cloud Hosting"
+                  ].map((service) => (
+                    <li key={service}>
+                      <Link
+                        href="#services"
+                        className="text-base font-medium text-gray-500 transition-colors duration-300 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                      >
+                        {service}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-gray-400">
-                  Our Top Services
-                </h2>
-                <ul>
+              <div className="mb-12">
+                <h3 className="mb-9 text-sm font-black uppercase tracking-[0.2em] text-black dark:text-white">
+                  Connect
+                </h3>
+                <ul className="space-y-6">
                   <li>
-                    <a
-                      href="#services"
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
+                    <Link
+                      href="tel:+918072770837"
+                      className="group flex items-start gap-4"
                     >
-                      <MdOutlineDoubleArrow />Landing & Static Website Development
-                    </a>
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/5 text-primary">
+                        <LuPhoneCall />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Call Us</p>
+                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors">+91 80727 70837</p>
+                      </div>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#services"
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
+                    <Link
+                      href="https://www.google.com/maps"
+                      className="group flex items-start gap-4"
                     >
-                      <MdOutlineDoubleArrow /> Dynamic Website Development
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#services"
-
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow />Web App Development
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#services"
-
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow />Digital Marketing Services
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#services"
-
-                      rel="noopener noreferrer"
-
-                      className="flex items-center gap-2 mb-4 text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary hover:scale-105"
-                    >
-                      <MdOutlineDoubleArrow /> Domain & Hosting service
-                    </a>
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/5 text-primary">
+                        <IoLocationOutline />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Visit Us</p>
+                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors">Rajajinagar, Krishnagiri</p>
+                      </div>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <ChatBox />
-            <a
-              href={`https://wa.me/917904463409?text=${msg}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat with us on WhatsApp"
-              className="fixed bottom-20 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-400 hover:scale-110 transition-all duration-300"
-            >
-              <FaWhatsapp className="w-10 h-10" />
-            </a>
-
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className=" flex items-center justify-around p-4 text-sm">
-            <p className="flex items-center text-center text-base text-body-color dark:text-gray-400"><MdOutlineCopyright />{new Date().getFullYear()} CoderzWeb. All rights are reserved</p>
-            <p className="text-center text-base text-body-color dark:text-gray-400">
-
-              Crafted with ❤️ By @Founder CoderzWeb
+          <div className="flex flex-col items-center justify-between border-t border-gray-100 py-10 dark:border-white/5 md:flex-row">
+            <p className="mb-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:mb-0">
+              © {new Date().getFullYear()} CoderzWeb. Engineering Digital Excellence.
+            </p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              Crafted by <span className="font-bold text-black dark:text-white">@Founder CoderzWeb</span>
             </p>
           </div>
         </div>

@@ -12,256 +12,210 @@ const Pricing = () => {
   const revealRef = useScrollReveal();
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 " ref={revealRef}>
-      <div className="container">
-        <div className="reveal">
-          <SectionTitle
-            title="Simple and Affordable Pricing"
-            paragraph="Find the perfect plan for your business. Transparent pricing, maximum value, and results-driven packages designed for startups and enterprises alike."
-            center
-            width="700px"
-          />
-        </div>
-        {/* <div className="text-center max-w-5xl mx-auto mb-10">
+    <section id="pricing" className="relative z-10 py-24 md:py-32 overflow-hidden bg-white dark:bg-[#030712]" ref={revealRef}>
+      {/* Background Decoration */}
+      <div className="absolute inset-0 -z-10 bg-mesh opacity-30 dark:opacity-50" />
+      <div className="absolute -left-20 top-1/3 -z-10 h-96 w-96 rounded-full bg-primary/5 blur-[120px]" />
+      <div className="absolute -right-20 bottom-1/3 -z-10 h-96 w-96 rounded-full bg-purple-500/5 blur-[120px]" />
 
-          <p className="text-gray-500 text-lg leading-relaxed">
-            In todays digital world, Online presence is not just about posting — its about
-            <span className="font-semibold text-black"> building visibility, trust, and sales.</span>
-            Our Digital crafted packages are carefully designed for business growth, not just followers.
+      <div className="container">
+        <div className="reveal max-w-4xl mx-auto text-center mb-16 md:mb-24">
+          <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary md:text-sm">
+            <span className="mr-2 h-2 w-2 animate-pulse rounded-full bg-primary" />
+            Flexible Investment
+          </div>
+          
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 dark:text-white mb-8 tracking-tight leading-[1.1]">
+            Transparent <span className="text-primary text-glow">Pricing</span>
+          </h2>
+          
+          <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto mb-12">
+            Select the perfect growth engine for your business. Scalable solutions tailored for startups and global enterprises.
           </p>
 
-        </div> */}
-        {/* TOGGLE BUTTONS */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {["website", "marketing", "whatsapp"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-6 py-2 rounded-full font-semibold transition 
-              ${activeTab === tab
-                  ? "bg-[#4A6CF7] text-white shadow-lg"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
-            >
-              {tab === "website" && "Website"}
-              {tab === "marketing" && "Digital Marketing"}
-              {tab === "whatsapp" && "WhatsApp API"}
-            </button>
-          ))}
+          {/* TAB NAVIGATION */}
+          <div className="reveal flex flex-wrap justify-center gap-3">
+            {["website", "marketing", "whatsapp"].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`px-8 py-3 rounded-2xl font-bold uppercase tracking-widest text-xs transition-all duration-300 
+                ${activeTab === tab
+                    ? "bg-primary text-white shadow-lg shadow-primary/30 scale-105"
+                    : "bg-gray-100 text-gray-500 hover:bg-gray-200 dark:bg-white/5 dark:text-gray-400 dark:hover:bg-white/10"
+                  }`}
+              >
+                {tab === "website" && "Web Architecture"}
+                {tab === "marketing" && "Digital Strategy"}
+                {tab === "whatsapp" && "Omnichannel API"}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* ================= WEBSITE PRICING ================= */}
         {activeTab === "website" && (
-
-          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
-
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 reveal-stagger">
             <PricingBox
               packageName="Essential"
               price={"11,999"}
-              subtitle="One-pager or starter website, conversion-focused, perfect for product launches or lead gen."
+              subtitle="The strategic starting point for emerging startups and lead-generation focused landing pages."
             >
-              <OfferList text="Landing page or static website 1 – 2 pages" status="active" />
-              <OfferList text="Responsive design (looks great on all devices)" status="active" />
-              <OfferList text="Social media integration " status="active" />
-              <OfferList text="Website optimization with advance auditing tool (lazy loading, image compression)" status="active" />
-              <OfferList text="Contact form integration (email capture / WhatsApp link)" status="active" />
-              <OfferList text="Free SSL + Free basic hosting for a year" status="active" />
-              <OfferList text="6 months free website maintenace" status="active" />
+              <OfferList text="1-2 Pages Architecture" status="active" />
+              <OfferList text="High-Performance UX/UI" status="active" />
+              <OfferList text="Social Ecosystem Integration" status="active" />
+              <OfferList text="Core SEO Optimization" status="active" />
+              <OfferList text="Lead Capture Engine" status="active" />
+              <OfferList text="Premium SSL Security" status="active" />
+              <OfferList text="3 months free Maintenance" status="active" />
             </PricingBox>
 
             <PricingBox
               packageName="Recommended"
               price={"17,999"}
-              subtitle="Your brand needs. Clean, scalable, and intentional with AI power chat bot."
+              subtitle="The industry standard for high-growth brands requiring custom animations and AI integration."
+              isFeatured
             >
-              <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
-                Most Popular
-              </span>
-              <OfferList text="Starter package features included" status="active" />
-              <OfferList text="4 – 5 pages (Home, About, Services, Projects/Portfolio & Contact)" status="active" />
-              <OfferList text="Custom UI with animations & modern design" status="active" />
-              <OfferList text="Proven SEO optimization (keywords, sitemap, robots.txt, google setup)" status="active" />
-              <OfferList text="Google maps integration & Call-to-action integration" status="active" />
-              <OfferList text="Grab your free .in domain for a year" status="active" />
-              <OfferList text="Free Basic AI chat bot" status="active" />
-              <OfferList text="Free Google indexing for the site" status="active" />
-              <OfferList text="8 months free website maintenace" status="active" />
+              <OfferList text="Everything in Essential" status="active" />
+              <OfferList text="5-Page Elite Architecture" status="active" />
+              <OfferList text="Cinematic UI Animations" status="active" />
+              <OfferList text="Advanced SEO Dominance" status="active" />
+              <OfferList text="Google Ecosystem Setup" status="active" />
+              <OfferList text="Free .IN Domain & Hosting" status="active" />
+              <OfferList text="Neural AI Chatbot v1" status="active" />
+              <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
 
             <PricingBox
               packageName="Web Booster"
               price={"23,999"}
-              subtitle="Flexible packages crafted to help your brand shine online with AI power chat bot."
+              subtitle="Full-scale digital transformation with PWA capabilities and comprehensive multi-language support."
             >
-              <OfferList text="Recommended package features included" status="active" />
-              <OfferList text="Grab 10% discount hosting plan" status="active" />
-              <OfferList text="Grab 10% discount in .com domain" status="active" />
-              <OfferList text="1 year free website maintenace" status="active" />
-              <OfferList text="Full-stack / Scalable web app(pwa)" status="active" />
-              <OfferList text="Free AI chat bot with live updates" status="active" />
-              <OfferList text="Multi-language support (if required)" status="active" />
-              <OfferList text="Technical SEO (website)" status="active" />
-              <OfferList text="Free google business page creation" status="active" />
+              <OfferList text="Everything in Recommended" status="active" />
+              <OfferList text="Full-Stack Web App (PWA)" status="active" />
+              <OfferList text="Scalable Database Integration" status="active" />
+              <OfferList text="AI Agent with Live Sync" status="active" />
+              <OfferList text="Multi-Language Support" status="active" />
+              <OfferList text="Technical SEO Audit" status="active" />
+              <OfferList text="GMB Global Authority" status="active" />
+              <OfferList text="6 months free Maintenance" status="active" />
             </PricingBox>
+
             <PricingBox
-              packageName="Shopify Starter"
+              packageName="Commerce"
               price={"27,999"}
-              subtitle="Everything for modern shoppers. Perfect for launches, ideas & everyday essentials."
+              subtitle="Engineered for modern high-volume retail. Lightning-fast Shopify experiences for global brands."
             >
-              <OfferList text="Strategy call to align on goals" status="active" />
-              <OfferList text="Custom UI with modern design" status="active" />
-              <OfferList text="Grab 10% discount in your domain" status="active" />
-              <OfferList text="1 year free website maintenace" status="active" />
-              <OfferList text="Mobile-optimized & lightning fast" status="active" />
-              <OfferList text="Multi-language support (if required)" status="active" />
-              <OfferList text="Technical SEO (website)" status="active" />
-              <OfferList text="Free Gmb page creation" status="active" />
+              <OfferList text="Global Commerce Strategy" status="active" />
+              <OfferList text="Custom Liquid/React UI" status="active" />
+              <OfferList text="Domain/Hosting Discounts" status="active" />
+              <OfferList text="Cart Optimization Suite" status="active" />
+              <OfferList text="Mobile-First Architecture" status="active" />
+              <OfferList text="Omnichannel Integration" status="active" />
+              <OfferList text="Inventory Automation" status="active" />
+              <OfferList text="6 months free Maintenance" status="active" />
             </PricingBox>
           </div>
         )}
 
-        {/* ================= DIGITAL MARKETING (SMM) ================= */}
+        {/* ================= DIGITAL MARKETING ================= */}
         {activeTab === "marketing" && (
-          <div>
-            {/* SMM Cards */}
-            <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
+            <PricingBox
+              packageName="Starter"
+              price={"6,599"}
+              subtitle="Aggressive brand entry package for local businesses seeking immediate social authority."
+            >
+              <OfferList text="Strategic Scriptwriting" status="active" />
+              <OfferList text="1 Professional video shoot + video editing with Animation" status="active" />
+              <OfferList text="Meta Ads for 3 Days ads credit is included" status="active" />
+              <OfferList text="2 Targeted Campaign Setup" status="active" />
+              <OfferList text="Femal Voiceover Casting (optional)" status="active" />
+              <OfferList text="Brand Trust Foundation" status="active" />
+            </PricingBox>
 
-              <PricingBox
-                packageName="Saver"
-                price={"6,599"}
-                subtitle="Perfect for startups & local businesses beginning their branding journey(One time package)."
-              >
-                <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
-                  One Time
-                </span>
-                <OfferList text="1 Shoot with specific script" status="active" />
-                <OfferList text="1 professional video with engaging animation" status="active" />
-                <OfferList text="1 Free Meta ad campaign for 3 days" status="active" />
-                <OfferList text="2 ad campaign setup max (Optional)" status="active" />
-                <OfferList text="1 scripted voiceover (Optional)" status="active" />
-                <OfferList text="Ideal for creating brand presence & trust" status="active" />
-              </PricingBox>
+            <PricingBox
+              packageName="Recommended"
+              price={"11,499"}
+              subtitle="Scaling engine for brands ready to capture market share through high-frequency content."
+              isFeatured
+            >
+              <OfferList text="4 Elite Visual Assets" status="active" />
+              <OfferList text="Seasonal Branding Suite" status="active" />
+              <OfferList text="2 Premium Video Shoots" status="active" />
+               <OfferList text="2 promotional Video Editing with Animation " status="active" />
+              <OfferList text="Meta Ads Engine (3 Days)" status="active" />
+              <OfferList text="3 time campaign setup" status="active" />
+              <OfferList text="Script Writing for promotion (optional) " status="active" />
+            </PricingBox>
 
-              <PricingBox
-                packageName="Recommended"
-                price={"11,499"}
-                subtitle="Best for startups & brands ready to grow faster and reach more customers."
-              >
-                <span className="absolute -top-4 font-medium right-8 border-2 border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
-                  Most Popular
-                </span>
-                <OfferList text="4 high-quality business posters" status="active" />
-                <OfferList text="1 festival poster for seasonal branding (Optional)" status="active" />
-                <OfferList text="2 Proper video shoots" status="active" />
-                <OfferList text="2 professional video with engaging animation" status="active" />
-                <OfferList text="2 Free Meta ad campaign each for 2 days" status="active" />
-                <OfferList text="3 Meta ad campaigns setup max" status="active" />
-                <OfferList text="1 scripted voiceover (Optional)" status="active" />
-              </PricingBox>
-
-              <PricingBox
-                packageName="Booster"
-                price={"13,499"}
-                subtitle="For businesses serious about scaling and dominating online presence."
-              >
-
-                <OfferList text="6 premium social media posters" status="active" />
-                <OfferList text="1 festival poster for seasonal branding" status="active" />
-                <OfferList text="2 Proper video shoots" status="active" />
-                <OfferList text="3 professional video with engaging animation" status="active" />
-                <OfferList text="1 Free Meta ad campaign each for 3 days" status="active" />
-                <OfferList text="4 Meta ad campaigns setup max" status="active" />
-                <OfferList text="1 scripted voiceover (Optional)" status="active" />
-              <OfferList text="Free Gmb page creation" status="active" />
-              </PricingBox>
-
-            </div>
-
-            {/* Closing Business Hook */}
-            {/* <div className="mt-12 text-center">
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                We dont just manage your social media — we make it work for your business.
-                Choose us if you want <span className="font-semibold text-black">results, not just designs.</span>
-              </p>
-            </div> */}
+            <PricingBox
+              packageName="Growth"
+              price={"13,499"}
+              subtitle="Full-spectrum digital marketing dominance for businesses serious about global expansion."
+            >
+              <OfferList text="6 Premium Visual Assets" status="active" />
+              <OfferList text="2 Production video Shoots" status="active" />
+              <OfferList text="2 promotional Video Editing with Animation " status="active" />
+              <OfferList text="Meta Ads Engine (3 Days)" status="active" />
+              <OfferList text="4 time Campaign Setup" status="active" />
+              <OfferList text="Script Writing for promotion (optional)" status="active" />
+              <OfferList text="GMB Authority Growth" status="active" />
+            </PricingBox>
           </div>
         )}
-
 
         {/* ================= WHATSAPP API ================= */}
         {activeTab === "whatsapp" && (
-          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:max-w-4xl lg:mx-auto reveal-stagger">
             <PricingBox
-              packageName="Saver"
+              packageName="Starter API"
               price={"6,599"}
-              subtitle="Perfect for a small business or solopreneur to get started with WhatsApp Broadcasting & Automation for 3 months."
+              subtitle="Automated customer engagement bridge for small teams to centralize communications."
             >
-              <OfferList text="Get Official WhatsApp Business API" status="active" />
-              <OfferList text="Broadcast Unlimited Campaigns" status="active" />
-              <OfferList text="Zero-fee WhatsApp setup" status="active" />
-              <OfferList text="Schedule Broadcasts" status="active" />
-              <OfferList text="Chat CRM Included" status="active" />
-              <OfferList text="Click-to-WhatsApp-Ads" status="active" />
-              <OfferList text="Connect Your Third-Party APIs" status="active" />
-              <OfferList text="Zero Mock-up charges" status="active" />
-              <OfferList text="Multi Agent Shared Inbox" status="active" />
-              <OfferList text="Click-tracking" status="active" />
+              <OfferList text="Official WhatsApp API v2" status="active" />
+              <OfferList text="Unlimited Broadcast Engine" status="active" />
+              <OfferList text="Zero Setup Friction" status="active" />
+              <OfferList text="Scheduled Narrative Flows" status="active" />
+              <OfferList text="Omnichannel CRM Access" status="active" />
+              <OfferList text="Click-to-WhatsApp Ads" status="active" />
+              <OfferList text="Shared Inbox Core" status="active" />
+              <OfferList text="3 Months Access" status="active" />
             </PricingBox>
-            {/* <PricingBox
-              packageName="Essential"
-              price={"7,999"}
-              subtitle="Perfect for a small business or solopreneur or brands to get started with WhatsApp Broadcasting & Automation for 6 months."
-            >
-              <OfferList text="Get Official WhatsApp Business API" status="active" />
-              <OfferList text="Broadcast Unlimited Campaigns" status="active" />
-              <OfferList text="Zero-fee WhatsApp API setup" status="active" />
-              <OfferList text="Schedule Broadcasts" status="active" />
-              <OfferList text="Chat CRM Included" status="active" />
-              <OfferList text="Click-to-WhatsApp-Ads" status="active" />
-              <OfferList text="Connect Your Third-Party APIs" status="active" />
-              <OfferList text="Zero Mock-up charges" status="active" />
-              <OfferList text="Multi Agent Shared Inbox" status="active" />
-              <OfferList text="Click-tracking" status="active" />
-            </PricingBox> */}
-            <PricingBox
-              packageName="Recommended"
-              price={"12,599"}
-              subtitle="Best for Advanced features and higher limits, ideal for growing businesses needing more capabilities for an year."
-            >
-              <span className="absolute -top-4 font-medium right-8  border-[#A2B2FB] bg-[#A2B2FB] text-white rounded-xl p-1 shadow-lg skew-y-3 shadow-[#99ABFB]">
-                Most Popular
-              </span>
-              <span className=""></span>
-              <OfferList text="Get Official WhatsApp Business API" status="active" />
-              <OfferList text="Broadcast Unlimited Campaigns" status="active" />
-              <OfferList text="Zero-fee WhatsApp setup" status="active" />
-              <OfferList text="Schedule Broadcasts" status="active" />
-              <OfferList text="Chat CRM Included" status="active" />
-              <OfferList text="Click-to-WhatsApp-Ads" status="active" />
-              <OfferList text="Connect Your Third-Party APIs" status="active" />
-              <OfferList text="Zero Mock-up charges" status="active" />
-              <OfferList text="Connect No Code A.I. Chatbots" status="active" />
-              <OfferList text="Multi Agent Shared Inbox" status="active" />
-              <OfferList text="Click-tracking" status="active" />
 
+            <PricingBox
+              packageName="Growth API"
+              price={"12,599"}
+              subtitle="The elite communication suite with neural AI integration and high-volume broadcast limits."
+              isFeatured
+            >
+              <OfferList text="Official WhatsApp API v2" status="active" />
+              <OfferList text="Unlimited Enterprise Broadcast" status="active" />
+              <OfferList text="Zero Setup Friction" status="active" />
+              <OfferList text="Advanced AI Chatbot Bridge" status="active" />
+              <OfferList text="Custom API Integrations" status="active" />
+              <OfferList text="Advanced Click-Tracking" status="active" />
+              <OfferList text="Multi-Agent Shared Inbox" status="active" />
+              <OfferList text="12 Months Access" status="active" />
             </PricingBox>
           </div>
         )}
-      </div>
-      <div className="mt-10 flex flex-col items-center justify-center">
-        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto text-center">
-          We dont just manage your social media — we make it work for your business.
-          Choose us if you want <span className="font-semibold text-gray-600 dark:text-gray-400">results, not just designs.</span>
-        </p>
 
-        <Link
-          href="tel:918072770837"
-          className="mt-4 w-48 rounded-lg bg-[#99ABFB] shadow-md shadow-[#A2B2FB] px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:shadow-xl text-center"
-        >
-          Connect with us
-        </Link>
-      </div>
+        {/* Footer CTA */}
+        <div className="reveal mt-20 flex flex-col items-center justify-center text-center">
+          <p className="mb-8 text-lg font-medium text-gray-500 dark:text-gray-400">
+            "Results-driven architecture, engineered for <span className="text-black dark:text-white font-bold">your business growth.</span>"
+          </p>
 
+          <Link
+            href="tel:918072770837"
+            className="group relative flex h-14 items-center justify-center overflow-hidden rounded-2xl bg-primary px-10 text-base font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(74,108,247,0.5)]"
+          >
+            <span className="relative z-10">Connect With Strategy Team</span>
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] transition-transform duration-500 group-hover:translate-x-[100%]" />
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };

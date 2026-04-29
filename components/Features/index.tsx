@@ -19,9 +19,16 @@ const Features = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 reveal-stagger">
-          {featuresData.map((feature) => (
-            <SingleFeature key={feature.id} feature={feature} />
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-6 lg:grid-cols-12 reveal-stagger">
+          {featuresData.map((feature, index) => (
+            <div 
+              key={feature.id} 
+              className={`reveal h-full ${
+                index === 0 || index === 3 ? "md:col-span-3 lg:col-span-8" : "md:col-span-3 lg:col-span-4"
+              }`}
+            >
+              <SingleFeature feature={feature} />
+            </div>
           ))}
         </div>
       </div>

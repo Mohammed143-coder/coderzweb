@@ -49,108 +49,74 @@ const techIcons: { [key: string]: string } = {
 };
 
 const SinglePortfolio = ({ portfolio }: { portfolio: Portfolio }) => {
-  const accentClass = accentColors[portfolio.category] || "from-gray-500 to-gray-600";
   const categoryBg = categoryColors[portfolio.category] || "bg-gray-50 text-gray-700";
 
   return (
-    <div className="group h-full flex flex-col">
-      {/* Card Container */}
-      <div className="relative h-full flex flex-col bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden transition-all duration-300 hover:border-gray-300 dark:hover:border-gray-700 hover:shadow-md dark:hover:shadow-xl backdrop-blur-sm">
+    <div className="group relative h-full flex flex-col">
+      {/* Glow Effect */}
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-primary/20 to-purple-500/20 opacity-0 blur transition duration-500 group-hover:opacity-100" />
+      
+      <div className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white transition-all duration-300 dark:border-white/5 dark:bg-[#111322]">
         
-        {/* Top Accent Line */}
-        {/* <div className={`h-1 w-full bg-gradient-to-r ${accentClass}`}></div> */}
-
-        {/* Image Section - Live Site Preview */}
-        <div className="relative h-48 w-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 overflow-hidden">
+        {/* Image Section */}
+        <div className="relative h-64 w-full overflow-hidden">
           <Image
-            src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(portfolio.link)}?w=600&h=400`}
-            alt={`${portfolio.title} - Live Preview`}
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyudxvier9AdSdQadh/HLRGJvEYKLGU0YaX9P8AxSaHU="
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            width={600}
-            height={400}
-            onError={(e) => {
-              // Fallback to placeholder on error
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              const fallback = target.parentElement?.querySelector('.fallback') as HTMLElement;
-              if (fallback) fallback.style.display = 'flex';
-            }}
+            src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(portfolio.link)}?w=800&h=600`}
+            alt={portfolio.title}
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+            width={800}
+            height={600}
+            unoptimized
           />
+          {/* Overlay Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#111322] via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
           
-          {/* Fallback for when image fails to load */}
-          <div className="fallback absolute inset-0 hidden items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700">
-            <div className="text-center">
-              <div className="text-4xl mb-2 opacity-60">
-                {portfolio.technologies?.[0] && techIcons[portfolio.technologies[0]] ? (
-                  techIcons[portfolio.technologies[0]]
-                ) : (
-                  "🌐"
-                )}
-              </div>
-              <div className="text-sm text-gray-500 dark:text-gray-400">Preview unavailable</div>
-            </div>
-          </div>
-
-          {/* Live Status Badge */}
+          {/* Status Badge */}
           {portfolio.isLive && (
-            <div className="absolute top-3 right-3 inline-flex items-center gap-1.5 bg-green-500/90 text-white px-2 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
-              Live
+            <div className="absolute right-4 top-4 flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white backdrop-blur-md">
+              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-400" />
+              Live Deployment
             </div>
           )}
         </div>
 
         {/* Content Section */}
-        <div className="flex-1 flex flex-col p-6 gap-4">
-          
-          {/* Category & Title */}
-          <div>
-            <span className={`inline-block text-xs font-semibold px-2 py-1 rounded-md mb-3 ${categoryBg}`}>
+        <div className="flex flex-1 flex-col p-8">
+          <div className="mb-4">
+            <span className={`inline-block rounded-lg px-3 py-1 text-[10px] font-bold uppercase tracking-widest ${categoryBg} bg-primary/5 text-primary`}>
               {portfolio.category}
             </span>
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white leading-tight mb-2 line-clamp-2 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">
-              {portfolio.title}
-            </h3>
           </div>
+          
+          <h3 className="mb-4 text-2xl font-bold leading-tight text-black transition-colors duration-300 group-hover:text-primary dark:text-white dark:group-hover:text-primary">
+            {portfolio.title}
+          </h3>
 
-          {/* Description */}
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed flex-grow">
+          <p className="mb-8 text-base font-medium leading-relaxed text-gray-500 dark:text-gray-400">
             {portfolio.description}
           </p>
 
-          {/* Tech Stack */}
-          {portfolio.technologies && portfolio.technologies.length > 0 && (
-            <div className="flex flex-wrap gap-1.5">
-              {portfolio.technologies.slice(0, 3).map((tech, idx) => (
-                <span
-                  key={idx}
-                  className="text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2.5 py-1 rounded-md"
-                >
+          <div className="mt-auto">
+            {/* Tech Stack */}
+            <div className="mb-6 flex flex-wrap gap-2">
+              {portfolio.technologies?.slice(0, 3).map((tech, idx) => (
+                <span key={idx} className="rounded-md bg-gray-50 px-2 py-1 text-xs font-bold text-gray-400 dark:bg-white/5 dark:text-gray-500">
                   {tech}
                 </span>
               ))}
-              {portfolio.technologies.length > 3 && (
-                <span className="text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2.5 py-1 rounded-md">
-                  +{portfolio.technologies.length - 3}
-                </span>
-              )}
             </div>
-          )}
 
-          {/* CTA Button */}
-          <Link
-            href={portfolio.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 mt-2 text-sm font-semibold text-primary dark:text-blue-400 hover:text-primary/80 dark:hover:text-blue-300 transition-colors group/link"
-          >
-            Explore Project
-            <svg className="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </Link>
+            <Link
+              href={portfolio.link}
+              target="_blank"
+              className="inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-primary transition-all duration-300 hover:tracking-[0.3em]"
+            >
+              Explore Project
+              <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

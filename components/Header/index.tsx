@@ -98,89 +98,72 @@ const Header = () => {
 
   return (
     <header
-      className={`header left-0 top-0 z-40 flex w-full items-center ${
+      className={`header left-0 top-0 z-40 flex w-full items-center transition-all duration-300 ${
         sticky
-          ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark"
+          ? "fixed z-[9999] bg-white/70 shadow-sticky backdrop-blur-xl dark:bg-black/70 dark:shadow-sticky-dark"
           : "absolute bg-transparent"
       }`}
     >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="w-60 max-w-full px-4 xl:mr-12 text-[#A9B8FB] text-lg md:text-2xl font-semibold hover:rotate-[-4deg] hover:scale-105 transition-all duration-200">
+          <div className="w-60 max-w-full px-4 text-[#4A6CF7] text-xl md:text-2xl font-black tracking-tighter">
             <Link
               href="/"
-              className={`header-logo block w-full ${
-                sticky ? "py-5 lg:py-2" : "py-8"
+              className={`header-logo block w-full transition-transform duration-300 hover:scale-105 ${
+                sticky ? "py-4" : "py-8"
               }`}
               onClick={(e) => handleNavClick(e, "/")}
             >
-              CoderzWeb
+              CODERZWEB
             </Link>
           </div>
 
           {/* Navigation */}
-          <div className="flex w-full items-center justify-between px-4">
-            <div>
-              {/* Mobile menu toggle */}
-              <button
-                onClick={navbarToggleHandler}
-                id="navbarToggler"
-                aria-label="Mobile Menu"
-                className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-              >
-                <span
-                  className={`my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                    navbarOpen ? "top-[7px] rotate-45" : ""
-                  }`}
-                />
-                <span
-                  className={`my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                    navbarOpen ? "opacity-0" : ""
-                  }`}
-                />
-                <span
-                  className={`my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                    navbarOpen ? "top-[-8px] -rotate-45" : ""
-                  }`}
-                />
-              </button>
+          <div className="flex w-full items-center justify-end px-4">
+            <nav
+              id="navbarCollapse"
+              className={`navbar absolute right-0 z-30 w-[250px] rounded-2xl border border-white/10 bg-white/90 px-6 py-4 backdrop-blur-xl duration-300 dark:bg-black/90 lg:visible lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 ${
+                navbarOpen
+                  ? "visibility top-full opacity-100 shadow-2xl"
+                  : "invisible top-[120%] opacity-0"
+              }`}
+            >
+              <ul className="block lg:flex lg:items-center lg:space-x-10">
+                {menuData.map((menuItem) => (
+                  <li key={menuItem.id} className="group relative">
+                    <Link
+                      href={menuItem.path.startsWith("#") ? "/" : menuItem.path}
+                      onClick={(e) => handleNavClick(e, menuItem.path)}
+                      className={`flex py-2 text-sm font-bold uppercase tracking-widest transition-all duration-300 lg:inline-flex lg:px-0 lg:py-4 ${
+                        isActive(menuItem.path)
+                          ? "text-primary dark:text-white"
+                          : "text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                      }`}
+                    >
+                      {menuItem.title}
+                    </Link>
+                  </li>
+                ))}
+                <li className="mt-4 lg:ml-4 lg:mt-0">
+                  <ThemeToggler />
+                </li>
+              </ul>
+            </nav>
 
-              {/* Menu items */}
-              <nav
-                id="navbarCollapse"
-                className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white  px-6 py-4 duration-300 dark:border-body-color/20 lg:visible lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 ${
-                  navbarOpen
-                    ? "visibility top-full opacity-100"
-                    : "invisible top-[120%] opacity-0"
-                }`}
-              >
-                <ul className="block lg:flex lg:space-x-12">
-                  {menuData.map((menuItem) => (
-                    <li key={menuItem.id} className="group relative">
-                      {menuItem.title && (
-                        <Link
-                          href={menuItem.path.startsWith("#") ? "/" : menuItem.path}
-                          onClick={(e) => handleNavClick(e, menuItem.path)}
-                          className={`flex py-2 text-base justify-center lg:mr-0 lg:inline-flex lg:px-0 lg:py-4 transition-all duration-200 font-semibold ${
-                            isActive(menuItem.path)
-                              ? "text-primary dark:text-white  text-scale-105 text-rotate-[6deg]"
-                              : "text-gray-400  hover:text-primary dark:text-[#A9B8FB]  border-b border-gray-400 lg:border-none hover:border-primary"
-                          }`}
-                        >
-                          {menuItem.title}
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
-
-            {/* Theme toggler */}
-            <div className="flex items-center justify-end pr-16 lg:pr-0">
-              <ThemeToggler />
-            </div>
+            {/* Mobile menu toggle */}
+            <button
+              onClick={navbarToggleHandler}
+              id="navbarToggler"
+              aria-label="Mobile Menu"
+              className="ml-4 rounded-xl border border-primary/20 bg-primary/5 p-2 lg:hidden"
+            >
+              <div className="space-y-1.5">
+                <span className={`block h-0.5 w-6 bg-primary transition-all duration-300 ${navbarOpen ? "translate-y-2 rotate-45" : ""}`} />
+                <span className={`block h-0.5 w-6 bg-primary transition-all duration-300 ${navbarOpen ? "opacity-0" : ""}`} />
+                <span className={`block h-0.5 w-6 bg-primary transition-all duration-300 ${navbarOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+              </div>
+            </button>
           </div>
         </div>
       </div>

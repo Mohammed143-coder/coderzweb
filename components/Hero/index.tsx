@@ -11,297 +11,63 @@ const Hero = () => {
       <section
         id="home"
         aria-label="Hero section"
-        className="relative z-10 min-h-screen overflow-hidden bg-white pb-10 pt-[200px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[260px] "
+        className="relative z-10 flex min-h-screen items-center justify-center overflow-hidden bg-white pb-16 pt-[120px] dark:bg-[#030712] md:pt-[150px] xl:pt-[180px]"
       >
-        <div className="container" ref={revealRef}>
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="reveal mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl">
-                  Our Proven Digital Solution for Your <br />
-                  <TypeWriter
-                    sentences={[
-                      "Startup Growth.",
-                      "Local Business Success.",
-                      "Brand Expansion.",
-                      "Boost Your Brand Online.",
-                    ]}
-                    typingSpeed={100}
-                    deletingSpeed={50}
-                    pauseDuration={1500}
-                  />
-                </h1>
+        {/* Cinematic Background */}
+        <div className="absolute inset-0 -z-10 bg-mesh opacity-50 dark:opacity-100" />
+        <div className="absolute inset-0 -z-10 bg-spotlight opacity-30" />
+        
+        <div className="container relative" ref={revealRef}>
+          <div className="mx-auto max-w-[1000px] text-center">
+            {/* Tagline */}
+            <div className="reveal mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary md:text-sm">
+              <span className="mr-2 h-2 w-2 animate-pulse rounded-full bg-primary" />
+              Digital Excellence Redefined
+            </div>
 
-                <p className="reveal mb-12  font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 text-xs md:text-base">
-                  We provide digital growth solutions including custom website
-                  development, SEO, AI automation, and performance marketing for
-                  startups and local businesses.
-                </p>
-                <div className="reveal flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-2">
-                  <Link
-                    href="#contact"
-                    className="inline-flex items-center justify-center rounded-lg bg-[#A2B2FB] border-2 border-[#A2B2FB] px-8 py-4 text-base font-semibold text-white duration-300 hover:bg-white hover:text-[#A2B2FB] hover:border-[#A2B2FB]"
-                  >
-                    Book a Call
-                  </Link>
-                  <Link
-                    href="/#pricing"
-                    className="inline-flex items-center justify-center rounded-lg bg-white border-2 border-[#A2B2FB] px-8 py-4 text-base font-semibold text-[#A2B2FB] duration-300 hover:bg-[#A2B2FB] hover:text-white dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
-                  >
-                    Unlock Discounts
-                  </Link>
-                </div>
-              </div>
+            <h1 className="reveal mb-8 text-4xl font-black leading-[1.1] tracking-tight text-black dark:text-white sm:text-5xl md:text-7xl lg:text-8xl">
+              Proven Digital <br /> Solutions for Your <br />
+              <span className="text-primary text-glow">
+                <TypeWriter
+                  sentences={[
+                    "Startup Growth.",
+                    "Local Success.",
+                    "Brand Expansion.",
+                    "Online Dominance.",
+                  ]}
+                  typingSpeed={100}
+                  deletingSpeed={50}
+                  pauseDuration={1500}
+                />
+              </span>
+            </h1>
+
+            <p className="reveal mx-auto mb-12 max-w-[700px] text-lg font-medium leading-relaxed text-gray-500 dark:text-gray-400 md:text-xl">
+              We engineer high-performance digital experiences including custom web architecture, SEO dominance, and AI-driven automation.
+            </p>
+
+            <div className="reveal flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
+              <Link
+                href="#contact"
+                className="group relative flex h-14 w-full items-center justify-center overflow-hidden rounded-2xl bg-primary px-8 text-base font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(74,108,247,0.5)] sm:w-auto"
+              >
+                <span className="relative z-10">Start Your Journey</span>
+                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] transition-transform duration-500 group-hover:translate-x-[100%]" />
+              </Link>
+              
+              <Link
+                href="/#pricing"
+                className="group flex h-14 w-full items-center justify-center rounded-2xl border border-gray-200 bg-white/50 px-8 text-base font-bold text-black backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-white dark:border-white/10 dark:text-white dark:hover:bg-white/10 sm:w-auto"
+              >
+                View Packages
+              </Link>
             </div>
           </div>
         </div>
-        <div
-          className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100"
-          aria-hidden="true"
-        >
-          <svg
-            width="450"
-            height="556"
-            viewBox="0 0 450 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
-            <circle
-              cx="325.486"
-              cy="302.87"
-              r="180"
-              transform="rotate(-37.6852 325.486 302.87)"
-              fill="url(#paint3_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="184.521"
-              cy="315.521"
-              r="132.862"
-              transform="rotate(114.874 184.521 315.521)"
-              stroke="url(#paint4_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="356"
-              cy="290"
-              r="179.5"
-              transform="rotate(-30 356 290)"
-              stroke="url(#paint5_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="191.659"
-              cy="302.659"
-              r="133.362"
-              transform="rotate(133.319 191.659 302.659)"
-              fill="url(#paint6_linear_25:217)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:217"
-                x1="-54.5003"
-                y1="-178"
-                x2="222"
-                y2="288"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint1_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <radialGradient
-                id="paint2_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <linearGradient
-                id="paint3_linear_25:217"
-                x1="226.775"
-                y1="-66.1548"
-                x2="292.157"
-                y2="351.421"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:217"
-                x1="184.521"
-                y1="182.159"
-                x2="184.521"
-                y2="448.882"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_25:217"
-                x1="356"
-                y1="110"
-                x2="356"
-                y2="470"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint6_linear_25:217"
-                x1="118.524"
-                y1="29.2497"
-                x2="166.965"
-                y2="338.63"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div
-          className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100"
-          aria-hidden="true"
-        >
-          <svg
-            width="364"
-            height="201"
-            viewBox="0 0 364 201"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"
-              stroke="url(#paint0_linear_25:218)"
-            />
-            <path
-              d="M-22.1107 72.3303C5.65989 66.4798 73.3965 64.9086 122.178 105.427C183.155 156.076 201.59 162.093 236.333 166.607C271.076 171.12 309.718 183.657 334.889 212.24"
-              stroke="url(#paint1_linear_25:218)"
-            />
-            <path
-              d="M-53.1107 72.3303C-25.3401 66.4798 42.3965 64.9086 91.1783 105.427C152.155 156.076 170.59 162.093 205.333 166.607C240.076 171.12 278.718 183.657 303.889 212.24"
-              stroke="url(#paint2_linear_25:218)"
-            />
-            <path
-              d="M-98.1618 65.0889C-68.1416 60.0601 4.73364 60.4882 56.0734 102.431C120.248 154.86 139.905 161.419 177.137 166.956C214.37 172.493 255.575 186.165 281.856 215.481"
-              stroke="url(#paint3_linear_25:218)"
-            />
-            <circle
-              opacity="0.8"
-              cx="214.505"
-              cy="60.5054"
-              r="49.7205"
-              transform="rotate(-13.421 214.505 60.5054)"
-              stroke="url(#paint4_linear_25:218)"
-            />
-            <circle cx="220" cy="63" r="43" fill="url(#paint5_radial_25:218)" />
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:218"
-                x1="184.389"
-                y1="69.2405"
-                x2="184.389"
-                y2="212.24"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_25:218"
-                x1="156.389"
-                y1="69.2405"
-                x2="156.389"
-                y2="212.24"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint2_linear_25:218"
-                x1="125.389"
-                y1="69.2405"
-                x2="125.389"
-                y2="212.24"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_25:218"
-                x1="93.8507"
-                y1="67.2674"
-                x2="89.9278"
-                y2="210.214"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:218"
-                x1="214.505"
-                y1="10.2849"
-                x2="212.684"
-                y2="99.5816"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint5_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(220 63) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="white" stopOpacity="0" />
-                <stop offset="1" stopColor="white" stopOpacity="0.08" />
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
+
+        {/* Decorative Orbs */}
+        <div className="absolute -left-24 top-1/4 -z-10 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
+        <div className="absolute -right-24 bottom-1/4 -z-10 h-96 w-96 rounded-full bg-purple-500/10 blur-[120px]" />
       </section>
     </>
   );
