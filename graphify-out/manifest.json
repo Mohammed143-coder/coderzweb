@@ -1,0 +1,402 @@
+{
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/tailwind.config.js": {
+    "mtime": 1777462553.893606,
+    "hash": "99c2a0d768e1ac04cba4b6b04b7d7725"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/next.config.js": {
+    "mtime": 1774464067.6901226,
+    "hash": "7967e91488ff0cb05c64c10568e6aa2d"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/next-sitemap.config.js": {
+    "mtime": 1766747382.7113426,
+    "hash": "8f5d439f50c333b6d473eaa3165bf4bc"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/next-env.d.ts": {
+    "mtime": 1758528376.0,
+    "hash": "3cf36e94213e85dc306ec5f3f3760ecc"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/postcss.config.js": {
+    "mtime": 1758528376.0,
+    "hash": "854b38759e7a8b4b82306ae2d9a3a833"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/brand.ts": {
+    "mtime": 1758528376.0,
+    "hash": "5afddb600d1599e700bf573fde2aaefa"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/portfolio.ts": {
+    "mtime": 1774464971.8601582,
+    "hash": "06fa07d90d3fcc67ee5ad3b4a04be629"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/blog.ts": {
+    "mtime": 1758528376.0,
+    "hash": "d29094b391306ddfdcafc43cec5d9ce1"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/testimonial.ts": {
+    "mtime": 1759392280.576076,
+    "hash": "bc8a12ec1de2a47d37fbd8cfced7fee5"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/menu.ts": {
+    "mtime": 1758528376.0,
+    "hash": "415543751166fb738428b7aebd95c478"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/feature.ts": {
+    "mtime": 1758528376.0,
+    "hash": "f66d9864f3cf7fe2669a170d0d1263e2"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/layout.tsx": {
+    "mtime": 1774425313.4643397,
+    "hash": "4c18043976d403607136de0a4fe4c62d"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/page.tsx": {
+    "mtime": 1774425386.0086613,
+    "hash": "9ee97f8cb4b72e2d83278060438bc613"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/not-found.tsx": {
+    "mtime": 1767961718.2331383,
+    "hash": "8be33b30eab394148e9389bd24f92c87"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/providers.tsx": {
+    "mtime": 1758528376.0,
+    "hash": "f0aea068b42a99cc247dfd58aecd94f6"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/contact/page.tsx": {
+    "mtime": 1767961948.1071565,
+    "hash": "03556ff58444371d4a45b50729c42f41"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/api/chat/route.js": {
+    "mtime": 1771353204.2015247,
+    "hash": "bcdda6d099b41f4f01c35562004cdab8"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/error/page.tsx": {
+    "mtime": 1766749016.0328498,
+    "hash": "e4db9d78aa62a724ec2d0369037fc5ec"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/LogoLoop.tsx": {
+    "mtime": 1763919767.7930188,
+    "hash": "e044558c1d95f0d178d8b8edb764c3b0"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/TechLogos.tsx": {
+    "mtime": 1777466523.5011003,
+    "hash": "7f64864bc8a0aa9de64e44d8dee5a934"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/LiquidEther.tsx": {
+    "mtime": 1760172309.0785363,
+    "hash": "eb08ab048eb48133bab6223494211b6b"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/ClientLayout.tsx": {
+    "mtime": 1771317104.423249,
+    "hash": "4e1f99eb1c50c94764ec51de9bb16f83"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Footer/index.tsx": {
+    "mtime": 1777989638.338736,
+    "hash": "511855698817257ae91e02b32d2d7e63"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/StructuredData/index.tsx": {
+    "mtime": 1774425232.9313726,
+    "hash": "714833730ac6b5151049907e34e120cb"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Video/index.tsx": {
+    "mtime": 1777466811.7230291,
+    "hash": "0c681f8c3f407a0e86075cee3dc87610"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Contact/index.tsx": {
+    "mtime": 1777465571.9706447,
+    "hash": "9c328f009ad2c21e81ec720eb58a8355"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Contact/NewsLatterBox.tsx": {
+    "mtime": 1771330649.707425,
+    "hash": "e7b49cfa6cc74cc7cecfe4167b3089ff"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Testimonials/index.tsx": {
+    "mtime": 1777467232.280021,
+    "hash": "4e95a3d960e72c962fedc792e0945255"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Testimonials/SingleTestimonial.tsx": {
+    "mtime": 1777467422.5327022,
+    "hash": "ce4268dce7077422fa6b64f6ae518a22"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/ScrollToTop/index.tsx": {
+    "mtime": 1758528376.0,
+    "hash": "f9b3e8a07edbe234430b80360bbfe634"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/ChatBot/index.jsx": {
+    "mtime": 1773818712.3421738,
+    "hash": "0c1b259e4644dce3205ebaf3f21ce2d0"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Features/index.tsx": {
+    "mtime": 1777463009.708175,
+    "hash": "55c840a19c021b6bbb6e9e221dd275e1"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Features/SingleFeature.tsx": {
+    "mtime": 1777463018.858139,
+    "hash": "901f05dd9c54d10e2ebabc8a03facb4e"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Features/featuresData.tsx": {
+    "mtime": 1767008089.7582126,
+    "hash": "24649e0c6ad7f06faddf83f44d415bad"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/About/AboutSectionOne.tsx": {
+    "mtime": 1777469990.0690014,
+    "hash": "1a79c0d7c9fdeb70c11f65238694e7b1"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/About/AboutSectionTwo.tsx": {
+    "mtime": 1777990434.9338064,
+    "hash": "02e7ec2ef48c97a9374c62cd7f092395"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Blog/index.tsx": {
+    "mtime": 1777465886.4718304,
+    "hash": "74b92b0de39c08aacb41df7f7582d89d"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Blog/TagButton.tsx": {
+    "mtime": 1759328744.6800277,
+    "hash": "b86aa32854766b4707a62a0edaaec28b"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Blog/SingleBlog.tsx": {
+    "mtime": 1777465899.2432234,
+    "hash": "7dcae4ac5dc77a6fc303a4dd985cc5eb"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Blog/blogData.tsx": {
+    "mtime": 1766821979.5783439,
+    "hash": "bd36459ac0a0e8156b7389028fba18b4"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/ScrollUp.tsx": {
+    "mtime": 1758528376.0,
+    "hash": "57062b6292880122aab86819d68ae4f4"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/Breadcrumb.tsx": {
+    "mtime": 1759388921.1235116,
+    "hash": "f6f66ca8382a900da0bc46fd5dde5ad7"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/ShinyText.tsx": {
+    "mtime": 1759401105.3506095,
+    "hash": "4771a124c0353451cb0aa8aa25e5fdd6"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/ModernFAQ.jsx": {
+    "mtime": 1777465875.994815,
+    "hash": "2b371e0224fda553e65fdd9c30a019a9"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/SectionTitle.tsx": {
+    "mtime": 1771331779.1326547,
+    "hash": "cdd9754e83ef2d9359b259e27f78a99d"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Portfolio/index.tsx": {
+    "mtime": 1777465678.944894,
+    "hash": "9d4b72ad688ade534bc5288c0aad61f2"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Portfolio/SinglePortfolio.tsx": {
+    "mtime": 1777464620.8982558,
+    "hash": "e760ad50713a1b93be21fbef82043a42"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Portfolio/portfolioData.tsx": {
+    "mtime": 1777469810.1180363,
+    "hash": "15ff18ee8801347080803552579d8967"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Hero/index.tsx": {
+    "mtime": 1777462992.5718324,
+    "hash": "2149667021a9b1184119ab5125441157"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Hero/TypeWriter.jsx": {
+    "mtime": 1773820084.1968708,
+    "hash": "52383e314a0a49c96725a34be91b4e92"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Pricing/index.tsx": {
+    "mtime": 1777989822.6169705,
+    "hash": "0132247e4664cbcdb2d1c3fa1e1cba7d"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Pricing/PricingBox.tsx": {
+    "mtime": 1777469998.0807784,
+    "hash": "6939a79494e4f5915232536bb9c75545"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Pricing/OfferList.tsx": {
+    "mtime": 1777465013.5804665,
+    "hash": "90b93517dcb84eed5e296dbc15fe0dee"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Header/index.tsx": {
+    "mtime": 1777463042.1828911,
+    "hash": "3f169c2f8cd83ab2496d44729328ec04"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Header/menuData.tsx": {
+    "mtime": 1763195453.5037558,
+    "hash": "0d0dcfff3825bb4479de0cbf28b9097c"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Header/ThemeToggler.tsx": {
+    "mtime": 1759328744.6797795,
+    "hash": "ed7cb00b9365537b2d98e8528ef5ed57"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Analytics/gtag.js": {
+    "mtime": 1766824254.975552,
+    "hash": "d1d12da36cb12140e59f91120078f9a5"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/lib/useScrollReveal.ts": {
+    "mtime": 1771349441.34091,
+    "hash": "fc4a677786a10ef24dc6ec326a4af5ad"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/lib/utils.ts": {
+    "mtime": 1758528376.0,
+    "hash": "f90d811feb91c3f34fab09c9283223bf"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/robots.txt": {
+    "mtime": 1777985269.3364918,
+    "hash": "efa741f61972822d06e76dbfd6d044f6"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/404.svg": {
+    "mtime": 1758528376.0,
+    "hash": "6fce9923cf5db921c5c80a026b5f834e"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/video/shape.svg": {
+    "mtime": 1758528376.0,
+    "hash": "4681d693b31383861f87236f3003e571"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/video/cw-may-1-poster.webp": {
+    "mtime": 1777460406.3254974,
+    "hash": "e4342dea989c6f255bf0ae658de0515a"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/testimonials/auth-02.png": {
+    "mtime": 1758528376.0,
+    "hash": "8888f1eca8a077a9cf33d368d016a3ab"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/testimonials/auth-03.png": {
+    "mtime": 1758528376.0,
+    "hash": "571b9c9971abdf0e05334df7c30dbb07"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/testimonials/auth-01.png": {
+    "mtime": 1758528376.0,
+    "hash": "6c3822c32d70744caccc538b65acb66e"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/testimonials/author-01.png": {
+    "mtime": 1758528376.0,
+    "hash": "6c3822c32d70744caccc538b65acb66e"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/testimonials/author-03.png": {
+    "mtime": 1758528376.0,
+    "hash": "571b9c9971abdf0e05334df7c30dbb07"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/testimonials/author-02.png": {
+    "mtime": 1758528376.0,
+    "hash": "8888f1eca8a077a9cf33d368d016a3ab"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/uideck-light.svg": {
+    "mtime": 1758528376.0,
+    "hash": "49568988dd7a7a523b73237e20eaa27c"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/plainadmin.svg": {
+    "mtime": 1758528376.0,
+    "hash": "030c086faaf6d9d240991345d3a5cc5c"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/tailadmin.svg": {
+    "mtime": 1758528376.0,
+    "hash": "1afb368fdf162e36d52100ce73724b61"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/ayroui.svg": {
+    "mtime": 1758528376.0,
+    "hash": "546014a3a2df29e50b9e97b7c3da51cd"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/lineicons.svg": {
+    "mtime": 1758528376.0,
+    "hash": "4c53eb4ad372955016fb61e1490715b5"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/tailgrids.svg": {
+    "mtime": 1758528376.0,
+    "hash": "c63062cd6ebca42ce63fe46d60ad00ee"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/ayroui-light.svg": {
+    "mtime": 1758528376.0,
+    "hash": "c7d2a44f621c0d91621124bc20b19e5e"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/uideck.svg": {
+    "mtime": 1758528376.0,
+    "hash": "cc778e996ac214baa66ac132f0f091d8"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/lineicons-light.svg": {
+    "mtime": 1758528376.0,
+    "hash": "0c153f08668b295ed7a3ede0d03007b2"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/graygrids.svg": {
+    "mtime": 1758528376.0,
+    "hash": "7becbdd8d6cc7f16d978b30213199970"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/ecommerce-html.svg": {
+    "mtime": 1758528376.0,
+    "hash": "a4146a35ac07544d5229a50e9c6c5b9b"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/plainadmin-light.svg": {
+    "mtime": 1758528376.0,
+    "hash": "9b26c06788cd13ca5c88174268c45c2f"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/brands/tailgrids-light.svg": {
+    "mtime": 1758528376.0,
+    "hash": "2d9dba228ae39962730e9c078f9f7a2b"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/about/about-image-dark.svg": {
+    "mtime": 1758528376.0,
+    "hash": "fce2f26009f3987b7ace84e4eca4efc9"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/about/about-image.svg": {
+    "mtime": 1758528376.0,
+    "hash": "829be77e8d3d378ac7bf11076c40567b"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/about/about-image-2-dark.svg": {
+    "mtime": 1758528376.0,
+    "hash": "b47252bdcd2b191c212d18cda9f20563"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/about/coderzweb-about1.jpeg": {
+    "mtime": 1760016023.489196,
+    "hash": "fa576e8be7810d29c67e1f26493f1234"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/about/about-image-2.svg": {
+    "mtime": 1758528376.0,
+    "hash": "cc53d20d812ccda797df6624962d425f"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/coderzweb-blog3.webp": {
+    "mtime": 1759408936.658985,
+    "hash": "670cd054c0255956fdcbff0e5b252010"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/blog-details-02.jpg": {
+    "mtime": 1771329918.2789738,
+    "hash": "cce6205fc4e061a752fc8adc7d7cef37"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/post-01.jpg": {
+    "mtime": 1758528376.0,
+    "hash": "eebc90d69021d4251c825ad88835af5e"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/post-03.jpg": {
+    "mtime": 1758528376.0,
+    "hash": "a56d665a8bbebd8a0b5440e8648f5d01"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/blog-details-01.jpg": {
+    "mtime": 1771329918.2516298,
+    "hash": "da63c2a7fe244fe2226671dc480247f0"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/post-02.jpg": {
+    "mtime": 1758528376.0,
+    "hash": "31db4b37a77062914d1b48d59368636f"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/coderzweb-blog2.webp": {
+    "mtime": 1759407884.8870535,
+    "hash": "3d51ec427dc246af844c517315011319"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/coderzweb-blog1.webp": {
+    "mtime": 1759407407.2644737,
+    "hash": "4f3191d9cf9bcdd7ec952907bf55b052"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/blog/author-03.png": {
+    "mtime": 1758528376.0,
+    "hash": "b62ec8eaa435cd9bd365c294eba6575d"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/logo/logo.svg": {
+    "mtime": 1758528376.0,
+    "hash": "bfa8d6bfd3b3a984ffc8f740dc880144"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/logo/logo-2.svg": {
+    "mtime": 1758528376.0,
+    "hash": "fb1ae77587419cec2af5146a7dccacf4"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/hero/shape-02.svg": {
+    "mtime": 1758528376.0,
+    "hash": "1303f3b663609b660802d2f2e5882c83"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/hero/shape-01.svg": {
+    "mtime": 1758528376.0,
+    "hash": "e76b5cdae0dbcb8adeef4f6c1d7604be"
+  }
+}

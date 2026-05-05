@@ -1,7 +1,8 @@
-# Graph Report - .  (2026-05-05)
+# Graph Report - coderzweb-startup  (2026-05-05)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 59 files · ~53,207 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 99 nodes · 59 edges · 44 communities (42 shown, 2 thin omitted)
@@ -9,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `860032e0`
+- Built from commit: `f727dc70`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

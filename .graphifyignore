@@ -1,0 +1,28 @@
+# .graphifyignore
+node_modules/
+dist/
+.next/
+*.generated.py
+
+# Ignore everything by default
+*
+
+# Only index your actual source code and config
+!app/
+!app/**
+!components/
+!components/**
+!lib/
+!lib/**
+!types/
+!types/**
+!styles/
+!styles/**
+!public/
+!public/**
+
+# Keep essential config files
+!package.json
+!tsconfig.json
+!next.config.js
+!tailwind.config.js
