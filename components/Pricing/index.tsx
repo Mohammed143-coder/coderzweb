@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
+
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 import Link from "next/link";
@@ -47,7 +47,7 @@ const Pricing = () => {
               >
                 {tab === "website" && "Web Architecture"}
                 {tab === "marketing" && "Digital Strategy"}
-                {tab === "whatsapp" && "Omnichannel API"}
+                {tab === "whatsapp" && "Official WhatsApp API"}
               </button>
             ))}
           </div>
@@ -79,10 +79,10 @@ const Pricing = () => {
               <OfferList text="Everything in Essential" status="active" />
               <OfferList text="5-Page Elite Architecture" status="active" />
               <OfferList text="Cinematic UI Animations" status="active" />
-              <OfferList text="Advanced SEO Dominance" status="active" />
+              <OfferList text="Core SEO Optimization" status="active" />
               <OfferList text="Google Ecosystem Setup" status="active" />
-              <OfferList text="Free .IN Domain & Hosting" status="active" />
-              <OfferList text="Neural AI Chatbot v1" status="active" />
+              <OfferList text="Free .IN Domain & 10% off on Hosting" status="active" />
+              <OfferList text="AI Chatbot v1" status="active" />
               <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
 
@@ -94,10 +94,10 @@ const Pricing = () => {
               <OfferList text="Everything in Recommended" status="active" />
               <OfferList text="Full-Stack Web App (PWA)" status="active" />
               <OfferList text="Scalable Database Integration" status="active" />
-              <OfferList text="AI Agent with Live Sync" status="active" />
+              <OfferList text="AI Chatbot v1 with Live website Content Sync" status="active" />
               <OfferList text="Multi-Language Support" status="active" />
               <OfferList text="Technical SEO Audit" status="active" />
-              <OfferList text="GMB Global Authority" status="active" />
+              <OfferList text="GMB page creation" status="active" />
               <OfferList text="6 months free Maintenance" status="active" />
             </PricingBox>
 
@@ -107,11 +107,12 @@ const Pricing = () => {
               subtitle="Engineered for modern high-volume retail. Lightning-fast Shopify experiences for global brands."
             >
               <OfferList text="Global Commerce Strategy" status="active" />
+
               <OfferList text="Custom Liquid/React UI" status="active" />
-              <OfferList text="Domain/Hosting Discounts" status="active" />
+              <OfferList text="10% .com Domai" status="active" />
               <OfferList text="Cart Optimization Suite" status="active" />
               <OfferList text="Mobile-First Architecture" status="active" />
-              <OfferList text="Omnichannel Integration" status="active" />
+              <OfferList text="WhatsApp Integration" status="active" />
               <OfferList text="Inventory Automation" status="active" />
               <OfferList text="6 months free Maintenance" status="active" />
             </PricingBox>
@@ -140,13 +141,13 @@ const Pricing = () => {
               subtitle="Scaling engine for brands ready to capture market share through high-frequency content."
               isFeatured
             >
-              <OfferList text="4 Elite Visual Assets" status="active" />
-              <OfferList text="Seasonal Branding Suite" status="active" />
-              <OfferList text="2 Premium Video Shoots" status="active" />
+              <OfferList text="4 Elite Visual Posters" status="active" />
+             
+              <OfferList text="2 Professional video shoot" status="active" />
                <OfferList text="2 promotional Video Editing with Animation " status="active" />
-              <OfferList text="Meta Ads Engine (3 Days)" status="active" />
-              <OfferList text="3 time campaign setup" status="active" />
-              <OfferList text="Script Writing for promotion (optional) " status="active" />
+              <OfferList text="Meta Ads for 3 Days ads credit is included" status="active" />
+               <OfferList text="2 Targeted Campaign Setup max" status="active" />
+               <OfferList text="Femal Voiceover Casting (optional)" status="active" />
             </PricingBox>
 
             <PricingBox
@@ -154,13 +155,13 @@ const Pricing = () => {
               price={"13,499"}
               subtitle="Full-spectrum digital marketing dominance for businesses serious about global expansion."
             >
-              <OfferList text="6 Premium Visual Assets" status="active" />
-              <OfferList text="2 Production video Shoots" status="active" />
-              <OfferList text="2 promotional Video Editing with Animation " status="active" />
-              <OfferList text="Meta Ads Engine (3 Days)" status="active" />
-              <OfferList text="4 time Campaign Setup" status="active" />
-              <OfferList text="Script Writing for promotion (optional)" status="active" />
-              <OfferList text="GMB Authority Growth" status="active" />
+              <OfferList text="6 Elite Visual Posters" status="active" />
+              <OfferList text="2 Professional video shoots" status="active" />
+              <OfferList text="3 promotional Video Editing with Animation " status="active" />
+               <OfferList text="2 Meta Ads each for 3 Days ads credit is included" status="active" />
+               <OfferList text="4 Targeted Campaign Setup max" status="active" />
+              <OfferList text="Femal Voiceover Casting (optional)" status="active" />
+              <OfferList text="GMB page creation" status="active" />
             </PricingBox>
           </div>
         )}

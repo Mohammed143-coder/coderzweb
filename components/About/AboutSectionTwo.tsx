@@ -15,7 +15,7 @@ const AboutSectionTwo = () => {
       <div className="container relative z-10 mx-auto px-4">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
-            <div className="reveal-left relative mx-auto aspect-[25/24] max-w-[500px]">
+            <div className="reveal-left relative mx-auto mb-12 aspect-[25/24] max-w-[500px] lg:mb-0">
               <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-bl from-primary/20 to-purple-500/20 blur-[80px]" />
               <Image
                 src="/images/about/about-image-2.svg"
@@ -32,9 +32,9 @@ const AboutSectionTwo = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-xl lg:pl-12">
+            <div className="max-w-xl pt-10 lg:pl-12 lg:pt-0">
               <div className="mb-12">
-                <div className="reveal mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary md:text-sm">
+                <div className="reveal mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-xs font-bold uppercase tracking-widest text-primary md:text-sm">
                   <span className="mr-2 h-2 w-2 animate-pulse rounded-full bg-primary" />
                   Our Core Values
                 </div>

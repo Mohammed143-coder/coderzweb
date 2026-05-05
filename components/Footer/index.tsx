@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12">
               <div className="mb-12 max-w-[360px]">
-                <Link href="/" className="mb-8 inline-block text-2xl font-black tracking-tighter text-primary">
+                <Link href="/" className="mb-8 inline-block text-2xl font-black tracking-tighter text-primary hover:-skew-x-12 transition-all duration-300">
                   CODERZWEB
                 </Link>
                 <p className="mb-9 text-base font-medium leading-relaxed text-gray-500 dark:text-gray-400">
@@ -36,7 +36,7 @@ const Footer = () => {
                   {[
                     { icon: <FaFacebook />, href: "https://facebook.com/profile.php?id=61581874762273" },
                     { icon: <PiInstagramLogoDuotone />, href: "https://www.instagram.com/coderzweb_official/" },
-                    { icon: <FaWhatsapp />, href: `https://wa.me/917904463409?text=${msg}` }
+                    { icon: <FaWhatsapp />, href: `https://wa.me/918072770837?text=${msg}` }
                   ].map((social, i) => (
                     <Link
                       key={i}
@@ -113,7 +113,7 @@ const Footer = () => {
                       </div>
                       <div>
                         <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Call Us</p>
-                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors">+91 80727 70837</p>
+                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors whitespace-normal">+91 80727 70837 / +91 79044 63409</p>
                       </div>
                     </Link>
                   </li>
@@ -137,12 +137,12 @@ const Footer = () => {
             <ChatBox />
           </div>
 
-          <div className="flex flex-col items-center justify-between border-t border-gray-100 py-10 dark:border-white/5 md:flex-row">
+          <div className="flex flex-col items-center justify-around border-t border-gray-100 py-10 dark:border-white/5 md:flex-row">
             <p className="mb-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:mb-0">
               © {new Date().getFullYear()} CoderzWeb. Engineering Digital Excellence.
             </p>
             <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-              Crafted by <span className="font-bold text-black dark:text-white">@Founder CoderzWeb</span>
+              Crafted ❤️ by <span className="font-bold text-black dark:text-white">@Founder CoderzWeb</span>
             </p>
           </div>
         </div>
