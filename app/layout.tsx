@@ -29,6 +29,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en" className={poppins.variable}>
       <head>
         <link rel="canonical" href="https://coderzweb.in/" />
+        <meta name="msvalidate.01" content="32C5DEAC9F08EA04B93087634246FECA" />
         <OrganizationSchema />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${poppins.className}`}>
