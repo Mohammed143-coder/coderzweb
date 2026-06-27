@@ -58,7 +58,7 @@ const Pricing = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 reveal-stagger">
             <PricingBox
               packageName="Essential"
-              price={"11,999"}
+              price={"12,999"}
               subtitle="The strategic starting point for emerging startups and lead-generation focused landing pages."
             >
               <OfferList text="1-2 Pages Architecture" status="active" />
@@ -88,7 +88,7 @@ const Pricing = () => {
 
             <PricingBox
               packageName="Web Booster"
-              price={"23,999"}
+              price={"24,999"}
               subtitle="Full-scale digital transformation with PWA capabilities and comprehensive multi-language support."
             >
               <OfferList text="Everything in Recommended" status="active" />
@@ -102,8 +102,8 @@ const Pricing = () => {
             </PricingBox>
 
             <PricingBox
-              packageName="Commerce"
-              price={"27,999"}
+              packageName="E-Commerce"
+              price={"28,999"}
               subtitle="Engineered for modern high-volume retail. Lightning-fast Shopify experiences for global brands."
             >
               <OfferList text="Global Commerce Strategy" status="active" />
@@ -124,7 +124,7 @@ const Pricing = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
             <PricingBox
               packageName="Starter"
-              price={"6,599"}
+              price={"6,399"}
               subtitle="Aggressive brand entry package for local businesses seeking immediate social authority."
             >
               <OfferList text="Strategic Scriptwriting" status="active" />
@@ -137,7 +137,7 @@ const Pricing = () => {
 
             <PricingBox
               packageName="Recommended"
-              price={"11,499"}
+              price={"11,999"}
               subtitle="Scaling engine for brands ready to capture market share through high-frequency content."
               isFeatured
             >
@@ -146,20 +146,20 @@ const Pricing = () => {
               <OfferList text="2 Professional video shoot" status="active" />
                <OfferList text="2 promotional Video Editing with Animation " status="active" />
               <OfferList text="Meta Ads for 3 Days ads credit is included" status="active" />
-               <OfferList text="2 Targeted Campaign Setup max" status="active" />
+               <OfferList text="3 Targeted Campaign Setup " status="active" />
                <OfferList text="Femal Voiceover Casting (optional)" status="active" />
             </PricingBox>
 
             <PricingBox
               packageName="Growth"
-              price={"13,499"}
+              price={"14,999"}
               subtitle="Full-spectrum digital marketing dominance for businesses serious about global expansion."
             >
               <OfferList text="6 Elite Visual Posters" status="active" />
               <OfferList text="2 Professional video shoots" status="active" />
               <OfferList text="3 promotional Video Editing with Animation " status="active" />
-               <OfferList text="2 Meta Ads each for 3 Days ads credit is included" status="active" />
-               <OfferList text="4 Targeted Campaign Setup max" status="active" />
+               <OfferList text="1 Meta Ads for 4 Days ads credit is included" status="active" />
+               <OfferList text="4 Targeted Campaign Setup" status="active" />
               <OfferList text="Femal Voiceover Casting (optional)" status="active" />
               <OfferList text="GMB page creation" status="active" />
             </PricingBox>
@@ -171,7 +171,7 @@ const Pricing = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:max-w-4xl lg:mx-auto reveal-stagger">
             <PricingBox
               packageName="Starter API"
-              price={"6,599"}
+              price={"1,399 / month"}
               subtitle="Automated customer engagement bridge for small teams to centralize communications."
             >
               <OfferList text="Official WhatsApp API v2" status="active" />
@@ -181,12 +181,12 @@ const Pricing = () => {
               <OfferList text="Omnichannel CRM Access" status="active" />
               <OfferList text="Click-to-WhatsApp Ads" status="active" />
               <OfferList text="Shared Inbox Core" status="active" />
-              <OfferList text="3 Months Access" status="active" />
+              <OfferList text="6 Months Access" status="active" />
             </PricingBox>
 
             <PricingBox
               packageName="Growth API"
-              price={"12,599"}
+              price={"999 / month"}
               subtitle="The elite communication suite with neural AI integration and high-volume broadcast limits."
               isFeatured
             >
