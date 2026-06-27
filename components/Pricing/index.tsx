@@ -124,7 +124,7 @@ const Pricing = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 reveal-stagger">
             <PricingBox
               packageName="Starter"
-              price={"6,399"}
+              price={"6,599"}
               subtitle="Aggressive brand entry package for local businesses seeking immediate social authority."
             >
               <OfferList text="Strategic Scriptwriting" status="active" />
