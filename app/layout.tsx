@@ -30,10 +30,11 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://coderzweb.in/" />
         <meta name="msvalidate.01" content="32C5DEAC9F08EA04B93087634246FECA" />
+          <Gtag />
         <OrganizationSchema />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${poppins.className}`}>
-        <Gtag />
+      
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
