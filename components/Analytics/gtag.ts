@@ -1,20 +1,25 @@
-export const GA_MEASUREMENT_ID = "G-5GRMHR0NC7";
+"use client";
 
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-  }
+import Script from "next/script";
+
+const GA_ID = "G-5GRMHR0NC7";
+
+export default function Gtag() {
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');
+        `}
+      </Script>
+    </>
+  );
 }
-
-export const pageview = (url: string) => {
-  window.gtag("config", GA_MEASUREMENT_ID, {
-    page_path: url,
-  });
-};
-
-export const event = (
-  action: string,
-  parameters?: Record<string, any>
-) => {
-  window.gtag("event", action, parameters);
-};
