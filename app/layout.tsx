@@ -13,9 +13,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Professional Web Development & Digital Marketing",
+  title: "CoderzWeb | Professional Web Development & Performance Marketing",
   description:
-    "Award-winning web development and digital marketing services. We create responsive websites, web apps, Meta ads, Google ads & SEO solutions.",
+    "Award-winning web development and Performance marketing services. We create responsive websites, web apps, Meta ads, Google ads & SEO solutions.",
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#4A6CF7",
 };

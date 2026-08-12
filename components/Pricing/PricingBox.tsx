@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 const PricingBox = (props: {
   price: string;
@@ -6,8 +7,22 @@ const PricingBox = (props: {
   subtitle: string;
   children: React.ReactNode;
   isFeatured?: boolean;
+  discountCode?: string;
+  serviceCategory?: string;
 }) => {
-  const { price, packageName, subtitle, children, isFeatured } = props;
+  const {
+    price,
+    packageName,
+    subtitle,
+    children,
+    isFeatured,
+    discountCode = "CW/10OFF",
+    serviceCategory = "Services",
+  } = props;
+
+  const whatsappMessage = `Hi CoderzWeb Team! I would like to unlock a 10% discount on the *${serviceCategory} - ${packageName} Package* (₹${price}).\n\n Coupon Code: *${discountCode}*\n\nPlease share more details and help me get started! `;
+
+  const whatsappUrl = `https://wa.me/918072770837?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="group relative h-full flex flex-col">
@@ -57,14 +72,17 @@ const PricingBox = (props: {
 
         {/* CTA BUTTON */}
         <Link
-          href="tel:918072770837"
-          className={`mb-10 flex h-14 items-center justify-center rounded-2xl text-base font-bold transition-all duration-300 hover:scale-105 active:scale-95 ${
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mb-10 flex h-14 items-center justify-center gap-2.5 rounded-2xl text-base font-bold transition-all duration-300 hover:scale-105 active:scale-95 ${
             isFeatured
               ? "bg-primary text-white shadow-[0_0_40px_-10px_rgba(74,108,247,0.5)]"
               : "bg-gray-50 text-black hover:bg-gray-100 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
           }`}
         >
-          Unlock Discount
+          {/* <FaWhatsapp className="text-xl text-[#25D366] transition-transform duration-300 group-hover:scale-110" /> */}
+          <span>Unlock Discount</span>
         </Link>
 
         {/* FEATURE LIST */}
@@ -80,3 +98,4 @@ const PricingBox = (props: {
 };
 
 export default PricingBox;
+

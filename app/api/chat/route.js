@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 import { NextResponse } from "next/server";
 import { ChatGroq } from "@langchain/groq";
@@ -18,7 +18,7 @@ You are an AI assistant representing CoderzWeb, a professional web development a
 - Basic Package: ₹11,999 (Landing page or simple responsive websites)
 - Recommended Package: ₹17,999 (Business websites with features and AI chatbots)
 - Booster Package: ₹23,999 (Advanced web apps with AI chatbots)
-- Custom Solutions: Web apps using popular tech stacks, Digital Marketing, Maintenance
+- Custom Solutions: Web apps using popular tech stacks, Performance Marketing, Maintenance
 
 👨‍💻 Team:
 We’re a group of experienced developers and creative professionals working remotely across India.  
@@ -47,7 +47,6 @@ RESPONSE RULES:
 Always represent CoderzWeb positively and professionally.
 `;
 
-
 export async function POST(req) {
   try {
     const { messages } = await req.json();
@@ -56,7 +55,7 @@ export async function POST(req) {
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json(
         { error: "Invalid messages format" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -76,14 +75,15 @@ export async function POST(req) {
     return NextResponse.json({ reply: response.content });
   } catch (error) {
     console.error("Chat API Error:", error);
-    
+
     // Return user-friendly error
     return NextResponse.json(
-      { 
+      {
         error: "Failed to process your request. Please try again.",
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        details:
+          process.env.NODE_ENV === "development" ? error.message : undefined,
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -99,7 +99,7 @@ const Testimonials = () => {
             Trusted by fast-growing companies
           </p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 px-4">
-            {["HI-TECH", "CODERZWEB", "AS MOBILES", "ASQUARE", "FAISAL AUTOS"].map((brand) => (
+            {["HI-TECH", "AS MOBILES", "ASQUARE", "RRR AGRO","ZYRA","AYANGARAN","J.S Traders"].map((brand) => (
               <span key={brand} className="text-sm font-black tracking-widest text-gray-400 dark:text-gray-500">
                 {brand}
               </span>

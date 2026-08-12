@@ -26,7 +26,7 @@ const OrganizationSchema = ({
   organizationName = "CoderzWeb",
   url = "https://coderzweb.in",
   logo = "https://coderzweb.in/images/logo/logo.svg",
-  description = "Professional web development and digital marketing agency in Krishnagiri, Tamil Nadu. We create responsive websites, web apps, e-commerce solutions, and provide SEO & performance marketing services.",
+  description = "Professional web development and Performance Marketing agency in Krishnagiri, Tamil Nadu. We create responsive websites, web apps, e-commerce solutions, and provide SEO & performance marketing services.",
   telephone = "+918072770837",
   email = "coderzweb@gmail.com",
   address = {
@@ -80,7 +80,7 @@ const OrganizationSchema = ({
       "Web Development",
       "E-commerce Development",
       "SEO Services",
-      "Digital Marketing",
+      "Performance Marketing",
       "WhatsApp Business API",
       "Logo Design",
     ],
