@@ -26,13 +26,13 @@ export const portfolioData: Portfolio[] = [
   },
   {
     id: 3,
-    title: "Real Estate Developer Website",
-    category: "Real Estate",
+    title: "RRR Agro Website",
+    category: "Coconut Exporter",
    
     description:
-      "Professional real estate developer website with project listings and inquiry system.",
-    link: "https://rddevelopers.in",
-    technologies: ["Next.js", " Parallel effect library", "Forms"],
+      "Professional coconut exporter website with  inquiry system.",
+    link: "https://rrragroproducts.com/",
+    technologies: ["HTML", "CSS", "JavaScript","Forms"],
     isLive: true,
     featured: true,
   },
@@ -58,19 +58,9 @@ export const portfolioData: Portfolio[] = [
     technologies: ["HTML", "CSS", "JavaScript","AI Assistance"],
     isLive: true,
   },
+  
   {
     id: 6,
-    title: "Milk Products Website",
-    category: "Business",
-    
-    description:
-      "E-commerce website for dairy products with product listings and online ordering.",
-    link: "https://drbuddha.co",
-    technologies: ["HTML", "CSS", "JavaScript",'Forms'],
-    isLive: true,
-  },
-  {
-    id: 7,
     title: "Asquare Constructions & Real Estate",
     category: "Construction",
     
@@ -81,7 +71,7 @@ export const portfolioData: Portfolio[] = [
     isLive: true,
   },
   {
-    id: 8,
+    id: 7,
     title: "Portfolio Website",
     category: "Portfolio",
     
@@ -92,7 +82,7 @@ export const portfolioData: Portfolio[] = [
     isLive: true,
   },
   {
-    id: 9,
+    id: 8,
     title: "My-Namaz PWA Site",
     category: "Web App",
     
