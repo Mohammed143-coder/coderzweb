@@ -1,16 +1,16 @@
 # Graph Report - coderzweb-startup  (2026-08-12)
 
 ## Corpus Check
-- 56 files · ~53,098 words
+- 56 files · ~53,285 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 99 nodes · 59 edges · 44 communities (42 shown, 2 thin omitted)
+- 100 nodes · 60 edges · 44 communities (41 shown, 3 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `67d83f43`
+- Built from commit: `d07b501f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,6 +18,7 @@
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useScrollReveal()` - 16 edges
@@ -27,6 +28,7 @@
 5. `getBlogData()` - 2 edges
 6. `ModernFAQ()` - 2 edges
 7. `Hero()` - 2 edges
+8. `Gtag()` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Video()` --calls--> `useScrollReveal()`  [INFERRED]
@@ -38,14 +40,14 @@
 - `getBlogData()` --calls--> `getImagePath()`  [INFERRED]
   components/Blog/blogData.tsx → lib/utils.ts
 
-## Communities (44 total, 2 thin omitted)
+## Communities (44 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.13
 Nodes (4): ModernFAQ(), Hero(), useScrollReveal(), Video()
 
 ## Knowledge Gaps
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

@@ -200,6 +200,7 @@ const Pricing = () => {
               <OfferList text="Advanced CAPI-Tracking" status="active" />
               <OfferList text="Click-to-WhatsApp Ads" status="active" />
               <OfferList text="Shared Inbox Core" status="active" />
+              <OfferList text="10% off on Website for first 5 clients/month" status="active" />
               <OfferList text="6 Months Access" status="active" />
             </PricingBox>
 
@@ -219,6 +220,7 @@ const Pricing = () => {
               <OfferList text="Custom API Integrations" status="active" />
               <OfferList text="Advanced CAPI-Tracking" status="active" />
               <OfferList text="Multi-Agent Shared Inbox" status="active" />
+              <OfferList text="10% off on Website for first 5 clients/month" status="active" />
               <OfferList text="12 Months Access" status="active" />
             </PricingBox>
           </div>

@@ -32,32 +32,32 @@
     "hash": "f66d9864f3cf7fe2669a170d0d1263e2"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/layout.tsx": {
-    "mtime": 1774425313.4643397,
-    "hash": "4c18043976d403607136de0a4fe4c62d"
+    "mtime": 1786541984.762554,
+    "hash": "52f8678d5b5852ed8f9ea2f280acecc8"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/page.tsx": {
-    "mtime": 1774425386.0086613,
-    "hash": "9ee97f8cb4b72e2d83278060438bc613"
+    "mtime": 1786542031.4971833,
+    "hash": "fe01ddb06a1e358af59fd7df364448a7"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/not-found.tsx": {
-    "mtime": 1767961718.2331383,
-    "hash": "8be33b30eab394148e9389bd24f92c87"
+    "mtime": 1786542031.5307553,
+    "hash": "ee3a36c50eae308716c3b08708636525"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/providers.tsx": {
     "mtime": 1758528376.0,
     "hash": "f0aea068b42a99cc247dfd58aecd94f6"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/contact/page.tsx": {
-    "mtime": 1767961948.1071565,
-    "hash": "03556ff58444371d4a45b50729c42f41"
+    "mtime": 1786542031.5613172,
+    "hash": "459b83aa988cdc2dd0136c29c1a73ab6"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/api/chat/route.js": {
-    "mtime": 1771353204.2015247,
-    "hash": "bcdda6d099b41f4f01c35562004cdab8"
+    "mtime": 1786542031.422146,
+    "hash": "52e835581f28a42933a6b335d447e844"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/error/page.tsx": {
-    "mtime": 1766749016.0328498,
-    "hash": "e4db9d78aa62a724ec2d0369037fc5ec"
+    "mtime": 1786542031.5564983,
+    "hash": "e9f47c695f3272b645fb68faec2430c5"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/LogoLoop.tsx": {
     "mtime": 1763919767.7930188,
@@ -80,8 +80,8 @@
     "hash": "511855698817257ae91e02b32d2d7e63"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/StructuredData/index.tsx": {
-    "mtime": 1774425232.9313726,
-    "hash": "714833730ac6b5151049907e34e120cb"
+    "mtime": 1786542031.5070612,
+    "hash": "35926ff0d73772ca4013bd3abdef3e2e"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Video/index.tsx": {
     "mtime": 1777466811.7230291,
@@ -96,8 +96,8 @@
     "hash": "e7b49cfa6cc74cc7cecfe4167b3089ff"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Testimonials/index.tsx": {
-    "mtime": 1777467232.280021,
-    "hash": "4e95a3d960e72c962fedc792e0945255"
+    "mtime": 1786537106.3797276,
+    "hash": "3c481f56a698f165611b6d7ebd7f6e55"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Testimonials/SingleTestimonial.tsx": {
     "mtime": 1777467422.5327022,
@@ -176,11 +176,11 @@
     "hash": "e760ad50713a1b93be21fbef82043a42"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Portfolio/portfolioData.tsx": {
-    "mtime": 1786534292.5330112,
+    "mtime": 1786534412.3177571,
     "hash": "f43442920c26da15e44ae60592b5969a"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Hero/index.tsx": {
-    "mtime": 1777462992.5718324,
+    "mtime": 1786542124.10537,
     "hash": "2149667021a9b1184119ab5125441157"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Hero/TypeWriter.jsx": {
@@ -188,12 +188,12 @@
     "hash": "52383e314a0a49c96725a34be91b4e92"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Pricing/index.tsx": {
-    "mtime": 1777989822.6169705,
-    "hash": "0132247e4664cbcdb2d1c3fa1e1cba7d"
+    "mtime": 1786542031.4962459,
+    "hash": "ef13615abb679ee71f4d9aef0e9bd313"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Pricing/PricingBox.tsx": {
-    "mtime": 1777469998.0807784,
-    "hash": "6939a79494e4f5915232536bb9c75545"
+    "mtime": 1786540147.4957404,
+    "hash": "4c33cfacc76dfdf0739fcaa057864751"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Pricing/OfferList.tsx": {
     "mtime": 1777465013.5804665,
@@ -211,9 +211,9 @@
     "mtime": 1759328744.6797795,
     "hash": "ed7cb00b9365537b2d98e8528ef5ed57"
   },
-  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Analytics/gtag.js": {
-    "mtime": 1766824254.975552,
-    "hash": "d1d12da36cb12140e59f91120078f9a5"
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Analytics/gtag.tsx": {
+    "mtime": 1786534411.7335732,
+    "hash": "2d9aca232f93a7bbdc7ba6b036b14d97"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/lib/useScrollReveal.ts": {
     "mtime": 1771349441.34091,
@@ -224,7 +224,7 @@
     "hash": "f90d811feb91c3f34fab09c9283223bf"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/robots.txt": {
-    "mtime": 1777985269.3364918,
+    "mtime": 1786539867.997686,
     "hash": "efa741f61972822d06e76dbfd6d044f6"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/images/404.svg": {
