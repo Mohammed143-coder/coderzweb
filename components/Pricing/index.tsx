@@ -58,7 +58,7 @@ const Pricing = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 reveal-stagger">
             <PricingBox
               packageName="Essential"
-              price={"14,999"}
+              price={"13,999"}
               subtitle="The strategic starting point for emerging startups and lead-generation focused landing pages."
               serviceCategory="Web Architecture"
               discountCode="CW/SW/10OFF"
@@ -67,6 +67,7 @@ const Pricing = () => {
               <OfferList text="High-Performance UX/UI" status="active" />
               <OfferList text="Social Ecosystem Integration" status="active" />
               <OfferList text="Free Core SEO Optimization" status="active" />
+              <OfferList text="10% off on Domain & Hosting" status="active" />
               <OfferList text="Lead Capture Engine" status="active" />
               <OfferList text="Google Ecosystem Setup" status="active" />
               <OfferList text="Premium SSL Security" status="active" />
@@ -75,7 +76,7 @@ const Pricing = () => {
 
             <PricingBox
               packageName="Recommended"
-              price={"18,999"}
+              price={"17,999"}
               subtitle="The industry standard for high-growth brands requiring custom animations and AI integration."
               isFeatured
               serviceCategory="Web Architecture"
@@ -85,8 +86,9 @@ const Pricing = () => {
               <OfferList text="5-Page Elite Architecture" status="active" />
               <OfferList text="Cinematic UI Animations" status="active" />
               <OfferList text="Google & Bing Ecosystem Setup" status="active" />
-              <OfferList text="Free .IN Domain & 10% off on Hosting" status="active" />
               <OfferList text="AI Chatbot v1 for first 1 year" status="active" />
+               <OfferList text="Free .IN Domain & 10% off on Hosting" status="active" />
+               <OfferList text="Free Google Business page creation for first 4 clients/Month" status="active" />
               <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
 
@@ -102,7 +104,7 @@ const Pricing = () => {
               <OfferList text="Database Integration" status="active" />
               <OfferList text="AI Chatbot v1 with Live website Content Sync for first 1 year" status="active" />
               <OfferList text="Multi-Language Support (Optional)" status="active" />
-              <OfferList text="Google Business page creation for first 5 clients/Month" status="active" />
+              <OfferList text="Free Google Business page creation" status="active" />
               <OfferList text="6 months free Maintenance" status="active" />
             </PricingBox>
 
