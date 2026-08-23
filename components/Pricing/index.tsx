@@ -148,7 +148,7 @@ const Pricing = () => {
 
             <PricingBox
               packageName="Recommended"
-              price={"11,999"}
+              price={"12,999"}
               subtitle="Scaling engine for brands ready to capture market share through high-frequency content."
               isFeatured
               serviceCategory="Performance Marketing"
@@ -166,7 +166,7 @@ const Pricing = () => {
 
             <PricingBox
               packageName="Growth"
-              price={"14,999"}
+              price={"15,999"}
               subtitle="Full-spectrum Performance Marketing dominance for businesses serious about global expansion."
               serviceCategory="Performance Marketing"
               discountCode="CW/SMM/10OFF"
@@ -177,7 +177,7 @@ const Pricing = () => {
               <OfferList text="Free Meta Ads (4-Days Ad Campaign) for first 5 clients/month for 6 months." status="active" />
               <OfferList text="4 Targeted Campaign Setup" status="active" />
               <OfferList text="Femal Voiceover Casting (optional)" status="active" />
-              <OfferList text="Free Google Business page creation (worth Rs.2000)" status="active" />
+              <OfferList text="Free Google Business page creation (worth Rs.2000) (Optional)" status="active" />
               <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
             </PricingBox>
           </div>
@@ -201,12 +201,12 @@ const Pricing = () => {
               <OfferList text="Click-to-WhatsApp Ads" status="active" />
               <OfferList text="Shared Inbox Core" status="active" />
               <OfferList text="10% off on Website for first 5 clients/month" status="active" />
-              <OfferList text="6 Months Access" status="active" />
+              <OfferList text="7 Months Access" status="active" />
             </PricingBox>
 
             <PricingBox
               packageName="Growth API"
-              price={"999 / month"}
+              price={"1,111/ month"}
               subtitle="The elite communication suite with neural AI integration and high-volume broadcast limits."
               isFeatured
               serviceCategory="Official WhatsApp API"

@@ -1480,9 +1480,9 @@
       "source_file": "components/Analytics/gtag.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_analytics_gtag_tsx",
-      "target": "analytics_gtag_gtag",
-      "confidence_score": 1.0
+      "target": "analytics_gtag_gtag"
     },
     {
       "relation": "contains",
@@ -1526,5 +1526,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d07b501fecd57824baabb44c974d4fbbc63215d9"
+  "built_at_commit": "c598ac5bb43bcf11ff6c9f215d47dbef6e51d1a3"
 }
