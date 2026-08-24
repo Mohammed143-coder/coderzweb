@@ -193,7 +193,7 @@ const Pricing = () => {
               price={"1,399 / month"}
               subtitle="Automated customer engagement bridge for small teams to centralize communications."
               serviceCategory="Official WhatsApp API"
-              discountCode="CW/WA/10OFF"
+              discountCode="CW/WA/5%OFF"
             >
               <OfferList text="Official WhatsApp API v2" status="active" />
               <OfferList text="Unlimited Enterprise Broadcast" status="active" />
@@ -203,7 +203,7 @@ const Pricing = () => {
               <OfferList text="Click-to-WhatsApp Ads" status="active" />
               <OfferList text="Shared Inbox Core" status="active" />
               <OfferList text="10% off on Website for first 5 clients/month" status="active" />
-              <OfferList text="7 Months Access" status="active" />
+              <OfferList text="6 Months Access" status="active" />
             </PricingBox>
 
             <PricingBox
@@ -212,7 +212,7 @@ const Pricing = () => {
               subtitle="The elite communication suite with neural AI integration and high-volume broadcast limits."
               isFeatured
               serviceCategory="Official WhatsApp API"
-              discountCode="CW/WA/10OFF"
+              discountCode="CW/WA/5%OFF"
             >
               <OfferList text="Official WhatsApp API v2" status="active" />
               <OfferList text="Unlimited Enterprise Broadcast" status="active" />
