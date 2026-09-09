@@ -13,7 +13,7 @@ const ChatBox = dynamic(() => import("../ChatBot"), { ssr: false });
 
 
 const Footer = () => {
-  const msg = `Hi, I'm planning to build website for my business, Checking from your website ?`;
+  const msg = `Hi, I'm planning to build my business onl, Checking from your services?`;
   return (
     <>
       <footer
