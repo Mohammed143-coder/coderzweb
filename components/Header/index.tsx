@@ -145,9 +145,9 @@ const Header = () => {
                     </Link>
                   </li>
                 ))}
-                <li className="mt-4 lg:ml-4 lg:mt-0">
+                {/* <li className="mt-4 lg:ml-4 lg:mt-0">
                   <ThemeToggler />
-                </li>
+                </li> */}
               </ul>
             </nav>
 

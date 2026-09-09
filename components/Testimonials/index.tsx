@@ -122,7 +122,7 @@ const Testimonials = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="group flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
+        {/* <div className="group flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
           <div className="flex animate-marquee-reverse gap-6 py-4 group-hover:[animation-play-state:paused]" style={{ "--duration": "50s", "--gap": "24px" } as React.CSSProperties}>
             {row2.map((testimonial, idx) => (
               <div key={`row2-${idx}`} className="w-[350px] shrink-0 md:w-[450px]">
@@ -130,7 +130,7 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Decorative Orbs */}

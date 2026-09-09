@@ -4,7 +4,7 @@ import { getImagePath } from "@/lib/utils";
 import Link from "next/link";
 import { MdOutlineCopyright, MdOutlineDoubleArrow } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { LuPhoneCall } from "react-icons/lu";
+import { LuMail, LuPhoneCall } from "react-icons/lu";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { PiInstagramLogoDuotone } from "react-icons/pi";
 import dynamic from "next/dynamic";
@@ -30,7 +30,7 @@ const Footer = () => {
                   CODERZWEB
                 </Link>
                 <p className="mb-9 text-base font-medium leading-relaxed text-gray-500 dark:text-gray-400">
-                  Engineering high-performance digital experiences. We craft modern, scalable solutions that transform businesses and build lasting digital authority.
+                  Engineering high-performance digital experiences at Krishnagiri & across India. We craft modern, scalable solutions that transform businesses and build lasting digital authority.
                 </p>
                 <div className="flex items-center gap-4">
                   {[
@@ -79,10 +79,11 @@ const Footer = () => {
                 <ul className="space-y-4">
                   {[
                     "Web Architecture",
-                    "PWA Development",
-                    "Digital Strategy",
+                    "Digital Marketing",
                     "AI Automation",
-                    "Cloud Hosting"
+                    "Performance Marketing",
+                    "E-Commerce Solutions",
+                    "Video Production",
                   ].map((service) => (
                     <li key={service}>
                       <Link
@@ -113,7 +114,21 @@ const Footer = () => {
                       </div>
                       <div>
                         <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Call Us</p>
-                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors whitespace-normal">+91 80727 70837 / +91 79044 63409</p>
+                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors whitespace-normal">80727 70837 / 79044 63409</p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="mailto:info@coderzweb.in"
+                      className="group flex items-start gap-4"
+                    >
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/5 text-primary">
+                        <LuMail />
+                      </div>
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Email Us</p>
+                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors whitespace-normal">info@coderzweb.in</p>
                       </div>
                     </Link>
                   </li>
@@ -142,7 +157,7 @@ const Footer = () => {
               © {new Date().getFullYear()} CoderzWeb. Engineering Digital Excellence.
             </p>
             <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-              Crafted ❤️ by <span className="font-bold text-black dark:text-white">@Founder CoderzWeb</span>
+              Crafted ❤️ By <span className="font-bold text-black dark:text-white">Team CoderzWeb</span>
             </p>
           </div>
         </div>

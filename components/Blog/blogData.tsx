@@ -10,9 +10,9 @@ const getBlogData = (): Blog[] => [
     author: {
       name: "Mohammed Junaith",
       image: getImagePath("/images/blog/coderzweb-blog1.webp"),
-      designation: "Full Stack Developer",
+      designation: "Founder @coderzweb",
     },
-    tags: ["Founder"],
+    tags: ["Full Stack Developer"],
     publishDate: "2025",
   },
   {
@@ -23,9 +23,9 @@ const getBlogData = (): Blog[] => [
     author: {
       name: "Ayub Khan",
     image: getImagePath("/images/blog/coderzweb-blog2.webp"),
-      designation: "Flutter Developer",
+      designation: "Co-Founder @coderzweb",
     },
-    tags: ["Co-Founder"],
+    tags: ["Flutter Developer"],
     publishDate: "2025",
   },
   {
@@ -36,9 +36,9 @@ const getBlogData = (): Blog[] => [
     author: {
       name: "Thousif",
       image: getImagePath("/images/blog/coderzweb-blog3.webp"),
-      designation: "Graphic Designer",
+      designation: "Editor & Designer @coderzweb",
     },
-    tags: ["Designer"],
+    tags: ["Editor & Designer"],
     publishDate: "2025",
   },
 ];

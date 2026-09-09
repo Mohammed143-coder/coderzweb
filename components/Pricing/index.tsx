@@ -67,7 +67,7 @@ const Pricing = () => {
               <OfferList text="High-Performance UX/UI" status="active" />
               <OfferList text="Social Ecosystem Integration" status="active" />
               <OfferList text="Free Core SEO Optimization" status="active" />
-              <OfferList text="10% off on Domain & Hosting" status="active" />
+              <OfferList text="10% off on Domain & Hosting for 1st year" status="active" />
               <OfferList text="Lead Capture Engine" status="active" />
               <OfferList text="Google Ecosystem Setup" status="active" />
               <OfferList text="Premium SSL Security" status="active" />
@@ -83,12 +83,12 @@ const Pricing = () => {
               discountCode="CW/SW/10OFF"
             >
               <OfferList text="Everything in Essential" status="active" />
-              <OfferList text="5-Page Elite Architecture" status="active" />
+              <OfferList text="3-5 Page Architecture" status="active" />
               <OfferList text="Cinematic UI Animations" status="active" />
               <OfferList text="Google & Bing Ecosystem Setup" status="active" />
               <OfferList text="AI Chatbot v1 for first 1 year" status="active" />
-               <OfferList text="Free .IN Domain & 10% off on Hosting" status="active" />
-               <OfferList text="Free Google Business page creation for first 4 clients/Month" status="active" />
+              <OfferList text="Free .IN Domain & 10% off on Hosting for 1st year" status="active" />
+              <OfferList text="Free Google Business page creation for first 4 clients/Month" status="active" />
               <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
 
@@ -104,6 +104,7 @@ const Pricing = () => {
               <OfferList text="Database Integration" status="active" />
               <OfferList text="AI Chatbot v1 with Live website Content Sync for first 1 year" status="active" />
               <OfferList text="Multi-Language Support (Optional)" status="active" />
+              <OfferList text="Free Domain & 10% off on Hosting for 1st year" status="active" />
               <OfferList text="Free Google Business page creation" status="active" />
               <OfferList text="6 months free Maintenance" status="active" />
             </PricingBox>
@@ -118,13 +119,13 @@ const Pricing = () => {
               <OfferList text="Global Commerce Strategy" status="active" />
 
               <OfferList text="Custom Liquid/React UI" status="active" />
-              <OfferList text="Free .com Domain on 1st year for first 5 clients/Month" status="active" />
+              <OfferList text="Free Domain on 1st year for first 5 clients/Month" status="active" />
               <OfferList text="Cart Optimization Suite" status="active" />
               <OfferList text="Mobile-First Architecture" status="active" />
               <OfferList text="Social Ecosystem Integration" status="active" />
               <OfferList text="Inventory Automation" status="active" />
               <OfferList text="Google Business page creation for first 5 clients/Month" status="active" />
-              <OfferList text="6 months free Maintenance" status="active" />
+              <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
           </div>
         )}
@@ -148,7 +149,7 @@ const Pricing = () => {
               <OfferList text="Brand Trust Foundation" status="active" />
             </PricingBox>
 
-            <PricingBox
+            {/* <PricingBox
               packageName="Recommended"
               price={"12,999"}
               subtitle="Scaling engine for brands ready to capture market share through high-frequency content."
@@ -164,25 +165,46 @@ const Pricing = () => {
               <OfferList text="Free Ad shoot scripting" status="active" />
               <OfferList text="Femal Voiceover Casting (optional)" status="active" />
               <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
-            </PricingBox>
+            </PricingBox> */}
 
             <PricingBox
-              packageName="Growth"
-              price={"15,999"}
+              packageName="Recommended"
+              price={"14,999"}
               subtitle="Full-spectrum Performance Marketing dominance for businesses serious about global expansion."
+              isFeatured
               serviceCategory="Performance Marketing"
               discountCode="CW/SMM/10OFF"
             >
-              <OfferList text="6 Elite Visual Posters" status="active" />
+              <OfferList text="4 Elite Visual Posters" status="active" />
               <OfferList text="2 Professional video shoots" status="active" />
-              <OfferList text="3 promotional Video Editing with Animation " status="active" />
-              <OfferList text="Free Meta Ads (4-Days Ad Campaign) for first 5 clients/month for 6 months." status="active" />
+              <OfferList text="3 Promotional Video Editing with Animation " status="active" />
               <OfferList text="4 Targeted Campaign Setup" status="active" />
               <OfferList text="Femal Voiceover Casting (optional)" status="active" />
-              <OfferList text="Free Google Business page creation (worth Rs.2000) (Optional)" status="active" />
+              <OfferList text="Free Meta Ads (3-Days Ad Campaign) for first 5 clients/month for 6 months." status="active" />
               <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
+              <OfferList text="Free Google Business page creation (worth Rs.2000) (Optional)" status="active" />
+
+            </PricingBox>
+            <PricingBox
+              packageName="Growth"
+              price={"Custom"}
+              subtitle="Scaling engine for brands ready to capture market share through high-frequency content."
+
+              serviceCategory="Performance Marketing"
+              discountCode="CW/SMM/10OFF"
+            >
+              <OfferList text="Elite Visual Posters" status="active" />
+              <OfferList text="Free Ad shoot scripting" status="active" />
+              <OfferList text="Professional video shoot" status="active" />
+              <OfferList text="Promotional Video Editing with Animation " status="active" />
+              <OfferList text="Targeted Campaign Setup " status="active" />
+              <OfferList text="Femal Voiceover Casting (optional)" status="active" />
+              <OfferList text="Free Meta Ads (4-Days Ad Campaign) for first 5 clients/month for 6 months." status="active" />
+              <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
+              <OfferList text="Free Google Business page creation (worth Rs.2000) (Optional)" status="active" />
             </PricingBox>
           </div>
+
         )}
 
         {/* ================= WHATSAPP API ================= */}
@@ -199,6 +221,7 @@ const Pricing = () => {
               <OfferList text="Unlimited Enterprise Broadcast" status="active" />
               <OfferList text="Zero Setup Cost" status="active" />
               <OfferList text="Scheduled Narrative Flows" status="active" />
+              <OfferList text="Advanced AI Chatbot Bridge" status="active" />
               <OfferList text="Advanced CAPI-Tracking" status="active" />
               <OfferList text="Click-to-WhatsApp Ads" status="active" />
               <OfferList text="Shared Inbox Core" status="active" />
@@ -207,8 +230,8 @@ const Pricing = () => {
             </PricingBox>
 
             <PricingBox
-              packageName="Growth API"
-              price={"1,111/ month"}
+              packageName="Recommended API"
+              price={"1,111 / month"}
               subtitle="The elite communication suite with neural AI integration and high-volume broadcast limits."
               isFeatured
               serviceCategory="Official WhatsApp API"
@@ -220,8 +243,9 @@ const Pricing = () => {
               <OfferList text="Scheduled Narrative Flows" status="active" />
               <OfferList text="Advanced AI Chatbot Bridge" status="active" />
               <OfferList text="Custom API Integrations" status="active" />
+              <OfferList text="Click-to-WhatsApp Ads" status="active" />
               <OfferList text="Advanced CAPI-Tracking" status="active" />
-              <OfferList text="Multi-Agent Shared Inbox" status="active" />
+              <OfferList text="Shared Inbox Core" status="active" />
               <OfferList text="10% off on Website for first 5 clients/month" status="active" />
               <OfferList text="12 Months Access" status="active" />
             </PricingBox>
