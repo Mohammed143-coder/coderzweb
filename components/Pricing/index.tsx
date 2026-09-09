@@ -178,7 +178,7 @@ const Pricing = () => {
               <OfferList text="4 Elite Visual Posters" status="active" />
               <OfferList text="2 Professional video shoots" status="active" />
               <OfferList text="3 Promotional Video Editing with Animation " status="active" />
-              <OfferList text="4 Targeted Campaign Setup" status="active" />
+              <OfferList text="3 Targeted Campaign Setup" status="active" />
               <OfferList text="Femal Voiceover Casting (optional)" status="active" />
               <OfferList text="Free Meta Ads (3-Days Ad Campaign) for first 5 clients/month for 6 months." status="active" />
               <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
