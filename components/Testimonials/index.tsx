@@ -10,7 +10,7 @@ const getTestimonialData = (): Testimonial[] => [
   {
     id: 1,
     name: "Hasane Mehadi",
-    designation: "Co-Founder @hitechconstructions",
+    designation: "MD @hitechconstructions",
     content:
       "Professional web development with clean design, fast delivery & SEO-friendly sites. Perfect for startups & businesses looking to grow online.",
     image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
@@ -37,7 +37,7 @@ const getTestimonialData = (): Testimonial[] => [
   {
     id: 4,
     name: "Asquare Constructions",
-    designation: "Owner @Asquare Constructions",
+    designation: "Founder @Asquare Constructions",
     content:"We’re very happy with the website developed by CoderzWeb for our Asquare construction and real estate business. The website is highly optimised, quick, and SEO-friendly, and the price was reasonable.",
     image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
     star: 5,
@@ -48,14 +48,23 @@ const getTestimonialData = (): Testimonial[] => [
     designation: "Sales manager",
     content:"Excellent web development service by coderzweb! They built our modern, fast website using Next.js. Great design, timely delivery, and professional support.",
     image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
-    star: 5,
+    star: 4,
   },
   {
     id: 6,
-    name: "Mohammed Faisal",
-    designation: "Manager @faisalautos",
+    name: "Rama Krishnan",
+    designation: "Owner @GP Motors",
     content:
-      "Best web development company in Krishnagiri. They built our auto parts store website and helped with Google Ads. Revenue doubled in 3 months!",
+      "Excellent service by CoderzWeb for our GP Motors’ Google Business Profile setup & optimization. Professional support, affordable pricing, better local visibility and fast response. Highly recommended for business growth services in Krishnagiri.",
+    image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
+    star: 5,
+  },
+   {
+    id: 7,
+    name: "Habibul Islam",
+    designation: "Owner @Sk Al Interior₹",
+    content:
+      "The performance marketing team delivered well-structured campaigns and maintained clear communication throughout the process. Their strategic approach helped improve our online visibility and generate quality leads for our business",
     image: <BsPersonCheck className="w-7 h-7" aria-hidden="true" />,
     star: 5,
   },
@@ -99,7 +108,7 @@ const Testimonials = () => {
             Trusted by fast-growing companies
           </p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 px-4">
-            {["HI-TECH", "AS MOBILES", "ASQUARE", "RRR AGRO","ZYRA","AYANGARAN","J.S Traders"].map((brand) => (
+            {["HI-TECH", "AS MOBILES", "ASQUARE", "RRR AGRO","ZYRA","AYANGARAN","J.S Traders","MNJ PRE SCHOOL"].map((brand) => (
               <span key={brand} className="text-sm font-black tracking-widest text-gray-400 dark:text-gray-500">
                 {brand}
               </span>
