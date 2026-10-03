@@ -142,7 +142,7 @@ const Footer = () => {
                       </div>
                       <div>
                         <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Visit Us</p>
-                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors">Rajajinagar, Krishnagiri</p>
+                        <p className="text-base font-bold text-black dark:text-white group-hover:text-primary transition-colors">Stadium 2nd Gate Opposite, Rajajinagar, Krishnagiri</p>
                       </div>
                     </Link>
                   </li>

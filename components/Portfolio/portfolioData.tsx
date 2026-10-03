@@ -47,6 +47,7 @@ export const portfolioData: Portfolio[] = [
     technologies: ["Next.js", "Qr library", "API"],
     isLive: true,
   },
+  
   {
     id: 5,
     title: "HI-Tech Constructions Website",
@@ -72,6 +73,17 @@ export const portfolioData: Portfolio[] = [
   },
   {
     id: 7,
+    title: "Construction Website",
+    category: "Construction",
+    description:
+      "Professional construction website showcasing services, projects, and company profile.",
+      link:"https://best-construction.onrender.com",
+    technologies: ["Next.js", "Tailwind CSS", "Forms","Gsap Animations"],
+    isLive: true,
+  },
+  
+  {
+    id: 8,
     title: "Portfolio Website",
     category: "Portfolio",
     
@@ -82,7 +94,7 @@ export const portfolioData: Portfolio[] = [
     isLive: true,
   },
   {
-    id: 8,
+    id: 9,
     title: "My-Namaz PWA Site",
     category: "Web App",
     

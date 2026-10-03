@@ -76,7 +76,7 @@ const Pricing = () => {
 
             <PricingBox
               packageName="Recommended"
-              price={"17,999"}
+              price={"23,999"}
               subtitle="The industry standard for high-growth brands requiring custom animations and AI integration."
               isFeatured
               serviceCategory="Web Architecture"
@@ -86,13 +86,14 @@ const Pricing = () => {
               <OfferList text="3-5 Page Architecture" status="active" />
               <OfferList text="Cinematic UI Animations" status="active" />
               <OfferList text="Google & Bing Ecosystem Setup" status="active" />
+              <OfferList text="Multi-Language Support (Optional)" status="active" />
               <OfferList text="Free AI Chatbot v1 for first 1st year" status="active" />
               <OfferList text="Free .IN Domain & 10% off on Hosting for 1st year" status="active" />
-              <OfferList text="Free Google Business page creation for first 3 clients/Month" status="active" />
+              <OfferList text="Free Google Business page creation for first 4 clients/Month" status="active" />
               <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
 
-            <PricingBox
+            {/* <PricingBox
               packageName="Web Booster"
               price={"25,999"}
               subtitle="Full-scale digital transformation with PWA capabilities and comprehensive multi-language support."
@@ -107,11 +108,11 @@ const Pricing = () => {
               <OfferList text="Free Domain & 10% off on Hosting for 1st year" status="active" />
               <OfferList text="Free Google Business page creation" status="active" />
               <OfferList text="6 months free Maintenance" status="active" />
-            </PricingBox>
+            </PricingBox> */}
 
             <PricingBox
               packageName="E-Commerce"
-              price={"29,999"}
+              price={"33,999"}
               subtitle="Engineered for modern high-volume retail. Lightning-fast Shopify experiences for global brands."
               serviceCategory="Web Architecture"
               discountCode="CW/E-Com/10OFF"
@@ -119,12 +120,13 @@ const Pricing = () => {
               <OfferList text="Global Commerce Strategy" status="active" />
 
               <OfferList text="Custom Liquid/React UI" status="active" />
-              <OfferList text="Free Domain on 1st year for first 5 clients/Month" status="active" />
+              <OfferList text="Free .IN Domain for 1st year" status="active" />
               <OfferList text="Cart Optimization Suite" status="active" />
               <OfferList text="Mobile-First Architecture" status="active" />
               <OfferList text="Social Ecosystem Integration" status="active" />
               <OfferList text="Inventory Automation" status="active" />
-              <OfferList text="Google Business page creation for first 5 clients/Month" status="active" />
+              <OfferList text="Google & Bing Ecosystem Setup" status="active" />
+              <OfferList text="Google Business page creation for first 4 clients/Month" status="active" />
               <OfferList text="4 months free Maintenance" status="active" />
             </PricingBox>
           </div>
@@ -145,11 +147,11 @@ const Pricing = () => {
               <OfferList text="Meta Ads for 3 Days ads credit is included" status="active" />
               <OfferList text="2 Targeted Campaign Setup" status="active" />
               <OfferList text="Femal Voiceover Casting (Optional)" status="active" />
-              <OfferList text="Free Complete Account Setup (worth Rs.1500) (Optional)" status="active" />
+              {/* <OfferList text="Free Complete Account Setup (worth Rs.1500) (Optional)" status="active" /> */}
               <OfferList text="Brand Awareness Foundation" status="active" />
             </PricingBox>
 
-           
+
 
             <PricingBox
               packageName="Recommended"
@@ -164,7 +166,7 @@ const Pricing = () => {
               <OfferList text="3 Promotional Video Editing with Animation " status="active" />
               <OfferList text="3 Targeted Campaign Setup" status="active" />
               <OfferList text="Femal Voiceover Casting (Optional)" status="active" />
-              <OfferList text="Free Meta Ads (3-Days Ad Campaign) for first 3 clients/month for 6 months." status="active" />
+              <OfferList text="Free Meta Ads (3-Days Ad Campaign) for first 3 clients/month for 5 months." status="active" />
               <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
 
             </PricingBox>
@@ -182,7 +184,7 @@ const Pricing = () => {
               <OfferList text="Custom Targeted Campaign Setup" status="active" />
 
               <OfferList text="Free Ad Shoot Scripting" status="active" />
-              <OfferList text="Female Voiceover Casting (Optional)" status="active" />
+              <OfferList text="Female Voiceover Casting" status="active" />
               <OfferList text="Free Meta Ads (4-Days Ad Campaign) for first 3 clients/month for 7 months." status="active" />
 
               <OfferList text="Free Complete Account Setup (worth Rs.1500)" status="active" />
@@ -221,7 +223,7 @@ const Pricing = () => {
               serviceCategory="Official WhatsApp API"
               discountCode="CW/WA/5%OFF"
             >
-              <OfferList text="Official WhatsApp API v2" status="active" />
+              <OfferList text="Official WhatsApp API" status="active" />
               <OfferList text="Unlimited Enterprise Broadcast" status="active" />
               <OfferList text="Zero Setup Cost" status="active" />
               <OfferList text="Scheduled Narrative Flows" status="active" />
@@ -265,7 +267,10 @@ const Pricing = () => {
 
               <OfferList text="Advanced CAPI-Tracking" status="active" />
               <OfferList text="10% off on Website for first 5 clients/month" status="active" />
+<OfferList text="Free Google Business page creation (worth Rs.2000) (Optional)" status="active" />
+
               <OfferList text="12 Months Access" status="active" />
+              
             </PricingBox>
           </div>
         )}
