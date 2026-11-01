@@ -31,13 +31,17 @@
     "mtime": 1758528376.0,
     "hash": "f66d9864f3cf7fe2669a170d0d1263e2"
   },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/types/declarations.d.ts": {
+    "mtime": 1793518448.6814568,
+    "hash": "ce7ed93035ddb1f9462f064400421a36"
+  },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/layout.tsx": {
-    "mtime": 1786541984.762554,
-    "hash": "52f8678d5b5852ed8f9ea2f280acecc8"
+    "mtime": 1793518699.6149423,
+    "hash": "5d293b99010d9a73041b929acf102f8b"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/page.tsx": {
-    "mtime": 1786542031.4971833,
-    "hash": "fe01ddb06a1e358af59fd7df364448a7"
+    "mtime": 1793514412.4681218,
+    "hash": "527d08c72b1a71b5a48ef76a9b971025"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/not-found.tsx": {
     "mtime": 1786542031.5307553,
@@ -48,8 +52,8 @@
     "hash": "f0aea068b42a99cc247dfd58aecd94f6"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/contact/page.tsx": {
-    "mtime": 1786542031.5613172,
-    "hash": "459b83aa988cdc2dd0136c29c1a73ab6"
+    "mtime": 1793532962.3116708,
+    "hash": "c3a02bdb2a4fd0e8841c302d8897088e"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/app/api/chat/route.js": {
     "mtime": 1786542031.422146,
@@ -75,9 +79,13 @@
     "mtime": 1771317104.423249,
     "hash": "4e1f99eb1c50c94764ec51de9bb16f83"
   },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/FaqSchema/index.tsx": {
+    "mtime": 1793519154.2746801,
+    "hash": "819f450c44ef7744a06f7f0e5018be3e"
+  },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Footer/index.tsx": {
-    "mtime": 1791041177.1817422,
-    "hash": "8c096de25ca9f1e7bc41a069978e945e"
+    "mtime": 1793528210.566738,
+    "hash": "cce7d04176c48e06041dfbc7b72f8563"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/StructuredData/index.tsx": {
     "mtime": 1786542031.5070612,
@@ -160,8 +168,8 @@
     "hash": "4771a124c0353451cb0aa8aa25e5fdd6"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/ModernFAQ.jsx": {
-    "mtime": 1777465875.994815,
-    "hash": "2b371e0224fda553e65fdd9c30a019a9"
+    "mtime": 1793520058.5727704,
+    "hash": "2dafd4ae113245b104963248b385b0b9"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Common/SectionTitle.tsx": {
     "mtime": 1771331779.1326547,
@@ -178,6 +186,10 @@
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Portfolio/portfolioData.tsx": {
     "mtime": 1791032987.6456263,
     "hash": "4b8ecc99d0d40a01d1c3bdf63ed23ce1"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/WhatsAppWidget/index.jsx": {
+    "mtime": 1793532070.4270325,
+    "hash": "b9333d0e29e0b3f5f5f0b1609c52321f"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/components/Hero/index.tsx": {
     "mtime": 1786542124.10537,
@@ -222,6 +234,10 @@
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/lib/utils.ts": {
     "mtime": 1758528376.0,
     "hash": "f90d811feb91c3f34fab09c9283223bf"
+  },
+  "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/llms.txt": {
+    "mtime": 1793532214.5768442,
+    "hash": "079c1a3565aa6949bdec5da9a46d30f4"
   },
   "/Users/mohammed/Documents/Coder-junaith/CoderzWeb/Websites/clients_websites/coderzweb-startup/public/robots.txt": {
     "mtime": 1786539867.997686,

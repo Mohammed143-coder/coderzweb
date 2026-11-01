@@ -4,89 +4,41 @@
 
 CODERZWEB builds enterprise-grade digital systems engineered for speed, search dominance, and measurable revenue growth. We combine modern front-end web architecture (Next.js, React, Tailwind CSS) with data-driven performance marketing (Meta Ads, Google Ads) and AI-powered CRM automation (Official WhatsApp Business API).
 
-## Business Details
-- **Entity Name**: CODERZWEB
-- **Alternative Names**: CoderzWeb Krishnagiri, CoderzWeb Hosur, Coderz Web Technologies
-- **Website**: https://coderzweb.in
-- **Headquarters**: Stadium 2nd Gate Opposite, 2nd Cross Street, Rajaji Nagar, Krishnagiri, Tamil Nadu - 635001, India
-- **Primary Phone**: +91 80727 70837
-- **Secondary Phone**: +91 79044 63409
-- **Email**: info@coderzweb.in
-- **Working Hours**: Monday to Saturday, 10:00 AM – 7:00 PM IST (Sunday Closed)
-- **Client Rating**: 4.9 / 5 (Verified Client Reviews)
-- **Track Record**: 25+ successful live deployments across commercial, export, and retail sectors
+## Core Services
+
+- [Custom Web Development](https://coderzweb.in/#services): High-performance Next.js and React responsive websites built for 40% faster load speed, SEO dominance, and lead conversion.
+- [E-Commerce Solutions](https://coderzweb.in/#services): Full-stack online stores with Razorpay, UPI, and card gateways, automated inventory syncing, and mobile-first UX.
+- [Performance Marketing](https://coderzweb.in/#services): ROI-driven Meta Ads and Google Ads campaigns for local and pan-India customer acquisition.
+- [WhatsApp Business API](https://coderzweb.in/#services): Official WhatsApp CRM integration for automated instant inquiry follow-ups and broadcast marketing.
+- [UI/UX & Logo Design](https://coderzweb.in/#services): Brand identity creation, custom vector logos, color palettes, and modern design systems.
+- [Video Production & Reels](https://coderzweb.in/#services): High-converting commercial video production, social media ad creatives, and promotional reels.
 
 ## Geographic Service Hubs
-CODERZWEB provides on-site consultations and remote digital engineering across:
-- **Krishnagiri**: Primary headquarters, serving granite exporters, agro-businesses, schools, and local retail.
-- **Hosur**: Primary B2B growth market, building product catalogs and lead engines for manufacturing units in SIPCOT I & II and auto-component suppliers.
-- **Bangalore (Bengaluru)**: Serving tech startups, D2C brands, and corporate enterprises along the Electronic City and South Bangalore corridor with high-performance Next.js engineering at cost-effective rates.
-- **Dharmapuri**: Digital solutions for medical, education, agro-processing, and commercial enterprises.
-- **Tirupattur**: Web development and e-commerce platforms for leather manufacturers, export traders, and retail businesses.
-- **Bargur & Shoolagiri**: Web design and marketing for educational institutions, warehousing, and highway retail logistics.
-- **Pan-India**: Remote software and web app engineering for clients in Mumbai, Delhi, Chennai, and Hyderabad.
 
-## Core Services & Capabilities
+- [Krishnagiri Web Development](https://coderzweb.in/): Physical headquarters in Rajaji Nagar serving granite exporters, agro-businesses, and retail.
+- [Hosur Web Development](https://coderzweb.in/): B2B web development for manufacturing units in SIPCOT I & II and auto suppliers.
+- [Bangalore Web Development](https://coderzweb.in/): Next.js web engineering for tech startups and D2C brands along the Electronic City corridor.
+- [Dharmapuri Web Design](https://coderzweb.in/): Web architecture for healthcare, education, and agro-processing businesses.
+- [Tirupattur Web Design](https://coderzweb.in/): E-commerce and digital platforms for leather exporters and retail merchants.
+- [Bargur & Shoolagiri Web Design](https://coderzweb.in/): Website development for colleges, warehousing, and highway retail logistics.
 
-### 1. Custom Website & Web Application Development
-- Engineering lightning-fast websites using modern tech stacks: Next.js (App Router), React, Tailwind CSS, TypeScript, and Node.js.
-- Single-page landing architectures, corporate websites, dynamic portals, and Progressive Web Apps (PWAs) with iOS and Android sync.
-- 40% faster loading speeds and 100/100 Core Web Vitals optimization compared to legacy WordPress templates.
+## Packages & Pricing
 
-### 2. E-Commerce Solutions
-- Full-stack custom online stores with mobile-first UI/UX.
-- Integrated domestic and international payment gateways: Razorpay, UPI, Cashfree, Stripe, Credit/Debit cards.
-- Automated inventory synchronization, abandoned cart recovery, and direct WhatsApp order notifications.
+- [Essential Package](https://coderzweb.in/#pricing): ₹13,999 - Custom landing page, mobile responsiveness, free SSL, core SEO, and 3 months maintenance.
+- [Recommended Tier](https://coderzweb.in/#pricing): ₹23,999 - 3 to 5 pages, custom UI animations, AI chatbot v1, free .IN domain, and 4 months maintenance.
+- [E-Commerce Tier](https://coderzweb.in/#pricing): ₹33,999 - Full online store, payment gateways, cart optimization, and 4 months maintenance.
 
-### 3. Performance Marketing (Meta & Google Ads)
-- ROI-driven lead generation campaigns on Meta (Facebook & Instagram) and Google Search / Display.
-- Localized audience targeting for retail showrooms, service providers, and B2B industrial suppliers.
+## Verified Deployments
 
-### 4. Official WhatsApp Business API Automation
-- Verified WhatsApp Business API setup for automated instant inquiries, bulk broadcasts, and CRM integration.
-- Automated customer follow-ups, lead qualification bots, and order status alerts.
+- [Granite Exporter Portal](https://coderzweb.in/#portfolio): Product catalog architecture with WhatsApp B2B inquiry funnels for Krishnagiri granite suppliers.
+- [Construction & Real Estate](https://coderzweb.in/#portfolio): High-converting lead generation landing pages for Asquare Constructions and HI-TECH Constructions.
+- [Agro Export Website](https://coderzweb.in/#portfolio): Global corporate export website with multi-currency quotation request system (RRR Agro).
+- [Automotive Services](https://coderzweb.in/#portfolio): Local search dominance and Google Business Profile optimization for GP Motors.
 
-### 5. UI/UX, Logo Design & Branding
-- Custom brand identity creation, responsive vector logos, brand color systems, and modern design guidelines.
+## Company Details
 
-### 6. Promotional Video Production & Ad Creatives
-- High-converting short-form video production, Instagram Reels, promotional commercial videos, and social media creative assets.
+- [Contact CODERZWEB](https://coderzweb.in/contact): Stadium 2nd Gate Opposite, 2nd Cross Street, Rajaji Nagar, Krishnagiri, Tamil Nadu - 635001. Phone: +91 80727 70837 / +91 79044 63409, Email: info@coderzweb.in.
 
-## Transparent Pricing & Packages
+## Optional
 
-- **Essential Package (₹13,999)**:
-  - High-performance landing page architecture
-  - Mobile-responsive UI/UX design
-  - Free Core SEO setup and indexing
-  - Free SSL security certificate
-  - 10% discount on hosting & domain setup for 1st year
-  - 3 months complimentary technical maintenance
-- **Recommended / Best Value Tier (₹23,999)**:
-  - 3 to 5-page custom business website architecture
-  - Cinematic UI animations and custom interactions
-  - Free AI chatbot integration (v1) for the 1st year
-  - Free .IN domain registration and 10% off cloud hosting
-  - Google & Bing Search Console ecosystem setup
-  - Free Google Business Profile setup and local optimization
-  - 4 months complimentary technical maintenance
-- **E-Commerce Architecture (₹33,999)**:
-  - Full-scale online retail storefront with custom Liquid / React / Next.js UI
-  - Multi-payment gateway integration (Razorpay, UPI, Cards)
-  - Mobile-first shopping cart and checkout optimization
-  - Inventory management automation and WhatsApp lead/order sync
-  - Free .IN domain registration for the 1st year
-  - 4 months complimentary technical maintenance
-
-## Industry Case Studies & Deployments
-- **Granite & Stone Exporter Portal**: Custom product showcase architecture with WhatsApp B2B inquiry funnels for Krishnagiri granite suppliers.
-- **Construction & Real Estate**: High-converting lead generation landing pages for Asquare Constructions and HI-TECH Constructions.
-- **Agro & Coconut Exporter**: Global corporate export website with multi-currency quotation request system (RRR Agro).
-- **Automotive Services**: Local search dominance and Google Business Profile ranking optimization for GP Motors.
-- **SaaS & Dynamic QR Generator**: Custom progressive web application with trackable dynamic QR code APIs (QRNest).
-
-## Contact & Direct Inquiries
-- **Official Website**: https://coderzweb.in
-- **Sales Hotline / WhatsApp**: +91 80727 70837
-- **Secondary Contact**: +91 79044 63409
-- **Inquiry Email**: info@coderzweb.in
-- **Direct WhatsApp Chat**: https://wa.me/918072770837
+- [Full Documentation](https://coderzweb.in/llms-full.txt): Extended technical specifications, detailed case studies, and complete client testimonials.

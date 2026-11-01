@@ -1,16 +1,16 @@
-# Graph Report - coderzweb-startup  (2026-10-03)
+# Graph Report - coderzweb-startup  (2026-11-01)
 
 ## Corpus Check
-- 56 files · ~54,303 words
+- 59 files · ~56,370 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 101 nodes · 61 edges · 44 communities (41 shown, 3 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
+- 106 nodes · 63 edges · 47 communities (44 shown, 3 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a17fa9e9`
+- Built from commit: `b8f32a6d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,7 +40,7 @@
 - `getBlogData()` --calls--> `getImagePath()`  [INFERRED]
   components/Blog/blogData.tsx → lib/utils.ts
 
-## Communities (44 total, 3 thin omitted)
+## Communities (47 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.13
