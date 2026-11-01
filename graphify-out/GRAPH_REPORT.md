@@ -1,16 +1,16 @@
-# Graph Report - coderzweb-startup  (2026-09-27)
+# Graph Report - coderzweb-startup  (2026-10-03)
 
 ## Corpus Check
-- 56 files · ~53,621 words
+- 56 files · ~54,303 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 100 nodes · 60 edges · 44 communities (41 shown, 3 thin omitted)
+- 101 nodes · 61 edges · 44 communities (41 shown, 3 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4b2dbe43`
+- Built from commit: `a17fa9e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,7 +18,7 @@
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
-- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useScrollReveal()` - 16 edges

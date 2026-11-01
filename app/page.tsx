@@ -23,7 +23,7 @@ const TechLogos = dynamic(() => import("@/components/TechLogos"), { ssr: false }
 const Portfolio = dynamic(() => import("@/components/Portfolio"));
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Professional Web Development & Performance Marketing agency in Krishnagiri",
+  title: "CODERZWEB | Web Development & Marketing Agency Krishnagiri & Hosur",
   description:
     "Award-winning web development and Best Performance Marketing services in Krishnagiri serving Pan India. We create responsive websites, web apps, Meta ads Google ads & SEO solutions. Get a free consultation today!",
   keywords:
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://coderzweb.in",
-    siteName: "CoderzWeb - Professional Web Development agency in Krishnagiri",
+    siteName: "CODERZWEB | Web Development & Marketing Agency Krishnagiri & Hosur",
     title: "Expert In Custom Websites & Performance Marketing",
     description:
       "Leading web development company delivering custom websites, web apps, and e-commerce solutions. 500+ projects completed. Fast turnaround. Free consultation. Transform your digital presence today!",

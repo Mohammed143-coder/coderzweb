@@ -1,8 +1,10 @@
+// app/layout.tsx
 import ClientLayout from "@/components/ClientLayout";
 import Gtag from "@/components/Analytics/gtag";
 import OrganizationSchema from "@/components/StructuredData";
+import FaqSchema from "@/components/FaqSchema";
 import { Poppins } from "next/font/google";
-import "../styles/index.css";
+import "@/styles/index.css";
 import { Metadata } from "next";
 
 const poppins = Poppins({
@@ -13,11 +15,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Professional Web Development & Performance Marketing",
+  title: "CODERZWEB | Web Development & Digital Marketing Agency Krishnagiri & Hosur",
   description:
-    "Award-winning web development and Performance marketing services. We create responsive websites, web apps, Meta ads, Google ads & SEO solutions.",
+    "Top-rated web development, e-commerce, and digital marketing agency in Krishnagiri & Hosur. Custom Next.js web architecture, SEO & Meta Ads starting at ₹5,999. Call today for a free consultation!",
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#4A6CF7",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -30,11 +35,11 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://coderzweb.in/" />
         <meta name="msvalidate.01" content="32C5DEAC9F08EA04B93087634246FECA" />
-          <Gtag />
+        <Gtag />
         <OrganizationSchema />
+        <FaqSchema />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${poppins.className}`}>
-      
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

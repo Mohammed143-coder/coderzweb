@@ -10,10 +10,11 @@ import { PiInstagramLogoDuotone } from "react-icons/pi";
 import dynamic from "next/dynamic";
 
 const ChatBox = dynamic(() => import("../ChatBot"), { ssr: false });
+const WhatsApp = dynamic(() => import("../WhatsAppWidget"), { ssr: false });
 
 
 const Footer = () => {
-  const msg = `Hi, I'm planning to build my business onl, Checking from your services?`;
+  const msg = `Hi, I'm planning to build my business online. Checking from your services?`;
   return (
     <>
       <footer
@@ -150,6 +151,8 @@ const Footer = () => {
               </div>
             </div>
             <ChatBox />
+            <WhatsApp/>
+             
           </div>
 
           <div className="flex flex-col items-center justify-around border-t border-gray-100 py-10 dark:border-white/5 md:flex-row">

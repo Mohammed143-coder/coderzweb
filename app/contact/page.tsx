@@ -4,14 +4,56 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CoderzWeb | Professional Web Development & Performance Marketing agency",
+  title: "Contact CODERZWEB | Web Development & Marketing Agency Krishnagiri",
   description:
-    "Award-winning web development company specializing in custom websites, web applications, e-commerce, and mobile apps, Meta ads, Google ads and Logo desiging. Transform your business with responsive design, SEO optimization, and 24/7 support. Get a free consultation today!",
-  keywords:
-    "web development services, custom website development, professional web design, web application development, Best Performance Marketing agency, e-commerce website development, responsive web design, mobile app development, website redesign services, business website development Krishnagiri, affordable web development Krishnagiri, React development services, Next.js development, full stack development, business website development, affordable web development, web development company, hire web developers, website maintenance services, SEO friendly web development, progressive web apps, API integration services, web developers near me Krishnagiri, best web development company Krishnagiri Tamil Nadu",
+    "Get in touch with CODERZWEB. Visit our Rajaji Nagar, Krishnagiri office, call +91 80727 70837, or email info@coderzweb.in for a free web development & marketing quote.",
+
+  alternates: {
+    canonical: "/contact",
+  },
+
   authors: [{ name: "CoderzWeb", url: "https://coderzweb.in" }],
   creator: "Mohammed Junaith",
-  publisher: "CoderzWeb",
+  publisher: "CODERZWEB",
+
+  keywords: [
+    "contact CoderzWeb",
+    "CoderzWeb Krishnagiri address",
+    "CoderzWeb phone number",
+    "web development consultation Krishnagiri",
+    "hire web developers Hosur",
+    "website designers contact number Krishnagiri",
+    "digital marketing agency Krishnagiri",
+    "performance marketing services Hosur",
+    "performance marketing agency near me Krishnagiri",
+    "web design office near me Krishnagiri",
+  ],
+
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://coderzweb.in/contact",
+    siteName: "CODERZWEB",
+    title: "Contact CODERZWEB | Web Development & Digital Marketing Agency",
+    description:
+      "Ready to build your next high-performance digital project? Reach out to our strategy team in Krishnagiri. Call or WhatsApp +91 80727 70837.",
+    images: [
+      {
+        url: "/_next/image/?url=%2Fimages%2Fblog%2Fcoderzweb-blog3.webp&w=1200&q=75",
+        width: 1200,
+        height: 630,
+        alt: "Contact CODERZWEB - Krishnagiri Office",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact CODERZWEB | Krishnagiri Office",
+    description:
+      "Connect with CODERZWEB for website development, e-commerce stores, and Meta Ads campaigns. Phone: +91 80727 70837.",
+    images: ["/_next/image/?url=%2Fimages%2Fblog%2Fcoderzweb-blog3.webp&w=1200&q=75"],
+  },
 };
 
 const ContactPage = () => {
